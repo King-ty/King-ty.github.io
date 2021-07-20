@@ -225,6 +225,99 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
+            <a href="/King-ty.github.io" class="post-title-link" itemprop="url">测试</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-07-20 17:07:22 / 修改时间：17:09:43" itemprop="dateCreated datePublished" datetime="2021-07-20T17:07:22+08:00">2021-07-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>测试使用计网服务端说明文档</strong></p>
+<h1 id="2021《计算机网络》小组作业"><a href="#2021《计算机网络》小组作业" class="headerlink" title=" 2021《计算机网络》小组作业 "></a><center> 2021《计算机网络》小组作业 </center></h1><h1 id="同步网盘-服务端说明文档"><a href="#同步网盘-服务端说明文档" class="headerlink" title=" 同步网盘-服务端说明文档"></a><center> 同步网盘-服务端说明文档</center></h1><p>![image-20210707182948514](F:\大学课程\大二下\计网\作业\11\final\center 2021《计算机网络》小组作业 center.assets\image-20210707182948514.png)</p>
+<center>成员1: 1851746 范千惠 </center>
+
+<center>成员2: 1853047 孔庆晨 </center>
+
+<center>成员3: 1953080 田&nbsp;&nbsp;&nbsp;&nbsp;宇</center>
+
+<center>指导老师：沈&nbsp;&nbsp;&nbsp;&nbsp;坚</center>
+
+
+
+
+
+
+
+<h3 id="一、编译运行"><a href="#一、编译运行" class="headerlink" title="一、编译运行"></a>一、编译运行</h3><h4 id="1-编译"><a href="#1-编译" class="headerlink" title="1. 编译"></a>1. 编译</h4><p>解压压缩包sync-disk-server.tar.bz2，进入server目录，输入make并回车，即可完成编译得到server可执行文件</p>
+<p>make情况如下所示：</p>
+<p>![image-20210707182220906](F:\大学课程\大二下\计网\作业\11\final\center 2021《计算机网络》小组作业 center.assets\image-20210707182220906.png)</p>
+<h4 id="2-运行"><a href="#2-运行" class="headerlink" title="2. 运行"></a>2. 运行</h4><p>将server可执行文件移动到需要的安装位置，输入./server &lt;–port port&gt;即可绑定指定端口号开始运行（端口号有默认值20641因此可以不输入）</p>
+<p>运行命令如下：(运行时没有提示输出)</p>
+<p>![image-20210707182252459](F:\大学课程\大二下\计网\作业\11\final\center 2021《计算机网络》小组作业 center.assets\image-20210707182252459.png)</p>
+<h3 id="二、运行表现"><a href="#二、运行表现" class="headerlink" title="二、运行表现"></a>二、运行表现</h3><h4 id="1-开始运行时"><a href="#1-开始运行时" class="headerlink" title="1. 开始运行时"></a>1. 开始运行时</h4><p>程序开始运行时会自动变成守护进程，建立数据库(数据库相关配置信息都写在代码中)</p>
+<p>建立数据库情况如下：</p>
+<p>![image-20210707182416343](F:\大学课程\大二下\计网\作业\11\final\center 2021《计算机网络》小组作业 center.assets\image-20210707182416343.png)</p>
+<p>同时程序会自动建立./storage/和./log_files/两个目录，分别存储同步盘的文件系统和用户的日志。</p>
+<p>程序运行后查看目录如下，可见已建立日志和文件相关目录</p>
+<p>![image-20210707181915354](F:\大学课程\大二下\计网\作业\11\final\center 2021《计算机网络》小组作业 center.assets\image-20210707181915354.png)</p>
+<h4 id="2-运行过程中"><a href="#2-运行过程中" class="headerlink" title="2. 运行过程中"></a>2. 运行过程中</h4><p>程序运行中会将相关日志写入每个用户的日志文件和总日志文件中，并输出一份到终端便于调试。日志情况如下：</p>
+<p>![image-20210707181849216](F:\大学课程\大二下\计网\作业\11\final\center 2021《计算机网络》小组作业 center.assets\image-20210707181849216.png)</p>
+<p>程序运行中可以查看数据库中相关表的变化以及查看文件系统中文件的变动，也可以查看日志，但是该服务端程序不能与终端交互。</p>
+<p>运行中查看文件系统情况如下：(按照我们的设计，文件传输到服务器后放在md5码前四位构成的文件夹中，且文件名即为该文件的md5码)</p>
+<p>![image-20210707182609226](F:\大学课程\大二下\计网\作业\11\final\center 2021《计算机网络》小组作业 center.assets\image-20210707182609226.png)</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://king-ty.github.io/King-ty.github.io">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="King-ty">
+      <meta itemprop="description" content="Waiting...">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Soul Talk">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
             <a href="/King-ty.github.io" class="post-title-link" itemprop="url">Hello World</a>
         </h2>
 
@@ -347,7 +440,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
