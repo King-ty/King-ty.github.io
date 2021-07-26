@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://king-ty.github.io/2021/07/26/test-new/</loc>
+    
+    <lastmod>2021-07-26</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://king-ty.github.io/2021/07/23/%E8%AE%B0%E6%9A%91%E6%9C%9F%E7%AC%AC%E4%B8%80%E5%9C%BACF/</loc>
     
     <lastmod>2021-07-26</lastmod>
@@ -60,5 +67,12 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://king-ty.github.io/categories/test/</loc>
+    <lastmod>2021-07-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>

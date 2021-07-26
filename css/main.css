@@ -1233,7 +1233,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #6e6f29;
+  background: #747c39;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2738,4 +2738,29 @@ mjx-container + br {
   .pagination {
     margin: 8px 0 0;
   }
+}
+body {
+  background: url("/images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  color: var(--text-color);
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1em;
+  line-height: 2;
+}
+.sidebar {
+  opacity: 0.9;
+}
+.header-inner {
+  background: rgba(255,255,255,0.9);
+}
+.popup {
+  opacity: 0.9;
+}
+.post-block {
+  background: rgba(255,255,255,0.9) none repeat scroll !important;
+}
+.comments {
+  background: rgba(255,255,255,0.9) none repeat scroll !important;
 }
