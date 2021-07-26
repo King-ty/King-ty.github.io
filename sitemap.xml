@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://king-ty.github.io/categories/index.html</loc>
+    <loc>https://king-ty.github.io/2021/07/23/%E8%AE%B0%E6%9A%91%E6%9C%9F%E7%AC%AC%E4%B8%80%E5%9C%BACF/</loc>
     
-    <lastmod>2021-07-25</lastmod>
+    <lastmod>2021-07-26</lastmod>
     
   </url>
   
   <url>
     <loc>https://king-ty.github.io/about/index.html</loc>
     
-    <lastmod>2021-07-25</lastmod>
+    <lastmod>2021-07-26</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://king-ty.github.io/categories/index.html</loc>
+    
+    <lastmod>2021-07-26</lastmod>
     
   </url>
   
   <url>
     <loc>https://king-ty.github.io/tags/index.html</loc>
     
-    <lastmod>2021-07-25</lastmod>
+    <lastmod>2021-07-26</lastmod>
     
   </url>
   
@@ -31,13 +38,6 @@
   
   <url>
     <loc>https://king-ty.github.io/2021/07/20/hello-world/</loc>
-    
-    <lastmod>2021-07-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://king-ty.github.io/2021/07/23/%E8%AE%B0%E6%9A%91%E6%9C%9F%E7%AC%AC%E4%B8%80%E5%9C%BACF/</loc>
     
     <lastmod>2021-07-24</lastmod>
     
