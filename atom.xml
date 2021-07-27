@@ -6,7 +6,7 @@
   <link href="https://king-ty.github.io/atom.xml" rel="self"/>
   
   <link href="https://king-ty.github.io/"/>
-  <updated>2021-07-26T15:48:33.503Z</updated>
+  <updated>2021-07-27T00:55:22.359Z</updated>
   <id>https://king-ty.github.io/</id>
   
   <author>
@@ -17,27 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test new</title>
-    <link href="https://king-ty.github.io/2021/07/26/test-new/"/>
-    <id>https://king-ty.github.io/2021/07/26/test-new/</id>
-    <published>2021-07-26T15:47:49.000Z</published>
-    <updated>2021-07-26T15:48:33.503Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="for-test"><a href="#for-test" class="headerlink" title="for test"></a>for test</h3><p>test</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;for-test&quot;&gt;&lt;a href=&quot;#for-test&quot; class=&quot;headerlink&quot; title=&quot;for test&quot;&gt;&lt;/a&gt;for test&lt;/h3&gt;&lt;p&gt;test&lt;/p&gt;
-</summary>
-      
+    <title>aaa</title>
+    <link href="https://king-ty.github.io/2021/07/27/aaa/"/>
+    <id>https://king-ty.github.io/2021/07/27/aaa/</id>
+    <published>2021-07-27T00:55:22.000Z</published>
+    <updated>2021-07-27T00:55:22.359Z</updated>
     
     
     
-    <category term="test" scheme="https://king-ty.github.io/categories/test/"/>
     
-    
-    <category term="test" scheme="https://king-ty.github.io/tags/test/"/>
     
   </entry>
   

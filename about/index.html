@@ -151,7 +151,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">1</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">0</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -345,12 +345,6 @@ Here are some ideas to get you started:
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
@@ -432,9 +426,14 @@ Here are some ideas to get you started:
                 console.error('Failed to save visitor count', error);
               });
           } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
+              Counter('post', '/classes/Counter', { title, url, time: 1 })
+                .then(response => response.json())
+                .then(() => {
+                  leancloudSelector(url).innerText = 1;
+                })
+                .catch(error => {
+                  console.error('Failed to create', error);
+                });
           }
         })
         .catch(error => {
@@ -461,7 +460,7 @@ Here are some ideas to get you started:
         });
     }
 
-    let { app_id, app_key, server_url } = {"enable":true,"app_id":"cCcVQwiryAvVqKG4mLerqsmS-gzGzoHsz","app_key":"pa8PoURd1N6TmEYtugBSUIpN","server_url":"https://cccvqwir.lc-cn-n1-shared.com","security":true};
+    let { app_id, app_key, server_url } = {"enable":true,"app_id":"cCcVQwiryAvVqKG4mLerqsmS-gzGzoHsz","app_key":"pa8PoURd1N6TmEYtugBSUIpN","server_url":"https://cccvqwir.lc-cn-n1-shared.com","security":false};
     function fetchData(api_server) {
       var Counter = (method, url, data) => {
         return fetch(`${api_server}/1.1${url}`, {
