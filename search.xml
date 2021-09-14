@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>git学习记录</title>
+      <link href="/2021/09/14/git%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+      <url>/2021/09/14/git%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<p>暑假前我曾经用了一天的时间学习git和github的使用，为了练习在暑假第一周我把大学作业中勉强称得上是项目的东西传到了github上并借助gitpages配置了本blog。本想着git算是学会了，可惜暑假并没有及时进行练习，当我想上传数据结构课设作业时发现该忘的都忘记了，记性不好吗，看来还是有必要记录一下。</p><span id="more"></span><h4 id="git-clone和download-zip区别"><a href="#git-clone和download-zip区别" class="headerlink" title="git clone和download zip区别"></a>git clone和download zip区别</h4><p>前者带一个.git，是一个仓库，也就是带有一些版本控制</p><h4 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h4><p>对于初始项目目录，使用git init初始化为git仓库</p><h4 id="git-add-A"><a href="#git-add-A" class="headerlink" title="git add -A"></a>git add -A</h4><p>将所有文件添加到暂存区<br>可用vscode左边点”+”实现</p><h4 id="vscode的U-A"><a href="#vscode的U-A" class="headerlink" title="vscode的U/A"></a>vscode的U/A</h4><p>U:表示是新增文件<br>A:到达暂存区</p><h4 id="git-commit-m-“提交信息”"><a href="#git-commit-m-“提交信息”" class="headerlink" title="git commit -m “提交信息”"></a>git commit -m “提交信息”</h4><p>提交暂存，每次提交有位移hash值，并用提交信息提醒这次提交了什么<br>可用vscode插件输入提交信息ctrl+enter实现</p><h4 id="git-log-—stat"><a href="#git-log-—stat" class="headerlink" title="git log —stat"></a>git log —stat</h4><p>查看提交记录<br>可直接在vscode插件COMMITS中查看</p><h4 id="git-checkout-filename"><a href="#git-checkout-filename" class="headerlink" title="git checkout [filename]"></a>git checkout [filename]</h4><p>未提交时撤销修改，变为仓库中的状态<br>可在vscode插件中点放弃修改实现</p><h4 id="git-reset-HEAD-m"><a href="#git-reset-HEAD-m" class="headerlink" title="git reset HEAD^[m]"></a>git reset HEAD^[m]</h4><p>退回到第前m个版本<br>可用COMMITS里undo commit做到</p><h4 id="git-checkout-b-branchname"><a href="#git-checkout-b-branchname" class="headerlink" title="git checkout -b [branchname]"></a>git checkout -b [branchname]</h4><p>以当前分支为基础创建分支并切换到该分支<br>主分支一般是代码的起点和终点</p><h4 id="git-checkout-branchname"><a href="#git-checkout-branchname" class="headerlink" title="git checkout [branchname]"></a>git checkout [branchname]</h4><p>切换分支</p><h4 id="git-merge-branchname"><a href="#git-merge-branchname" class="headerlink" title="git merge [branchname]"></a>git merge [branchname]</h4><p>把[branchname]分支合并到当前分支</p><h4 id="git-merge-—abort"><a href="#git-merge-—abort" class="headerlink" title="git merge —abort"></a>git merge —abort</h4><p>放弃本次合并</p><h4 id="git-branch"><a href="#git-branch" class="headerlink" title="git branch"></a>git branch</h4><p>查看本地所有分支<br>*是当前分支</p><h4 id="git-branch-r"><a href="#git-branch-r" class="headerlink" title="git branch -r"></a>git branch -r</h4><p>查看远程所有分支</p><h4 id="git-branch-a"><a href="#git-branch-a" class="headerlink" title="git branch -a"></a>git branch -a</h4><p>查看本地和远程所有分支</p><h4 id="git-branch-d-D-branchname"><a href="#git-branch-d-D-branchname" class="headerlink" title="git branch -d/D [branchname]"></a>git branch -d/D [branchname]</h4><p>删除分支，其中D是强制删除</p><h4 id="git-remote-add-origin-远端仓库地址"><a href="#git-remote-add-origin-远端仓库地址" class="headerlink" title="git remote add origin [远端仓库地址]"></a>git remote add origin [远端仓库地址]</h4><p>把远端仓库作为”origin”名添加到本地中</p><h4 id="git-branch-m-M-oldbranchname-newbranchname"><a href="#git-branch-m-M-oldbranchname-newbranchname" class="headerlink" title="git branch -m/M [oldbranchname] [newbranchname]"></a>git branch -m/M [oldbranchname] [newbranchname]</h4><p>修改分支名字，M是强制修改<br>可以只有[newbranchname]，修改当前分支<br>常用git branch -M main解决github上main和master的冲突</p><h4 id="git-push-u-remoteoriginname-localoriginname"><a href="#git-push-u-remoteoriginname-localoriginname" class="headerlink" title="git push (-u) [remoteoriginname] ([localoriginname])"></a>git push (-u) [remoteoriginname] ([localoriginname])</h4><p>推送到远程仓库<br>常用git push -u origin main<br>[localoriginname]省略则为<br>其中-u用来绑定远程主机，之后就可以简写为git push和git pull而不用指定origin<br><!-- ![](image/git学习记录/1631595461467.png) --></p><blockquote><p><code>$ git push origin</code><br>上面命令表示，将当前分支推送到origin主机的对应分支。<br>如果当前分支只有一个追踪分支，那么主机名都可以省略。<br><code>$ git push</code><br>如果当前分支与多个主机存在追踪关系，那么这个时候-u选项会指定一个默认主机，这样后面就可以不加任何参数使用git push。<br><code>$ git push -u origin master</code><br>上面命令将本地的master分支推送到origin主机，同时指定origin为默认主机，后面就可以不加任何参数使用git push了。</p></blockquote><h4 id="git-pull-—rebase-remoteoriginname-localoriginname"><a href="#git-pull-—rebase-remoteoriginname-localoriginname" class="headerlink" title="git pull (—rebase) [remoteoriginname] ([localoriginname])"></a>git pull (—rebase) [remoteoriginname] ([localoriginname])</h4><p>拉取远程分支内容<br>—rebase作用参考<a href="https://blog.csdn.net/yao_hou/article/details/108178717">这篇文章</a><br>其实就是git pull不在当前合并出新节点，而是在分支出来的结点进行合并并修改之后的结点<br>用来解决github新仓库第一次提交失败的问题</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>匹配</title>
       <link href="/2021/08/12/%E5%8C%B9%E9%85%8D/"/>
       <url>/2021/08/12/%E5%8C%B9%E9%85%8D/</url>
@@ -22,24 +49,11 @@
       
         <tags>
             
-            <tag> ACM </tag>
-            
             <tag> 学习 </tag>
             
+            <tag> ACM </tag>
+            
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>aaa</title>
-      <link href="/2021/07/27/aaa/"/>
-      <url>/2021/07/27/aaa/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
       
     </entry>
     
