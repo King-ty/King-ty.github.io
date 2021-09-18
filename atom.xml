@@ -6,7 +6,7 @@
   <link href="https://king-ty.github.io/atom.xml" rel="self"/>
   
   <link href="https://king-ty.github.io/"/>
-  <updated>2021-09-14T11:37:34.989Z</updated>
+  <updated>2021-09-18T11:32:23.043Z</updated>
   <id>https://king-ty.github.io/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>没啥动力，写点废话</title>
+    <link href="https://king-ty.github.io/2021/09/18/%E6%B2%A1%E5%95%A5%E5%8A%A8%E5%8A%9B%EF%BC%8C%E5%86%99%E7%82%B9%E5%BA%9F%E8%AF%9D/"/>
+    <id>https://king-ty.github.io/2021/09/18/%E6%B2%A1%E5%95%A5%E5%8A%A8%E5%8A%9B%EF%BC%8C%E5%86%99%E7%82%B9%E5%BA%9F%E8%AF%9D/</id>
+    <published>2021-09-18T11:16:04.000Z</published>
+    <updated>2021-09-18T11:32:23.043Z</updated>
+    
+    <content type="html"><![CDATA[<p>中秋节终于放假了，颇感没啥动力，在此记录一点开学以来的心路历程。</p><span id="more"></span><p>这学期开学颇为不顺，一开始几天忙着补假期一直拖的数据结构课设，刚刚补完就迎来了数模，好不容易数模结束了，新的忙碌的一周又开始了，到现在第二周结束，难免有些疲倦。<br>刚开学的时候，看着数据结构一团乱麻的代码，真想直接随便交一个东西混个及格算完了，想想还是坚持了下来；数模的时候，真想跑掉，但又不能辜负了队友的期望，只得痛苦三天把他搞完。这些结束后，我下定决心，今后再也不能延期了，上学期那么痛苦，这学期开学又是那么痛苦，很大一部分都是我的拖延症带来的。有的人回顾自己的大学生活，发现完全是一部延期史；如果到大四回顾的时候还是一样，未免太失败了。先定个小目标，这学期不延期。<br>数模结束后，最开始我感觉我精神百倍，中午不休息到下午甚至晚上也毫无倦意，于是我又重回了大二上的状态，课程都坐第一排，上课听好，下课立刻写作业。<br>最近一点烦心事就是数据结构武老师班的事，虽说与我完全无关，但是我还是挺生气的，有很多话，想想还是不适合在博客中写出来。<br>昨天班会我没去，听闻有一个上学期选了15门课还满绩的人，最初很吃惊，惊为天人。后来在lgf的提示下我意识到这人不就是我吗？略有沾沾自喜，但上学期究竟是怎样还是我自己最清楚，没什么好骄傲的，各种卡极限，运气占很大一部分，再加上实际上也似乎没学到什么真本事，实在没啥可骄傲的。<br>最近还是比较焦虑，可能当自己的绩点真的达到一定程度后，大家都会转为思考能不能保研的事吧，毕竟从各方面考虑，保研都是最划算的……但我的心态也发生了不少变化，比如我退掉了生命的省思这门课，我舍友颇感吃惊，其实我自己也有点吃惊，这毕竟完全不是我的做事风格。<br>焦虑也对我产生了不少负面影响，昨晚上安排的计划似乎是一点都没有完成，回到寝室还自暴自弃，实在不应该。<br>不说不快，其实说完了心情好了一些，回头看看，句子都不通顺，真就说废话。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;中秋节终于放假了，颇感没啥动力，在此记录一点开学以来的心路历程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="闲聊" scheme="https://king-ty.github.io/categories/%E9%97%B2%E8%81%8A/"/>
+    
+    
+    <category term="闲聊" scheme="https://king-ty.github.io/tags/%E9%97%B2%E8%81%8A/"/>
+    
+  </entry>
+  
+  <entry>
     <title>博客插入图片</title>
     <link href="https://king-ty.github.io/2021/09/14/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
     <id>https://king-ty.github.io/2021/09/14/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</id>
     <published>2021-09-14T11:24:28.000Z</published>
-    <updated>2021-09-14T11:37:34.989Z</updated>
+    <updated>2021-09-14T11:46:23.680Z</updated>
     
-    <content type="html"><![CDATA[<p>算是当时建站留下的一点坑，博客一直没有插入图片的功能，这对于显示当然及其不友好。这学期我转用markdown进行课堂笔记，最近突发奇想想将笔记转移到博客上，这样的话没有图片肯定是不行的，于是稍微折腾了一下。</p><span id="more"></span><p>其实网上比较推荐的做法是使用“七牛”等网络图床，网络存图有好处也有缺点，我想还是用本地方案得了，遂放弃（才不是懒得研究）<br>本地方案其实也不难，按照<a href="https://hexo.io/zh-cn/docs/">hexo的官方文档</a>来做十分容易，核心如下：<br><img src="博客插入图片/2021-09-14-19-29-24.png" alt=""><br>其实就是全局配置打开资源文件夹，然后用一些特定格式加入图片就行，markdown自带的插入图片格式也是可以用的，虽然官方说有些缺点。</p><p>问题在于为了做课堂笔记，想要插入图片必须要快速高效，因此需要使粘贴插图的默认位置在资源文件夹中。使用markdown all in one的默认位置使./image/[post_name]/pic_name，这样显然不行，仔细寻找了markdown all in one的设置也没有设置图片位置的方法，于是只能用其他方法来做到。<br>网上找到了一些方法，最后发现<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a>插件比较符合我的需求，可以按相对位置插入图片，也可以改变图片存储位置，只是粘贴的快捷键需要使用CTRL+ALT+V，稍微麻烦，但无伤大雅。<br><img src="博客插入图片/2021-09-14-19-37-33.png" alt=""></p><p>不算什么有用的文章，仅作记录。</p>]]></content>
+    <content type="html"><![CDATA[<p>算是当时建站留下的一点坑，博客一直没有插入图片的功能，这对于显示当然及其不友好。这学期我转用markdown进行课堂笔记，最近突发奇想想将笔记转移到博客上，这样的话没有图片肯定是不行的，于是稍微折腾了一下。</p><span id="more"></span><p>其实网上比较推荐的做法是使用“七牛”等网络图床，网络存图有好处也有缺点，我想还是用本地方案得了，遂放弃（才不是懒得研究）<br>本地方案其实也不难，按照<a href="https://hexo.io/zh-cn/docs/">hexo的官方文档</a>来做十分容易，核心如下：<br><img src="博客插入图片/2021-09-14-19-29-24.png" alt=""><img src="2021-09-14-19-29-24.png" alt=""><br>其实就是全局配置打开资源文件夹，然后用一些特定格式加入图片就行，markdown自带的插入图片格式也是可以用的，虽然官方说有些缺点。</p><p>问题在于为了做课堂笔记，想要插入图片必须要快速高效，因此需要使粘贴插图的默认位置在资源文件夹中。使用markdown all in one的默认位置使./image/[post_name]/pic_name，这样显然不行，仔细寻找了markdown all in one的设置也没有设置图片位置的方法，于是只能用其他方法来做到。<br>网上找到了一些方法，最后发现<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a>插件比较符合我的需求，可以按相对位置插入图片，也可以改变图片存储位置，只是粘贴的快捷键需要使用CTRL+ALT+V，稍微麻烦，但无伤大雅。<br><img src="博客插入图片/2021-09-14-19-37-33.png" alt=""><img src="2021-09-14-19-37-33.png" alt=""></p><p>不算什么有用的文章，仅作记录。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;算是当时建站留下的一点坑，博客一直没有插入图片的功能，这对于显示当然及其不友好。这学期我转用markdown进行课堂笔记，最近突发奇想想将笔记转移到博客上，这样的话没有图片肯定是不行的，于是稍微折腾了一下。&lt;/p&gt;</summary>
