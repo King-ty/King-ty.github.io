@@ -34,20 +34,21 @@
     var CONFIG = {"hostname":"king-ty.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="今天在高铁上，我终于完成了基于github pages的blog搭建，说实话从有想搭博客的想法已经很久了，直到最近才越来越感觉真的需要记录点东西，正好趁着假期研究了下git的使用(之前一直没搞明白属实惭愧)，于是趁热打铁利用github pages搭建了一个博客。正好赶上回家，感觉有许多想法想要记录下来，趁着年轻，就应该多留下点想法。">
+  <meta name="description" content="暑假快结束的时候为了玩安装了wsl，但是没有进行详细的配置，这次操作系统小实验需要用到linux系统，虽说已经有了centOS虚拟机，但是还是想借机玩一把wsl，在此做一点记录。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇博客——测试+哔哔赖赖">
-<meta property="og:url" content="https://king-ty.github.io/2021/07/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E6%B5%8B%E8%AF%95-%E5%93%94%E5%93%94%E8%B5%96%E8%B5%96/index.html">
+<meta property="og:title" content="配置wsl">
+<meta property="og:url" content="https://king-ty.github.io/2021/09/19/%E9%85%8D%E7%BD%AEwsl/index.html">
 <meta property="og:site_name" content="Soul Talk">
-<meta property="og:description" content="今天在高铁上，我终于完成了基于github pages的blog搭建，说实话从有想搭博客的想法已经很久了，直到最近才越来越感觉真的需要记录点东西，正好趁着假期研究了下git的使用(之前一直没搞明白属实惭愧)，于是趁热打铁利用github pages搭建了一个博客。正好赶上回家，感觉有许多想法想要记录下来，趁着年轻，就应该多留下点想法。">
+<meta property="og:description" content="暑假快结束的时候为了玩安装了wsl，但是没有进行详细的配置，这次操作系统小实验需要用到linux系统，虽说已经有了centOS虚拟机，但是还是想借机玩一把wsl，在此做一点记录。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-07-20T15:21:36.000Z">
-<meta property="article:modified_time" content="2021-07-24T15:43:23.616Z">
+<meta property="article:published_time" content="2021-09-19T03:10:49.000Z">
+<meta property="article:modified_time" content="2021-09-28T05:38:39.190Z">
 <meta property="article:author" content="King-ty">
-<meta property="article:tag" content="test">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="wsl">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://king-ty.github.io/2021/07/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E6%B5%8B%E8%AF%95-%E5%93%94%E5%93%94%E8%B5%96%E8%B5%96/">
+<link rel="canonical" href="https://king-ty.github.io/2021/09/19/%E9%85%8D%E7%BD%AEwsl/">
 
 
 <script id="page-configurations">
@@ -60,7 +61,7 @@
   };
 </script>
 
-  <title>第一篇博客——测试+哔哔赖赖 | Soul Talk</title>
+  <title>配置wsl | Soul Talk</title>
   
 
 
@@ -215,7 +216,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://king-ty.github.io/2021/07/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E6%B5%8B%E8%AF%95-%E5%93%94%E5%93%94%E8%B5%96%E8%B5%96/">
+    <link itemprop="mainEntityOfPage" href="https://king-ty.github.io/2021/09/19/%E9%85%8D%E7%BD%AEwsl/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -228,7 +229,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          第一篇博客——测试+哔哔赖赖
+          配置wsl
         </h1>
 
         <div class="post-meta">
@@ -240,18 +241,31 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-07-20 23:21:36" itemprop="dateCreated datePublished" datetime="2021-07-20T23:21:36+08:00">2021-07-20</time>
+              <time title="创建时间：2021-09-19 11:10:49" itemprop="dateCreated datePublished" datetime="2021-09-19T11:10:49+08:00">2021-09-19</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-24 23:43:23" itemprop="dateModified" datetime="2021-07-24T23:43:23+08:00">2021-07-24</time>
+                <time title="修改时间：2021-09-28 13:38:39" itemprop="dateModified" datetime="2021-09-28T13:38:39+08:00">2021-09-28</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/wsl/" itemprop="url" rel="index"><span itemprop="name">wsl</span></a>
+                </span>
+            </span>
 
           
-            <span id="/2021/07/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E6%B5%8B%E8%AF%95-%E5%93%94%E5%93%94%E8%B5%96%E8%B5%96/" class="post-meta-item leancloud_visitors" data-flag-title="第一篇博客——测试+哔哔赖赖" title="阅读次数">
+            <span id="/2021/09/19/%E9%85%8D%E7%BD%AEwsl/" class="post-meta-item leancloud_visitors" data-flag-title="配置wsl" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -266,8 +280,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/07/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E6%B5%8B%E8%AF%95-%E5%93%94%E5%93%94%E8%B5%96%E8%B5%96/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/07/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E6%B5%8B%E8%AF%95-%E5%93%94%E5%93%94%E8%B5%96%E8%B5%96/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/09/19/%E9%85%8D%E7%BD%AEwsl/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/09/19/%E9%85%8D%E7%BD%AEwsl/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -276,7 +290,7 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
               </span>
-              <span>2.5k</span>
+              <span>257</span>
             </span>
 
         </div>
@@ -288,15 +302,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>今天在高铁上，我终于完成了基于github pages的blog搭建，说实话从有想搭博客的想法已经很久了，直到最近才越来越感觉真的需要记录点东西，正好趁着假期研究了下git的使用(之前一直没搞明白属实惭愧)，于是趁热打铁利用github pages搭建了一个博客。正好赶上回家，感觉有许多想法想要记录下来，趁着年轻，就应该多留下点想法。</p>
-<span id="more"></span> 
-<h3 id="为什么要写博客？"><a href="#为什么要写博客？" class="headerlink" title="为什么要写博客？"></a>为什么要写博客？</h3><p>虽说不是什么事都要刨根问底问个为什么，但是写博客倒是确实需要一个明确的理由，毕竟现在已经不是博客的时代了，博客不再拥有大量的读者，也不像微博等当代社交方式便捷。那么我为什么要写博客呢？<br>一个原因是想记录自己学习技术的过程。就像很多计算机技术大牛那样，我想用博客记录一下自己学习过程中的一点点收获与思想。我在大二下这学期也明显感受到了自己所学的许多东西如果不经记录很快就会被忘记，因此确实有必要记录下来，至少可以起到备查的作用，如果能帮到其他有同样学习经历的人我更是感到十分荣幸，同时记录的过程也是对所学的一种总结，有利于更好地归纳总结所学。<br>另一个非常重要的原因就是想要通过博客与自己的内心进行一种“对话”，这也是我为什么将博客名暂定为”Soul Talk”。其实一直以来我废话都挺多的，至少心里有什么想法大多数时候都希望找个人分享一下，一般我都是通过打电话和家里分享或是告诉身边的朋友，但是这学期真的许多事似乎只适合和自己说，或是找到某种“灵魂伴侣”；当然若是能有红颜知己再好不过，但我懂得还是要放弃幻想认清形势。写博客其实就是和自己对话的过程，在高中时尽管平时学习压力并不小，但我还是喜欢闲下来的时候，写一点日记记录一下，到大学后不知道为何反而丢弃了记日记的习惯；另一方面，上大学后真的很少写字了，现在我这赖字写日记真的是自己看了都嫌弃，那就干脆用博客代替吧……</p>
-<h3 id="下一步做什么？"><a href="#下一步做什么？" class="headerlink" title="下一步做什么？"></a>下一步做什么？</h3><p>其实为啥写博客想清楚了，下一步干什么也就明白了。平时学习技术的时候开个md记录一下，有想说的就当日记记录一下，不求真的有读者，更重要的还是写给自己吧。<br>另外其实利用github pages搭建博客真的挺简单的，但我为了美化还是花了一些时间，不得不说这个next主题我个人感觉目前还是挺丑挺简陋的，未来肯定还要进一步美化，毕竟界面美了我才更有动力写下去嘛……</p>
-<h3 id="第一篇博客还有啥想说的"><a href="#第一篇博客还有啥想说的" class="headerlink" title="第一篇博客还有啥想说的"></a>第一篇博客还有啥想说的</h3><p>还想bb点这学期的事……高铁上我用电脑做了些事导致没电了，后期除了一段水群的时间，大概是考虑了一下这学期的一些事。<br>首先最大的好消息是满绩了，虽然一个虚无的数字对我已经不再有那么大的意义了，毕竟保研无望，但是这至少还是证明了自己其实并没有差多少。这学期我真的是一步一赌，步步惊心，31.5的学分量不管怎么说都给我带来了巨大的课业压力。为什么要选那么多课呢？因为当时感觉反正保研不可能了，不如干脆提前学一下大三的内容，到时候好抽出时间准备考研或出国，能够满绩是我完全没想到的。这学期其实有好几个之前和我绩点相近的同学都在努力证明自己，大概是周一没有重视导致现在绩点不太好看吧，就想着这学期努力证明一次，看看自己是不是真的比不上那些专业前列的大佬，也都取得了不错的结果。讲真我是没有这种想法的，毕竟我的学分量摆在那里，我只是努力走好每一步，渴望“活下去”。<br>那我究竟为什么竟能顶着如此大的压力达到满绩呢？一方面，有我自己努力的结果。期末复习时，我和同学说我每一科只需要两小时的复习时间，这虽然有所夸张，但是这学期我所有的考试确实都只复习了半天时间，一方面是我确实被一堆作业压迫着不得不缩减复习时间，另一方面这学期许多课我都是每次上完课及时通过看ppt熟悉了课程内容，而不是把复习压力全部堆到期末，这样期末复习时我就是在回忆而不是许多人调侃的“预习”，速度自然快。另一方面，更重要的就是许多朋友对我的帮助。在计网作业我几乎崩溃的时候，是waq和ymy对我提供了许多及时而有效的帮助；在DSP搞得我自闭时，是bcc和ljj给我指明了方向；在自动机、计组和人工智能因为我被作业压迫没有听课自己课下补课看不懂时，是gzc与我进行了许多理论方面的交流并给了我许多理解上的帮助，尤其是最后计组CPU54的实验，多亏gzc的提醒我才能避开许多坑成功完成了本学期最后的任务。真的真的非常感谢各位朋友的帮助，多亏了你们，才能让我成功活过了这个任务繁重的学期！同时我也认识到，只有大家抱团取暖，才能一起共度难关！</p>
-<p>另外这学期的一大坏消息就是感情上的大失败。说是失败其实也没啥，还是自己格局小了。想了想还是不bb这里了，把悲伤留给自己吧。</p>
-<p>想来这学期总算是结束了，虽然小学期还有两个课设和一点日记需要完成，但是大风大浪算是过去了。这学期我收获还蛮多的，我发现，之前大概是受my和by等熟悉学长的影响，我把较多精力花在了“用”上，但是经过大二的学习与不断的思考，我认为我们计算机科班与技校生的区别并不在于谁会不会用，而在于谁基础扎实，能够更快的适应；也就是说，相比于使用语言等工具，我感觉到基础扎实、原理透彻是很重要也很容易被忽视的。就比如这学期的人工智能课程项目，被很多学长吐槽为“没用”，是的，从项目本身来说，我们做的八数码、五子棋啥的确实没用，甚至不屑于写到简历中，同时我们使用的都是比较传统的基于搜索的方法，那么这个就真的没用了吗？非也，通过人工智能课程的学习和大作业的完成，我对于人工智能的基本原理有了真正的认识，而这才是这门课的真正目的。懂得了搜索的原理之后，再去实现无疑简单得多，我只是用语言工具描述一下就可以了，甚至基于先前对C++语言较为系统的学习和较深入的理解，我再学习js等工具时只需要花费很少的力气就可以轻松学会了，并能够立刻使用其完成五子棋web开发，这无疑比技校生、培训班高明得多。值得一提的是，计组的CPU编写也是这个道理。</p>
-<p>经过这学期的深思熟虑，我最终还是决定要出国读研，那么这个假期就要好好地准备起来，但是假期我又有ICPC竞赛训练、数模模拟赛、国创项目等一堆棘手的事情需要去做，同时还要准备语言考试，终归不是个轻松的假期，唉。</p>
-<p>bb结束，明天就正式开启假期吧！</p>
+        <p>暑假快结束的时候为了玩安装了wsl，但是没有进行详细的配置，这次操作系统小实验需要用到linux系统，虽说已经有了centOS虚拟机，但是还是想借机玩一把wsl，在此做一点记录。</p>
+<span id="more"></span>
+<p>算了懒得搞了，以后补充…</p>
+<p>补充(2021-9-28)：<br>似乎也没干什么特别的事情，一切都很顺利，使用的是WSL1+vscode remote WSL插件，效果非常nice<br>使用ssh连接的时候似乎需要找到WSL的地址，但是根据报错提示一步步来就行；然后ssh的安装也差不多，似乎有的地方有点问题网上查了一下解决了。<br>总之不算太复杂，有问题再记录吧…</p>
 
     </div>
 
@@ -332,7 +341,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://king-ty.github.io/2021/07/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E6%B5%8B%E8%AF%95-%E5%93%94%E5%93%94%E8%B5%96%E8%B5%96/" title="第一篇博客——测试+哔哔赖赖">https://king-ty.github.io/2021/07/20/第一篇博客——测试-哔哔赖赖/</a>
+    <a href="https://king-ty.github.io/2021/09/19/%E9%85%8D%E7%BD%AEwsl/" title="配置wsl">https://king-ty.github.io/2021/09/19/配置wsl/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -355,7 +364,8 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/test/" rel="tag"><i class="fa fa-tag"></i> test</a>
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
+              <a href="/tags/wsl/" rel="tag"><i class="fa fa-tag"></i> wsl</a>
           </div>
 
         
@@ -364,12 +374,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/07/20/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
+    <a href="/2021/09/18/%E6%B2%A1%E5%95%A5%E5%8A%A8%E5%8A%9B%EF%BC%8C%E5%86%99%E7%82%B9%E5%BA%9F%E8%AF%9D/" rel="prev" title="没啥动力，写点废话">
+      <i class="fa fa-chevron-left"></i> 没啥动力，写点废话
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/07/23/%E8%AE%B0%E6%9A%91%E6%9C%9F%E7%AC%AC%E4%B8%80%E5%9C%BACF/" rel="next" title="记暑期第一场CF">
-      记暑期第一场CF <i class="fa fa-chevron-right"></i>
+    <a href="/2021/09/28/C-%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" rel="next" title="C++的异常处理">
+      C++的异常处理 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -430,7 +440,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">为什么要写博客？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%81%9A%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">下一步做什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E8%BF%98%E6%9C%89%E5%95%A5%E6%83%B3%E8%AF%B4%E7%9A%84"><span class="nav-number">3.</span> <span class="nav-text">第一篇博客还有啥想说的</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -676,6 +685,59 @@ document.querySelectorAll('.pdfobject-container').forEach(element => {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

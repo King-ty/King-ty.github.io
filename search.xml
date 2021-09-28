@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>C++的异常处理</title>
+      <link href="/2021/09/28/C-%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+      <url>/2021/09/28/C-%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<p>C++的异常处理使用try throw catch进行，高程课并没有学习，我当时也就懒得自己研究，虽然老师建议要自学。近来随着接触一些东西意识到这玩意还是有必要学一下的，稍做记录。</p><span id="more"></span><p>唉我又懒了，贴几个学习网站…<br><a href="https://blog.csdn.net/Sleeping_Zky/article/details/78174312">stream 相关</a><br><a href="http://c.biancheng.net/view/422.html">整体学习网站</a><br>比较奇特的是，catch(…)可以捕获所有类型的异常，这种写法我没有见过。</p><p>另外就是<strong>为什么要用异常处理</strong>，我理解的很浅薄。<br>一方面是为了多种操作减轻异常处理的代码复杂度，例如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a,b,c;</span><br><span class="line">cin&gt;&gt;a;</span><br><span class="line">cin&gt;&gt;b;</span><br><span class="line">cin&gt;&gt;c;</span><br></pre></td></tr></table></figure><br>正常情况下似乎每个输入语句都要进行相同的错误判断，非常麻烦，而使用异常处理可以简化这种判断，只需要一种catch就可以捕获这些问题。<br>第二是可以作为一种“返回”的形式，可以借此错误返回并给出相应通知信息。<br>第三是抛出异常的返回值其实是没有的，不影响函数调用处接收变量的原值。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>配置wsl</title>
+      <link href="/2021/09/19/%E9%85%8D%E7%BD%AEwsl/"/>
+      <url>/2021/09/19/%E9%85%8D%E7%BD%AEwsl/</url>
+      
+        <content type="html"><![CDATA[<p>暑假快结束的时候为了玩安装了wsl，但是没有进行详细的配置，这次操作系统小实验需要用到linux系统，虽说已经有了centOS虚拟机，但是还是想借机玩一把wsl，在此做一点记录。</p><span id="more"></span><p>算了懒得搞了，以后补充…</p><p>补充(2021-9-28)：<br>似乎也没干什么特别的事情，一切都很顺利，使用的是WSL1+vscode remote WSL插件，效果非常nice<br>使用ssh连接的时候似乎需要找到WSL的地址，但是根据报错提示一步步来就行；然后ssh的安装也差不多，似乎有的地方有点问题网上查了一下解决了。<br>总之不算太复杂，有问题再记录吧…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+          <category> wsl </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> wsl </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>没啥动力，写点废话</title>
       <link href="/2021/09/18/%E6%B2%A1%E5%95%A5%E5%8A%A8%E5%8A%9B%EF%BC%8C%E5%86%99%E7%82%B9%E5%BA%9F%E8%AF%9D/"/>
       <url>/2021/09/18/%E6%B2%A1%E5%95%A5%E5%8A%A8%E5%8A%9B%EF%BC%8C%E5%86%99%E7%82%B9%E5%BA%9F%E8%AF%9D/</url>
