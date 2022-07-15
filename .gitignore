@@ -10,3 +10,5 @@ _multiconfig.yml
 .history/
 themes/
 *.yml
+*.jar
+*.zip
