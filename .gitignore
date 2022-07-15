@@ -8,7 +8,7 @@ public/
 _multiconfig.yml
 
 .history/
-themes/
-*.yml
+# themes/
+_config.butterfly.yml
 *.jar
 *.zip

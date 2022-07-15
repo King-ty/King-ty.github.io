@@ -10,7 +10,6 @@ top_img:
 comments: true
 cover:
 mathjax: true
-aplayer:
 # sticky: 1 # 置顶
 # Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:
