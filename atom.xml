@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Renxin&#39;s Blog</title>
+  
+  <subtitle>刃心的博客</subtitle>
+  <link href="https://www.king-ty.top/atom.xml" rel="self"/>
+  
+  <link href="https://www.king-ty.top/"/>
+  <updated>2022-07-16T08:36:42.919Z</updated>
+  <id>https://www.king-ty.top/</id>
+  
+  <author>
+    <name>King-ty</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客复活+浅谈博客相关的一些选择</title>
+    <link href="https://www.king-ty.top/2022/07/15/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB-%E6%B5%85%E8%B0%88%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%89%E6%8B%A9/"/>
+    <id>https://www.king-ty.top/2022/07/15/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB-%E6%B5%85%E8%B0%88%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%89%E6%8B%A9/</id>
+    <published>2022-07-15T15:00:34.000Z</published>
+    <updated>2022-07-16T08:36:42.919Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大概是一年前的这个时候，我头脑发热使用Hexo+github pages创建了自己的第一个Blog，并凭着一股热情在不懂大部分原理（甚至几乎不知道node.js是何物）的情况下跟着各路博客、视频、知乎文章美化博客。当时选用的主题是最最最常见的Next，我从各个地方学来野路子对他魔改一番，达到了还不错的显示效果。当时我感觉这一切很有成就感，现在回过头来感觉羞愧难耐——很多魔改都是主题自带的功能我却重写一遍，其他非自带功能我也魔改的不伦不类。</p><p>其实现在看来魔改Next并不是一个很好的选择，因为有很多已有的主题能够符合我的要求，而Next本身就是为喜欢简介风格的人士准备的，我去爆改他总有些不伦不类。但很多时候，一腔热情是很重要的，至少能够在当时的场景下支撑着我把事情做完，即使后来重新审视这件事情是多么的小儿科，但至少曾在认识尚浅的时候把事情做的还算不错。</p><p>唉，又说了一堆废话作为前言。</p><h2 id="为什么这么久不更新"><a href="#为什么这么久不更新" class="headerlink" title="为什么这么久不更新"></a>为什么这么久不更新</h2><p>从我开博客到现在不过一年时间，而距离我上次更新已经相隔10个月，为什么我竟然这么久都没有更新呢？</p><p>是因为我太忙了吗？我很想说是，但这明显只是个借口；想想，很多比我更忙的人其实一直在坚持更新博客，而我即使有时间也并没有用来写博客做记录。</p><p>是因为懒吗？我想是的，很多时候明明想了挺多，也挺想记录下来，可当我真正坐到博客编辑页之前，又好像懒于打字，思维骤停，就好像水龙头一下子被拧上了。于是干脆关掉编辑器做别的去了。</p><p>是因为写博客优先级太低吗？是的，我从来没把写博客当成一件要紧的事，一般只要有别的作业或是什么事情没做完，我绝不会想到先去记一下博客；即使所有事情都做完了，我第一个想到的还是娱乐；即使玩到不想再玩了，我又有什么时间和精力去写博客呢？</p><p>是因为害怕写错什么吗？这个有一点，主要是在记录技术时总担心自己有理解不到位的地方，怕误导别人。对我自己来说，通过博客记录自己的想法远比记录技术快乐得多，但是很多想法又不是能随意公开的，于是每每坐到编辑页面前，思来想去还是放弃了。</p><h2 id="为什么重新开博客"><a href="#为什么重新开博客" class="headerlink" title="为什么重新开博客"></a>为什么重新开博客</h2><p>既然有这么多的理由，那为什么我又重新开了博客呢？</p><p>其实本质上还是因为我有一些东西想要记录下来。</p><p>上面的问题都解决了吗？</p><p>有些解决了，有些转念一想也算是解决了。</p><p>对于时间和优先级问题，人这一生很少能有什么时候真正空闲下来，比如我说“等我有空了再去XXX把”，那这事很可能遥遥无期了；既然如此，就应该把博客的优先级提前一点，做事情累了，写写博客，不也是一种放松吗？</p><p>对于害怕误导别人的问题，其实很久之前我就意识到了，写博客最大的作用是给自己看，记录自己的学习生活的，既然如此，自私一点说，管别人干什么？别人偶然看到，若是能学到点东西，我自然无比荣幸；若是对其造成了误解，我大概也没有什么办法，也没有太多必要过于愧疚；若是别人能在评论中帮我指出问题，这自然是意外之喜，让我无比感激。总体来说，只要不是满篇胡说八道，本着较为严谨求实的态度，写博客于人于己还是利大于弊的。</p><p>至于说太懒，其实打打字也不会类到哪去，实在懒了上语音转文字好了。😁</p><h2 id="关于博客技术的选择"><a href="#关于博客技术的选择" class="headerlink" title="关于博客技术的选择"></a>关于博客技术的选择</h2><p>上次建博客的时候，我啥也不懂，不带脑子随大流上了Hexo+Next的车。现在看来，这样做还是有好处的，毕竟是采用了国内最多人采用的方案，遇到的问题总能通过搜索解决。</p><p>但是一方面Next的功能的外观其实有点不合我口味，另一方面我也羞于拿我不伦不类的魔改界面展示给别人，因此我还是决定认真调研一下常见的博客技术并做一点记录。</p><p>说是认真调研，其实也不过看了一点别人的说法，结合我去各自官网上查看了文档而已，真正上手测试的只有Typecho和Hexo……</p><h3 id="动态与静态博客的选择"><a href="#动态与静态博客的选择" class="headerlink" title="动态与静态博客的选择"></a>动态与静态博客的选择</h3><p>什么是动态与静态博客呢？一言以蔽之，前者带有后端、文章等信息存储在数据库里；后者不带后端，由静态页面生成器生成后作为静态页面发布。根据我的理解两者特点如下：</p><p>动态博客：</p><ul><li>需要后端和数据库，因此不能部署在各种码云带有的pages上，需要自己有服务器（很多时候是云服务器），并最好配备域名。顺便，服务器和域名一般都要钱的hhh…</li><li>由于要进行数据库查询，响应速度一般略慢于静态博客。</li><li>不需要使用静态页面生成器，可以在任何能够联网的场合使用浏览器访问页面写博客与进行管理。</li><li>轻松支持评论等功能，存到数据库里即可。</li><li>常用的动态博客框架有WordPress（功能多，不止可以做博客）、Typecho（轻量化）等，二者后端均为PHP</li></ul><p>静态博客：</p><ul><li>无后端和数据库，可以方便部署在各种码云的pages上，方便快捷，还免费。</li><li>直接请求页面，访问速度较快。</li><li>需要使用静态页面生成器，因此很可能需要有一个本地环境支持才能进行编辑与管理。（但这里我脑洞一下，是不是可以借助GitHub的CI/CD或是github.dev来简化编辑难度，达到一种只要能访问码云就可以编辑的效果呢？我没有尝试，我感觉有可行性，这样静态也就没有那么大的限制了。）</li><li>评论等功能需要额外支持。（但不得不说借助GitHub的issue来存储评论信息真是一大福音）</li><li>常用的静态博客生成器有Hexo（基于Node.js）、Hugo（基于Go）、Jekyll（基于Ruby）等。</li></ul><h3 id="常用博客框架的特点（我理解的）"><a href="#常用博客框架的特点（我理解的）" class="headerlink" title="常用博客框架的特点（我理解的）"></a>常用博客框架的特点（我理解的）</h3><ol><li><p><a href="https://cn.wordpress.org/">WordPress</a></p><p>动态框架，功能和插件非常全面，可以比较轻松的构建出不只包含博客的各种网站。在搜索资料时我没有尝试使用该框架，但是感觉WordPress的资料还是相当多的，插件也足够丰富，日后我会考虑在自己购买的云服务器上尝试一下。另外值得一提的是，之前在软工项目调查网站使用语言时，我发现即使在2022年PHP语言竟然在网站中博得头筹，这让我大为不解；现在看来，恐怕是有不少网站和个人博客直接采用了WordPress或Typecho导致了这种结果吧。</p></li><li><p><a href="http://typecho.org/">Typecho</a></p><p>前几天我突发奇想，既然树莓派都可以作为服务器使用，那么各方面功能无疑更加强大且完善的旧手机（除了不方便作为嵌入式开发板）为什么不能呢？经过调查我发现了基于<a href="https://kslabs.ru/">KSWEB</a>的方案。</p><p>KSWEB是一款Android服务器APP，使用lighttpd+nginx+apache+php+sql技术，各方面功能完善可用于搭建建议网站。</p><p>正好为了测试KSWEB和动态博客框架，我在我的平板上安装了KSWEB并使用Typecho搭建了简易的本地博客。我感觉Typecho对于搭建博客来说，各方面资料及插件应该是足够了，上手非常容易，按照网上的说法要求的配置也比WordPress低，可以一试。</p><p>后来我又尝试进行内网穿透，我使用的是免费的<a href="https://www.cpolar.com/">cpolar</a>。运行方法是使用<a href="https://termux.com/">Termux</a>安装与使用；Termux是一个是一款模拟Linu的APP，无需root，可以使用apt安装各种包。这套方案还算比较稳定，我自己在家里连接穿透后的网址还是相当不错的，但是不知道为啥发给别人测试却速度奇慢，或许在自家访问有什么特殊的优化？</p><p>后来我又了解到了<a href="https://www.aidlux.com/">AidLux</a>，可以让Android手机直接变成Linux电脑，装在平板上更是极为合适，爱奇艺变生产力了有木有。我暂时还没有折腾太多，但是感觉真的用它作为服务器也是完全可行的。</p><p>呃扯远了，总体来说Typecho轻量可用，但是外面想要访问还是存在一定的问题，使用各种小东西（手机、树莓派等）构建家庭网站甚为不错（但是这样真的有很大意义吗），真想分享给别人看可能还得是正经服务器（但就算是用云服务器，国内这些服务商较低的带宽能有多大的访问速度呢？这有待我进一步尝试）。</p><p>顺便吐槽一下官网😥</p><p><img src="博客复活-浅谈博客相关的一些选择/1657934787822.png" alt=""><img src="1657934787822.png" alt=""></p></li><li><p><a href="https://hexo.io/zh-cn/index.html">Hexo</a></p><p>基于Node.js的静态博客生成器，国内使用人数颇多以至于铺天盖地的Hexo+Next建站方案……</p><p>实现效果还是非常不错的，文档和各种资料非常全，基本不用担心遇到什么问题；主题和插件相当多，可以实现各种功能；而且静态博客基于Pages的方案是免费的。个人感觉对于小白来说Hexo应该是首选。</p><p>缺点是网传当文章数较多时，因为Node.js解释型语言的特点，速度还是有点慢的。具体我没有测试，网上给出的测试情况大概比Hugo慢5~10倍，但我想我大概一时半会体会不到这种慢……</p></li><li><p><a href="https://gohugo.io/">Hugo</a></p><p>基于Go语言的静态博客生成器，我暂时没找到很好的中文文档，但是英文文档还算是比较全。网上的讨论热度比起Hexo好像也没有低多少，遇到问题应该是都能解决的。</p><p>优点就是速度快，毕竟是编译型语言，速度还是比较有保障的。博文较多的小伙伴可以考虑迁移到Hugo。</p><p>由于我没有尝试，我对于他的认知仅限于网上其他博客的讨论。大概是主题偏少（实际上有那么一套稳定且符合需求的主题就足够了）、没有主题配置文件（这个我感觉有点奇怪，这个设计怎么看起来不太成熟的样子，这样能很好的维护吗？）。</p><p>我感觉Hugo还是不错的，未来博文多了或许会考虑迁移过来。</p></li><li><p><a href="https://jekyllrb.com/">Jekyll</a></p><p>基于Ruby，也是Github pages的默认渲染方式。我了解不多，感觉网上的讨论对比上两个确实偏少，于是不考虑使用了。</p></li><li><p><a href="https://vuepress.vuejs.org/zh/">VuePress</a></p><p>基于Vue，现在用的人还是偏少了，据说非常自由，但我不是很想折腾。其实我还是比较看好这个的。</p></li><li><p>Others</p><p>其实还是有不少其他方案的，这边说的都是相对来说比较常用的，对于我这样的新手，还是尽量套用前人的轮子吧。因此其他方案没有过多研究。</p></li></ol><h3 id="我的选择"><a href="#我的选择" class="headerlink" title="我的选择"></a>我的选择</h3><p>看了以上一堆胡言乱语的分析，你猜我选择了什么？</p><p>我暂时选择使用Hexo框架，因为资料最多最容易上手。日后如果博文变多了生成速度过慢，我会考虑迁移到Hugo中。</p><p>至于说动态博客，我觉得还是挺有意思的，或许会额外在云服务器上使用WordPress建一个玩玩，但是就不作为主力博客了。</p><h2 id="关于博客主题的选择"><a href="#关于博客主题的选择" class="headerlink" title="关于博客主题的选择"></a>关于博客主题的选择</h2><p>鉴于<a href="https://theme-next.js.org/">Next</a>主题实在是过于烂大街，且他的简洁风格不是我喜欢的样式，因此我需要寻找新的主题。</p><p>于是我来到<a href="https://hexo.io/themes/index.html">Hexo主题网站</a>寻找。其实好看的主题还是有不少的，但是经常点看一看star很少，怕是用户不多，这很可能意味着主体功能不够完善需要折腾。鉴于之前折腾的经历并不美好，我希望能直接找到符合我要求的主题。</p><p>我先是找到了<a href="https://github.com/auroral-ui/hexo-theme-aurora">Aurora</a>主题，感觉还是挺炫酷的，但是一看issues，好家伙现阶段怕是还有不少bug，还是暂时不折腾了。</p><p>没想到最后我还是投入了<a href="https://butterfly.js.org/">Butterfly</a>的怀抱。不得不说，Butterfly各方面还是非常完善且美观的，而且一直维护的很好（star 4.1k，远超Next 1.6k），适合作为Next的替代品新手上手。实际上日常查阅资料中Butterfly的烂大街程度并不比Next低多少（甚至可能比Next要更多见），但是其出色的自定义化程度让他很容易显示出个人的风格，让我们并不感觉他有多么常见。</p><p>接下来就是按照官方教程做优化了。讲真配置项还是挺多的，花了我半个上午+一整个下午的时间才算配置出了我比较喜欢的样子。官方教程讲的很详细，除了PWA的配置不知道是不是没有更新存在一些问题，其他的都很好。但是改配置怎么看都是体力活，花了这么多时间还是挺可惜的。</p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>唔，不管怎么说，博客总算是复活啦！接下来就是用它记录下生活，充分发挥博客的价值吧~😄</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;大概是一年前的这个时候，我头脑发热使用Hexo+github pages创建了自己的第一个Blog，并凭着一股热情在不懂大部分原理（甚至几乎</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://www.king-ty.top/2022/07/14/hello-world/"/>
+    <id>https://www.king-ty.top/2022/07/14/hello-world/</id>
+    <published>2022-07-14T10:54:32.756Z</published>
+    <updated>2022-07-14T10:54:32.756Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C++的异常处理</title>
+    <link href="https://www.king-ty.top/2021/09/28/C-%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+    <id>https://www.king-ty.top/2021/09/28/C-%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</id>
+    <published>2021-09-28T05:35:56.000Z</published>
+    <updated>2021-09-28T05:50:40.777Z</updated>
+    
+    <content type="html"><![CDATA[<p>C++的异常处理使用try throw catch进行，高程课并没有学习，我当时也就懒得自己研究，虽然老师建议要自学。近来随着接触一些东西意识到这玩意还是有必要学一下的，稍做记录。</p><span id="more"></span><p>唉我又懒了，贴几个学习网站…<br><a href="https://blog.csdn.net/Sleeping_Zky/article/details/78174312">stream 相关</a><br><a href="http://c.biancheng.net/view/422.html">整体学习网站</a><br>比较奇特的是，catch(…)可以捕获所有类型的异常，这种写法我没有见过。</p><p>另外就是<strong>为什么要用异常处理</strong>，我理解的很浅薄。<br>一方面是为了多种操作减轻异常处理的代码复杂度，例如：<br><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int a,b,c;</span><br><span class="line">cin&gt;&gt;a;</span><br><span class="line">cin&gt;&gt;b;</span><br><span class="line">cin&gt;&gt;c;</span><br></pre></td></tr></table></figure><br>正常情况下似乎每个输入语句都要进行相同的错误判断，非常麻烦，而使用异常处理可以简化这种判断，只需要一种catch就可以捕获这些问题。<br>第二是可以作为一种“返回”的形式，可以借此错误返回并给出相应通知信息。<br>第三是抛出异常的返回值其实是没有的，不影响函数调用处接收变量的原值。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;C++的异常处理使用try throw catch进行，高程课并没有学习，我当时也就懒得自己研究，虽然老师建议要自学。近来随着接触一些东西意识到这玩意还是有必要学一下的，稍做记录。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="C++" scheme="https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/C/"/>
+    
+    
+    <category term="学习" scheme="https://www.king-ty.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="C++" scheme="https://www.king-ty.top/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>没啥动力，写点废话</title>
+    <link href="https://www.king-ty.top/2021/09/18/%E6%B2%A1%E5%95%A5%E5%8A%A8%E5%8A%9B%EF%BC%8C%E5%86%99%E7%82%B9%E5%BA%9F%E8%AF%9D/"/>
+    <id>https://www.king-ty.top/2021/09/18/%E6%B2%A1%E5%95%A5%E5%8A%A8%E5%8A%9B%EF%BC%8C%E5%86%99%E7%82%B9%E5%BA%9F%E8%AF%9D/</id>
+    <published>2021-09-18T11:16:04.000Z</published>
+    <updated>2021-09-18T11:32:23.043Z</updated>
+    
+    <content type="html"><![CDATA[<p>中秋节终于放假了，颇感没啥动力，在此记录一点开学以来的心路历程。</p><span id="more"></span><p>这学期开学颇为不顺，一开始几天忙着补假期一直拖的数据结构课设，刚刚补完就迎来了数模，好不容易数模结束了，新的忙碌的一周又开始了，到现在第二周结束，难免有些疲倦。<br>刚开学的时候，看着数据结构一团乱麻的代码，真想直接随便交一个东西混个及格算完了，想想还是坚持了下来；数模的时候，真想跑掉，但又不能辜负了队友的期望，只得痛苦三天把他搞完。这些结束后，我下定决心，今后再也不能延期了，上学期那么痛苦，这学期开学又是那么痛苦，很大一部分都是我的拖延症带来的。有的人回顾自己的大学生活，发现完全是一部延期史；如果到大四回顾的时候还是一样，未免太失败了。先定个小目标，这学期不延期。<br>数模结束后，最开始我感觉我精神百倍，中午不休息到下午甚至晚上也毫无倦意，于是我又重回了大二上的状态，课程都坐第一排，上课听好，下课立刻写作业。<br>最近一点烦心事就是数据结构武老师班的事，虽说与我完全无关，但是我还是挺生气的，有很多话，想想还是不适合在博客中写出来。<br>昨天班会我没去，听闻有一个上学期选了15门课还满绩的人，最初很吃惊，惊为天人。后来在lgf的提示下我意识到这人不就是我吗？略有沾沾自喜，但上学期究竟是怎样还是我自己最清楚，没什么好骄傲的，各种卡极限，运气占很大一部分，再加上实际上也似乎没学到什么真本事，实在没啥可骄傲的。<br>最近还是比较焦虑，可能当自己的绩点真的达到一定程度后，大家都会转为思考能不能保研的事吧，毕竟从各方面考虑，保研都是最划算的……但我的心态也发生了不少变化，比如我退掉了生命的省思这门课，我舍友颇感吃惊，其实我自己也有点吃惊，这毕竟完全不是我的做事风格。<br>焦虑也对我产生了不少负面影响，昨晚上安排的计划似乎是一点都没有完成，回到寝室还自暴自弃，实在不应该。<br>不说不快，其实说完了心情好了一些，回头看看，句子都不通顺，真就说废话。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;中秋节终于放假了，颇感没啥动力，在此记录一点开学以来的心路历程。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="闲聊" scheme="https://www.king-ty.top/categories/%E9%97%B2%E8%81%8A/"/>
+    
+    
+    <category term="闲聊" scheme="https://www.king-ty.top/tags/%E9%97%B2%E8%81%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客插入图片</title>
+    <link href="https://www.king-ty.top/2021/09/14/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
+    <id>https://www.king-ty.top/2021/09/14/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</id>
+    <published>2021-09-14T11:24:28.000Z</published>
+    <updated>2022-07-16T13:49:16.090Z</updated>
+    
+    <content type="html"><![CDATA[<p>算是当时建站留下的一点坑，博客一直没有插入图片的功能，这对于显示当然及其不友好。这学期我转用markdown进行课堂笔记，最近突发奇想想将笔记转移到博客上，这样的话没有图片肯定是不行的，于是稍微折腾了一下。</p><span id="more"></span><p>其实网上比较推荐的做法是使用“七牛”等网络图床，网络存图有好处也有缺点，我想还是用本地方案得了，遂放弃（才不是懒得研究）<br>本地方案其实也不难，按照<a href="https://hexo.io/zh-cn/docs/">hexo的官方文档</a>来做十分容易，核心如下：<br><img src="博客插入图片/2021-09-14-19-29-24.png" alt=""><img src="2021-09-14-19-29-24.png" alt=""><br>其实就是全局配置打开资源文件夹，然后用一些特定格式加入图片就行，markdown自带的插入图片格式也是可以用的，虽然官方说有些缺点。</p><p>问题在于为了做课堂笔记，想要插入图片必须要快速高效，因此需要使粘贴插图的默认位置在资源文件夹中。使用markdown all in one的默认位置使./image/[post_name]/pic_name，这样显然不行，仔细寻找了markdown all in one的设置也没有设置图片位置的方法，于是只能用其他方法来做到。<br>网上找到了一些方法，最后发现<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a>插件比较符合我的需求，可以按相对位置插入图片，也可以改变图片存储位置，只是粘贴的快捷键需要使用CTRL+ALT+V，稍微麻烦，但无伤大雅。<br><img src="博客插入图片/2021-09-14-19-37-33.png" alt=""><img src="2021-09-14-19-37-33.png" alt=""></p><p>不算什么有用的文章，仅作记录。</p><hr><h2 id="更新-2022-7-16"><a href="#更新-2022-7-16" class="headerlink" title="更新 2022-7-16"></a>更新 2022-7-16</h2><p>时间来到了2022-7-16，没想到我重新建站又被插入图片ex了一下，因此有必要具体分析并做详细记录。</p><p>首先是解决方案。如果使用图床，免费的既有不小的空间基本够用，但是访问速度可能会有点不够；但即使氪金，个位数的价格即能在半年到一年的时间里获得不错的体验了。总体来说，价格完全完全可以接受。要说问题的话，如果使用Typora书写，自然可以很方便的上传图床，简直nice！但是Typora不再免费提供，有必要考虑其他方案。Vscode我没有仔细研究，猜测借助各种插件也是可以的，同时我也猜测没有Typora那么方便；不过这些纯属我个人根据经验意淫，因为我没有真正去尝试……</p><p>我个人还是倾向于本地方案（+Github）解决的，毕竟这种解决方案免费且比较稳定（真的稳定吗？）。好吧其实还是我懒了。</p><p>没想到时隔一年，<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a>插件依旧是首选方案。但是一年前我的具体解决方案并没有记录，这一年里也不知道怎么回事Paste Image好像配置都消失了，无奈我只得重新记录一下。</p><p>按照之前记录的方式（其实我也有重新查阅资料，但是方法并没有变化），我们可以使用hexo的标签插件（<code>&#123;% %&#125;</code>）的方式插入图片，也可以使用html的<code>img</code>标签灵活的插入图片，但是我最常用的自然还是markdown的<code>![](url)</code>的写法。</p><p>这里的原理就是使用Paste Image插件的自定义功能，在粘贴图片时一下插入两段插入图片的代码，一段带有资源文件夹（资源文件夹是什么上面有说过）路径而另一段不带有，这样在本地预览时看到的就是第一段代码插入的图片，而使用Hexo生成静态网页时，博文和博文资源文件夹中的图片被放到了同一目录下，这样第二段图片代码起作用展示图片。</p><p>这里需要注意的是，两段插入图片代码的方括号中在粘贴时都不要有内容，如果要给出提示加到第二段代码的方括号中。这样在网站上运行时，第一段代码请求图片一定是失败的，但是由于没有在方括号中给出提示性文字，相当于啥也不显示；而第二段代码如果由于网络问题也请求失败了，此时会显示第二段代码方括号里的内容作为提示。</p><p>这一解决思想其实也挺丑陋的，但是不失为一个可用的方案，如果想同时在本地预览并在Blog上看到、还不想使用图床，那么可以一试。我猜测未来大概会有更优雅的方法，到时候我再更换吧。</p><p>顺便提一下，问了有多年Blog经验的<a href="https://skyleaworlder.github.io/">skyleaworlder</a>，得知他写博客并不需要本地预览，直接写完提交就行了。看来我还是写少了……</p><p>又扯远了，回到具体解决方法上来。我重新阅读了<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Inage的说明文档</a>，发现其实只需要改一个地方就能满足需求，于是修改如下：</p><p><img src="博客插入图片\2022-07-16-17-03-11.png" alt=""><img src="2022-07-16-17-03-11.png" alt=""></p><p>其实就是改了一下插入的Pattern，改为以下代码：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$&#123;imageSyntaxPrefix&#125;$&#123;imageFilePath&#125;$&#123;imageSyntaxSuffix&#125;![]($&#123;imageFileName&#125;)</span><br></pre></td></tr></table></figure><p>该配置的默认项为前3个变量（<code>$&#123;&#125;</code>）内容，我在后面添加了<code>![]($&#123;imageFileName&#125;)</code>，相当于插入上文所说的第二段插入图片代码。此时使用<code>Ctrl+Alt+V</code>粘贴图片效果如下（一下展示的是上面的配置截图的图片代码）：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![](博客插入图片\2022-07-16-17-03-11.png)![](2022-07-16-17-03-11.png)</span><br></pre></td></tr></table></figure><p>好吧，虽然很啰嗦很丑陋，但是总算是完成了我预想的要求，先这样把博客写起来吧~</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;算是当时建站留下的一点坑，博客一直没有插入图片的功能，这对于显示当然及其不友好。这学期我转用markdown进行课堂笔记，最近突发奇想想将笔记转移到博客上，这样的话没有图片肯定是不行的，于是稍微折腾了一下。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="blog" scheme="https://www.king-ty.top/categories/blog/"/>
+    
+    
+    <category term="blog" scheme="https://www.king-ty.top/tags/blog/"/>
+    
+    <category term="image" scheme="https://www.king-ty.top/tags/image/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>匹配</title>
+    <link href="https://www.king-ty.top/2021/08/12/%E5%8C%B9%E9%85%8D/"/>
+    <id>https://www.king-ty.top/2021/08/12/%E5%8C%B9%E9%85%8D/</id>
+    <published>2021-08-12T03:20:57.000Z</published>
+    <updated>2021-09-14T03:55:25.281Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一点废话"><a href="#一点废话" class="headerlink" title="一点废话"></a>一点废话</h3><p>一直以来都没有太搞懂匹配，遇到别人眼里一眼出的匹配问题也经常看不懂，想想高中研究匹配的时候似乎就没吃透，导致现在还是有漏洞，这次详细研究一下，记录一点新的理解</p><span id="more"></span><h5 id="最大匹配"><a href="#最大匹配" class="headerlink" title="最大匹配"></a>最大匹配</h5><p>匹配数量最多的情况</p><h5 id="最优匹配-完美匹配"><a href="#最优匹配-完美匹配" class="headerlink" title="最优匹配/完美匹配"></a>最优匹配/完美匹配</h5><p>二分图中每个点都能匹配的情况。之前总是最大匹配最优匹配傻傻分不清</p><h5 id="交替路"><a href="#交替路" class="headerlink" title="交替路"></a>交替路</h5><p>从一个非匹配点出发，依次经过非匹配边、匹配边、非匹配边……形成的路径叫做交替路。</p><h5 id="增广路"><a href="#增广路" class="headerlink" title="增广路"></a>增广路</h5><p>经过另一个非匹配点的交替路。因此增广路中匹配边总是比非匹配边多1，取反后可以增加匹配数量。</p><h5 id="深度优先-广度优先"><a href="#深度优先-广度优先" class="headerlink" title="深度优先/广度优先"></a>深度优先/广度优先</h5><p><strong>深度优先：</strong>匹配冲突立刻找增广路，见的比较多。<br><strong>广度优先：</strong>匹配冲突先看有没有其他可行匹配，都不行再用增广路。</p><h5 id="KM算法"><a href="#KM算法" class="headerlink" title="KM算法"></a>KM算法</h5><p>用来求带权二分图最大匹配问题，主要参考了<a href="https://blog.csdn.net/qq_37457202/article/details/80161274">这篇博客</a>，理解之后发现复杂度相当暴力，看来不可避免需要继续学习其他高级算法。<br>例题：<a href="https://acm.hdu.edu.cn/showproblem.php?pid=2255">HDU2255</a></p><p>代码：<br><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">typedef</span> <span class="type">long</span> <span class="type">long</span> ll;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> clr(x) memset(x, 0, sizeof(x))</span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">309</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">1e9</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n;</span><br><span class="line"><span class="type">int</span> a[N][N];</span><br><span class="line"><span class="type">int</span> lx[N], ly[N], link[N], slack[N], vsx[N], vsy[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">vsx[x] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span> (vsy[i])</span><br><span class="line"><span class="keyword">continue</span>;</span><br><span class="line"><span class="type">int</span> temp = lx[x] + ly[i] - a[x][i];</span><br><span class="line"><span class="keyword">if</span> (!temp)</span><br><span class="line">&#123;</span><br><span class="line">vsy[i] = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">if</span> (!link[i] || <span class="built_in">dfs</span>(link[i]))</span><br><span class="line">&#123;</span><br><span class="line">link[i] = x;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">slack[i] = <span class="built_in">min</span>(slack[i], temp);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">KM</span><span class="params">(<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">clr</span>(lx);</span><br><span class="line"><span class="built_in">clr</span>(ly);</span><br><span class="line"><span class="built_in">clr</span>(link);</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= n; ++j)</span><br><span class="line">&#123;</span><br><span class="line">lx[i] = <span class="built_in">max</span>(a[i][j], lx[i]);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">memset</span>(slack, <span class="number">0x3f</span>, <span class="built_in">sizeof</span>(slack));</span><br><span class="line"><span class="comment">// for (int j = 1; j &lt;= n; ++j)</span></span><br><span class="line"><span class="comment">// slack[j] = INF;</span></span><br><span class="line"><span class="keyword">for</span> (;;)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">clr</span>(vsx);</span><br><span class="line"><span class="built_in">clr</span>(vsy);</span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">dfs</span>(i))</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="type">int</span> dlt = INF;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= n; ++j)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span> (!vsy[j])</span><br><span class="line">dlt = <span class="built_in">min</span>(dlt, slack[j]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= n; ++j)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">if</span> (vsx[j])</span><br><span class="line">lx[j] -= dlt;</span><br><span class="line"><span class="keyword">if</span> (vsy[j])</span><br><span class="line">ly[j] += dlt;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> res = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)</span><br><span class="line">&#123;</span><br><span class="line">res += lx[i] + ly[i];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (~<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n))</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= n; ++j)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;a[i][j]);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, <span class="built_in">KM</span>(n));</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;一点废话&quot;&gt;&lt;a href=&quot;#一点废话&quot; class=&quot;headerlink&quot; title=&quot;一点废话&quot;&gt;&lt;/a&gt;一点废话&lt;/h3&gt;&lt;p&gt;一直以来都没有太搞懂匹配，遇到别人眼里一眼出的匹配问题也经常看不懂，想想高中研究匹配的时候似乎就没吃透，导致现在还是有漏洞，这次详细研究一下，记录一点新的理解&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="学习" scheme="https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="ACM" scheme="https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/ACM/"/>
+    
+    
+    <category term="学习" scheme="https://www.king-ty.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="ACM" scheme="https://www.king-ty.top/tags/ACM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记暑期第一场CF</title>
+    <link href="https://www.king-ty.top/2021/07/23/%E8%AE%B0%E6%9A%91%E6%9C%9F%E7%AC%AC%E4%B8%80%E5%9C%BACF/"/>
+    <id>https://www.king-ty.top/2021/07/23/%E8%AE%B0%E6%9A%91%E6%9C%9F%E7%AC%AC%E4%B8%80%E5%9C%BACF/</id>
+    <published>2021-07-23T02:49:58.000Z</published>
+    <updated>2021-07-26T14:17:18.645Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天晚上的CF是昆明站以来第一次摸算法的东西(学校的算法课配叫算法？)，想法是借着这次CF回复一下竞赛状态，事实证明我的竞赛状态确实是一塌糊涂。打完后已经是凌晨一点多了，想想还是不总结记录了，于是把记录留到了今天。</p><span id="more"></span><p>首先出师不利，我竟然忘记了赛前register，只好等比赛开始10分钟后的extra register，直接丧失了赛处最珍贵的10分钟。比赛开始后，<a href="https://codeforces.com/problemset/problem/1553/A">A题</a>一如既往是大水题，秒过，但是由于不熟悉了在写代码时速度实在不算快。就在我以为自己竞赛状态竟然还有不少保留时，第二题直接打脸。<br>讲真我在写A题时，<a href="https://codeforces.com/problemset/problem/1553/B">B题</a>就已经有了一个说明通知，但由于我没看B题因此没有特别注意，结果第二题我没想到去看通知，一上来就理解错了，第一发写了一个奇葩的乱搞思路，白给。然后我就思考是怎么回事，这时才突然记起来那个通知，快速扫了一眼，知道自己提议理解错了，于是赶快重新构思并写代码。实际上B题就是一个朴素的三层循环(分别枚举起点、转折点、终点)，码完后过了样例，一交又不对，呜呜。调了一会，陆续找到了几个看起来有问题但是实际上应该不会有影响的小问题，改完后结果不变，心态崩了，弃疗。</p><p><a href="https://codeforces.com/problemset/problem/1553/C">C题</a>第一遍读题竟然没看懂，大慌，心想完了完了我不会只能签到吧……镇定下来重读一遍，总算是看懂了，快速码完并简单调试了一下，过了，心情大好。</p><p><a href="https://codeforces.com/problemset/problem/1553/D">D题</a>还是挺有意思的，乍一看似乎和B是同一个人出的。第一遍看下来感觉就是用s串去匹配t串的每一个，并考虑两个匹配字符之间相隔的字符数是否为偶数个，若是则匹配t的下一个字符。但是这个贪心思路明显是$O(n)$的，但是题目数据量看似在向$O(logn)$引导。算了，先写一发吧，写完后只剩3分钟了(前面浪费时间太多了，呜呜)，一试竟然过不了样例，大崩。这时候我突然想到我那个思路确实正着匹配是错的，但是按照题目中backspace的特性，似乎倒着匹配就是正确的？赶紧改，结果最后改完后时间还是到了，难受。</p><p>结束后一段时间不让提交，也没法验证D是否正确。对着电脑发了一会呆，感觉挺难受的，最后试了一遍还是不能交，想想还是先睡觉了。</p><p>没想到的是，今早晨起来，博宇哥说我B其实就是数组开小了，我一看，甚惊之，哭笑不得，一改遂过，难受了，舒服了……D题一交也是过了，这么说我昨天至少思路上四道题都是对的，可惜太久不做码力大降，加上时间分配不合理，最终抱憾两题，坐等掉大分。</p><p>不过想想好处也是有的，至少我感觉我的英语水平还是有所提升，读英文题目没有半年前那种浑身难受看不懂总想翻译的感觉了；顺便这么久没练做成这样倒也正常，叶神他们也不能一直保持状态，更别提一直划水的我了……</p><p>后面几题想想还是要补的，最后一年ACM了，虽说是一年但也就两三场比赛了，总要拼一下，大学生涯总不能一直炼铜(非恶意)啊……</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;昨天晚上的CF是昆明站以来第一次摸算法的东西(学校的算法课配叫算法？)，想法是借着这次CF回复一下竞赛状态，事实证明我的竞赛状态确实是一塌糊涂。打完后已经是凌晨一点多了，想想还是不总结记录了，于是把记录留到了今天。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇博客——测试+哔哔赖赖</title>
+    <link href="https://www.king-ty.top/2021/07/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E6%B5%8B%E8%AF%95-%E5%93%94%E5%93%94%E8%B5%96%E8%B5%96/"/>
+    <id>https://www.king-ty.top/2021/07/20/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E2%80%94%E2%80%94%E6%B5%8B%E8%AF%95-%E5%93%94%E5%93%94%E8%B5%96%E8%B5%96/</id>
+    <published>2021-07-20T15:21:36.000Z</published>
+    <updated>2021-07-24T15:43:23.616Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在高铁上，我终于完成了基于github pages的blog搭建，说实话从有想搭博客的想法已经很久了，直到最近才越来越感觉真的需要记录点东西，正好趁着假期研究了下git的使用(之前一直没搞明白属实惭愧)，于是趁热打铁利用github pages搭建了一个博客。正好赶上回家，感觉有许多想法想要记录下来，趁着年轻，就应该多留下点想法。</p><span id="more"></span> <h3 id="为什么要写博客？"><a href="#为什么要写博客？" class="headerlink" title="为什么要写博客？"></a>为什么要写博客？</h3><p>虽说不是什么事都要刨根问底问个为什么，但是写博客倒是确实需要一个明确的理由，毕竟现在已经不是博客的时代了，博客不再拥有大量的读者，也不像微博等当代社交方式便捷。那么我为什么要写博客呢？<br>一个原因是想记录自己学习技术的过程。就像很多计算机技术大牛那样，我想用博客记录一下自己学习过程中的一点点收获与思想。我在大二下这学期也明显感受到了自己所学的许多东西如果不经记录很快就会被忘记，因此确实有必要记录下来，至少可以起到备查的作用，如果能帮到其他有同样学习经历的人我更是感到十分荣幸，同时记录的过程也是对所学的一种总结，有利于更好地归纳总结所学。<br>另一个非常重要的原因就是想要通过博客与自己的内心进行一种“对话”，这也是我为什么将博客名暂定为”Soul Talk”。其实一直以来我废话都挺多的，至少心里有什么想法大多数时候都希望找个人分享一下，一般我都是通过打电话和家里分享或是告诉身边的朋友，但是这学期真的许多事似乎只适合和自己说，或是找到某种“灵魂伴侣”；当然若是能有红颜知己再好不过，但我懂得还是要放弃幻想认清形势。写博客其实就是和自己对话的过程，在高中时尽管平时学习压力并不小，但我还是喜欢闲下来的时候，写一点日记记录一下，到大学后不知道为何反而丢弃了记日记的习惯；另一方面，上大学后真的很少写字了，现在我这赖字写日记真的是自己看了都嫌弃，那就干脆用博客代替吧……</p><h3 id="下一步做什么？"><a href="#下一步做什么？" class="headerlink" title="下一步做什么？"></a>下一步做什么？</h3><p>其实为啥写博客想清楚了，下一步干什么也就明白了。平时学习技术的时候开个md记录一下，有想说的就当日记记录一下，不求真的有读者，更重要的还是写给自己吧。<br>另外其实利用github pages搭建博客真的挺简单的，但我为了美化还是花了一些时间，不得不说这个next主题我个人感觉目前还是挺丑挺简陋的，未来肯定还要进一步美化，毕竟界面美了我才更有动力写下去嘛……</p><h3 id="第一篇博客还有啥想说的"><a href="#第一篇博客还有啥想说的" class="headerlink" title="第一篇博客还有啥想说的"></a>第一篇博客还有啥想说的</h3><p>还想bb点这学期的事……高铁上我用电脑做了些事导致没电了，后期除了一段水群的时间，大概是考虑了一下这学期的一些事。<br>首先最大的好消息是满绩了，虽然一个虚无的数字对我已经不再有那么大的意义了，毕竟保研无望，但是这至少还是证明了自己其实并没有差多少。这学期我真的是一步一赌，步步惊心，31.5的学分量不管怎么说都给我带来了巨大的课业压力。为什么要选那么多课呢？因为当时感觉反正保研不可能了，不如干脆提前学一下大三的内容，到时候好抽出时间准备考研或出国，能够满绩是我完全没想到的。这学期其实有好几个之前和我绩点相近的同学都在努力证明自己，大概是周一没有重视导致现在绩点不太好看吧，就想着这学期努力证明一次，看看自己是不是真的比不上那些专业前列的大佬，也都取得了不错的结果。讲真我是没有这种想法的，毕竟我的学分量摆在那里，我只是努力走好每一步，渴望“活下去”。<br>那我究竟为什么竟能顶着如此大的压力达到满绩呢？一方面，有我自己努力的结果。期末复习时，我和同学说我每一科只需要两小时的复习时间，这虽然有所夸张，但是这学期我所有的考试确实都只复习了半天时间，一方面是我确实被一堆作业压迫着不得不缩减复习时间，另一方面这学期许多课我都是每次上完课及时通过看ppt熟悉了课程内容，而不是把复习压力全部堆到期末，这样期末复习时我就是在回忆而不是许多人调侃的“预习”，速度自然快。另一方面，更重要的就是许多朋友对我的帮助。在计网作业我几乎崩溃的时候，是waq和ymy对我提供了许多及时而有效的帮助；在DSP搞得我自闭时，是bcc和ljj给我指明了方向；在自动机、计组和人工智能因为我被作业压迫没有听课自己课下补课看不懂时，是gzc与我进行了许多理论方面的交流并给了我许多理解上的帮助，尤其是最后计组CPU54的实验，多亏gzc的提醒我才能避开许多坑成功完成了本学期最后的任务。真的真的非常感谢各位朋友的帮助，多亏了你们，才能让我成功活过了这个任务繁重的学期！同时我也认识到，只有大家抱团取暖，才能一起共度难关！</p><p>另外这学期的一大坏消息就是感情上的大失败。说是失败其实也没啥，还是自己格局小了。想了想还是不bb这里了，把悲伤留给自己吧。</p><p>想来这学期总算是结束了，虽然小学期还有两个课设和一点日记需要完成，但是大风大浪算是过去了。这学期我收获还蛮多的，我发现，之前大概是受my和by等熟悉学长的影响，我把较多精力花在了“用”上，但是经过大二的学习与不断的思考，我认为我们计算机科班与技校生的区别并不在于谁会不会用，而在于谁基础扎实，能够更快的适应；也就是说，相比于使用语言等工具，我感觉到基础扎实、原理透彻是很重要也很容易被忽视的。就比如这学期的人工智能课程项目，被很多学长吐槽为“没用”，是的，从项目本身来说，我们做的八数码、五子棋啥的确实没用，甚至不屑于写到简历中，同时我们使用的都是比较传统的基于搜索的方法，那么这个就真的没用了吗？非也，通过人工智能课程的学习和大作业的完成，我对于人工智能的基本原理有了真正的认识，而这才是这门课的真正目的。懂得了搜索的原理之后，再去实现无疑简单得多，我只是用语言工具描述一下就可以了，甚至基于先前对C++语言较为系统的学习和较深入的理解，我再学习js等工具时只需要花费很少的力气就可以轻松学会了，并能够立刻使用其完成五子棋web开发，这无疑比技校生、培训班高明得多。值得一提的是，计组的CPU编写也是这个道理。</p><p>经过这学期的深思熟虑，我最终还是决定要出国读研，那么这个假期就要好好地准备起来，但是假期我又有ICPC竞赛训练、数模模拟赛、国创项目等一堆棘手的事情需要去做，同时还要准备语言考试，终归不是个轻松的假期，唉。</p><p>bb结束，明天就正式开启假期吧！</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;今天在高铁上，我终于完成了基于github pages的blog搭建，说实话从有想搭博客的想法已经很久了，直到最近才越来越感觉真的需要记录点东西，正好趁着假期研究了下git的使用(之前一直没搞明白属实惭愧)，于是趁热打铁利用github pages搭建了一个博客。正好赶上回家，感觉有许多想法想要记录下来，趁着年轻，就应该多留下点想法。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="test" scheme="https://www.king-ty.top/tags/test/"/>
+    
+  </entry>
+  
+</feed>
