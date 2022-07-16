@@ -33,7 +33,7 @@ I am Yu Tian, a junior at Tongji University, majoring in Computer Science.
 
 <div align="center">
   
-  [![](https://img.shields.io/badge/website-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-blue)](https://king-ty.top/)
+  [![](https://img.shields.io/badge/website-%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-blue)](https://www.king-ty.top/)
   ![Page View](https://visitor-badge.glitch.me/badge?page_id=King-ty.King-ty)
 <!--   ![](https://komarev.com/ghpvc/?username=King-ty) -->
   
