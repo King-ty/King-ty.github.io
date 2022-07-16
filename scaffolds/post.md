@@ -9,7 +9,7 @@ description:
 top_img:
 comments: true
 cover:
-mathjax: true
+mathjax: false
 # sticky: 1 # 置顶
 # Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:

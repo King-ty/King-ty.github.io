@@ -4,5 +4,5 @@ tags:
 categories:
 keywords:
 description:
-mathjax: true
+mathjax: false
 ---
