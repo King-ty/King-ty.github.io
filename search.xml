@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>关于写书的想法</title>
+      <link href="/2022/07/17/%E5%85%B3%E4%BA%8E%E5%86%99%E4%B9%A6%E7%9A%84%E6%83%B3%E6%B3%95/"/>
+      <url>/2022/07/17/%E5%85%B3%E4%BA%8E%E5%86%99%E4%B9%A6%E7%9A%84%E6%83%B3%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="为什么想写书"><a href="#为什么想写书" class="headerlink" title="为什么想写书"></a>为什么想写书</h2><p>不知不觉大三结束了，再过一年我的本科生涯也将结束了，在这个时间点，我不禁想，我的大学生活是有意义的吗？</p><p>我不能说我的大学经历是成功的，但是粗略一想，有意义的值得回味的场景还是有不少的。于是我便想将其记录下来，未来看到便也能重新回忆这段美好的青春岁月。</p><p>另一个方面，作为新一批即将毕业的学生，我也不禁想给后人留下点精神财富之类的东西，倒不是为了让什么人记住我，更多的是希望后来的学弟学妹不要重蹈我的覆辙。这里我很想提一下<a href="https://github.com/skyleaworlder">jggg</a>的<a href="https://github.com/TJ-CSCCG">TJ-CSCCG</a>项目，我从中真的受益很多，让我能够站在巨人（各位学长）的肩膀上更好的接受每一门课程。虽然客观来说，这个仓库可能会导致一些课程卷度的提升，但正如介绍所说，它的意义“由你而定”，能从中学到些学长学姐们的经验，我感觉才是最大的意义。</p><p><img src="关于写书的想法\2022-07-17-09-49-34.png" alt=""><img src="2022-07-17-09-49-34.png" alt=""></p><p>说来惭愧，之前我还应了jggg“寻找接盘侠”的邀请，但是之前我对Github的使用实在是了解甚少（现在也没有太多hhh），又羞于请教，结果自然是不了了之。到了大四空闲的时候，我想我还是会尽力把自己所有的一点点经验放上去吧。</p><p>既然jggg已经构建了一个如此好的平台，那我的书里是否还需要兼顾分享经验呢？其实确实是不需要了，本身我写作的出发点更是记录我的大学生活，如果真能在客观上起到一点分享经验的作用，我自然是深感荣幸了。</p><p>以上讨论其实也是我内心的辩论，最终让我确定了我的写作更重要的目的是记录自己的大学生活，而不是为了写什么“《生存/自救指南》”。</p><h2 id="为什么是书的形式"><a href="#为什么是书的形式" class="headerlink" title="为什么是书的形式"></a>为什么是书的形式</h2><p>但是如果仅仅是记录我的大学生活，为什么非要是书的形式呢？写博客不行吗？</p><p>对此我的想法是，如果是从大一开始记录博客，现在能够积攒成册，自是妙极。可惜的是，我大三才开始写博客，而且非常疏于更新，现在的写作，更像是站在跑道3/4处做的总结，同时兼顾对未来1/4的憧憬。如果写成一篇博文，未免有些太长了；写成多篇博文，分开管理又有点不合我的想法。在我困扰之时，我突然想到之前查阅资料时经常看到的电子书形式的文档，我个人是非常喜欢这种形式的，简洁又具有整体感，具有非常不错的沉浸式屏幕阅读体验。于是，抱着试一试的想法，我决定采用写书的形式来做记录，这不一定是最合适的记录方式，但我觉得能在记录的同时兼顾练习一点点编写线上文档的能力，还是比较有意义的。</p><h2 id="技术选择"><a href="#技术选择" class="headerlink" title="技术选择"></a>技术选择</h2><ol><li><p>使用博客主题</p><p>首先常见的博客框架基本都有电子书的主题，使用方式类似于写博客，方便有相关经验的选手快速上手。但我想搞点新东西，故暂不考虑。</p></li><li><p><a href="https://www.gitbook.com/">GitBook</a></p><p><img src="关于写书的想法\2022-07-17-10-25-46.png" alt=""><img src="2022-07-17-10-25-46.png" alt=""></p><p>GitBook是借助Git工具管理的静态文档生成工具，基于Node.js，拥有各种主题和插件；支持使用Markdown或富文本编写，文档效果简洁大方，能够支持导出PDF、epub等常见格式；而且从官网来看，许多常见应用使用GitBook编写文档。总体来说，GitBook简直是完美的覆盖了我的需求！</p><p>可惜是的，GitBook的团队近年来一直向着商业化的方向发展，积极发展线上Web模式，而原本开源的本地模式则已经停止维护4年之久。我尝试了一下Web模式，感觉国内访问真的不够稳定，不算很适合使用。</p><p>我也尝试了一下本地模式，发现本地模式光安装都会因为不兼容新版本的Node会报2个错误，查阅资料解决方案有两种：一是降低Node的版本到10.X（开玩笑我会为了运行这个自降版本？），也可以安装多个Node（有点懒得折腾，但是其实不算很复杂）；二是修改一点源码解决问题。我自然是选择了方案二。安装起来之后，我发现GitBook果然各方面设计都很合我意，无论是文章组织形式还是生成效果。</p><p>当我想要实现特定功能寻找插件、以及想要美化界面寻找主题时，我发现GitBook的社区仿佛尘封了4年——很多插件和主题的更新时间整齐划一的指向四年前或更久的某个时间——就好像一场突如其来的火山爆发将这一切直接埋入地下。</p><p>我尝试了一下，基本功能和简单美化还是正常可用的，效果也确实相当不错。但是一想到GitBook的生态静止在了4年前的时间点，未来恐怕也是再也不会更新了，我感觉没必要选择它了，毕竟未来如果有什么新的需求或由于Node等更新带来的新的问题都难以解决。</p><p>不得不说，GitBook的效果还是相当不错的，看得出4年前的生态也相当好，以至于尽管难以维护，我在放弃他时还是有所纠结。我这里有一点小问题：为什么开发者要停止这么好的开源项目呢？为什么这4年来没有出现完全超越GitBook的同类产品呢（或许有但是我没有了解到）？为什么没有其他开源组织接手这个项目继续开发呢？希望懂的人能给我指点一二。</p></li><li><p><a href="https://hellowac.github.io/mdbook_doc/zh-cn/index.html">mdBook</a></p><p><img src="关于写书的想法\2022-07-17-10-56-56.png" alt=""><img src="2022-07-17-10-56-56.png" alt=""></p><p>mdBook是使用Rust语言编写的静态文档生成工具，Rust的官方教程也是用它编写的，成书效果还是相当不错的，兼容GitBook的各种格式，鉴于Rust的特点速度非常快，是替代GitBook的一级首选。</p><p><a href="https://www.rust-lang.org/zh-CN/">Rust</a>是一门比较新的高级程序设计语言，我有幸了解过他的基本语法，并被他的设计哲学深深折服。我的感觉是，Rust通过对程序员添加了一定的限制，达到了可以通过静态分析在编译阶段找到尽可能多的bug的效果；Rust没有垃圾回收器，而是使用所有权、生命周期等概念保证不会出现访问无效内存、重复释放、悬挂引用等问题，同时保证了极高的运行效率（看网上的测试和C不相上下，在很多场景下甚至比C快，但我自己其实没有测试过）；Rust编写出来的是二进制文件，与C类似，不需要额外的运行环境，非常方便。但我此前一直感觉Rust还不够成熟，一个很大的原因是我暂时没有接触过使用Rust编写的主流应用（很可能是我无知了，也很可能Rust还是太年轻了），这让我对Rust有一点不自信。而mdBook则让我有些欣喜，如果mdBook能够替代GitBook，至少可以让更多人接触与了解这门很不错的编程语言，从而推动Rust进一步发展。</p><p>扯远了。按照网络说法，mdBook在个别细节上还是不如GitBook，但是对我来说这些细节场景很少用到且无伤大雅；我也相信mdBook的上限一定比早已停止维护的GitBook要高得多😁。</p></li><li><p><a href="https://www.sphinx-doc.org/en/master/">Sphinx</a></p><p>Sphinx是使用Python语言编写的静态文档生成器，Python的官方文档就是使用的此工具；另外比较出名的<a href="https://seisman.github.io/how-to-write-makefile/index.html">《跟我一起写Makefile》</a>就有很不错的基于Sphinx版本；学习编译原理时我参考的<a href="https://pandolia.net/tinyc/">《自己动手写编译器》</a>也是使用Sphinx结合<a href="https://readthedocs.org/">Read the Docs</a>主题生成的。以上几本书的效果如下：</p><p><img src="关于写书的想法\2022-07-17-11-18-57.png" alt=""><img src="2022-07-17-11-18-57.png" alt="Python官方文档"><br><img src="关于写书的想法\2022-07-17-11-19-33.png" alt=""><img src="2022-07-17-11-19-33.png" alt="《跟我一起写Makefile》"><br><img src="关于写书的想法\2022-07-17-11-22-30.png" alt=""><img src="2022-07-17-11-22-30.png" alt="《自己动手写编译器》"></p><p>总体来说还是不错的，可以一试。</p></li><li><p><a href="https://www.mkdocs.org/">MkDocs</a></p><p>也是基于Python的静态文档生成器，也可以使用<a href="https://readthedocs.org/">Read the Docs</a>主题，感觉效果很不错。</p><p>之前看到的<a href="https://learnopengl-cn.github.io/">LearnOpenGL CN</a>便是用了Mkdocs结合<a href="https://bootswatch.com/yeti/">Yeti</a>主题；<a href="https://www.mkdocs.org/">MkDocs的官方文档</a>自然也是使用了MkDocs生成；<a href="https://markdown-docs-zh.readthedocs.io/zh_CN/latest/">MkDocs中文文档</a>则是使用了MkDocs+Read the Docs主题。以下是效果展示：</p><p><img src="关于写书的想法\2022-07-17-11-53-19.png" alt=""><img src="2022-07-17-11-53-19.png" alt="LearnOpenGL CN"><br><img src="关于写书的想法\2022-07-17-11-51-57.png" alt=""><img src="2022-07-17-11-51-57.png" alt="MkDocs官方文档"><br><img src="关于写书的想法\2022-07-17-11-54-45.png" alt=""><img src="2022-07-17-11-54-45.png" alt="MkDocs中文文档"></p><p>感觉效果也挺好的。</p></li><li><p><a href="https://vuepress.vuejs.org/zh/">VuePress</a></p><p>之前建博客的时候就有所了解，这里又看了一下。其实VuePress用来写书效果还是很不错的，<a href="https://v3.cn.vuejs.org/guide/introduction.html">Vue官方文档</a>以及Vue系列的文档都是用它生成的；另外最近我在学习的<a href="https://tai-e.pascal-lab.net/lectures.html">南京大学软件分析课程网站的文档</a>也是用了VuePress生成。以下是相关展示效果：</p><p><img src="关于写书的想法\2022-07-17-12-00-49.png" alt=""><img src="2022-07-17-12-00-49.png" alt="VuePress文档"><br><img src="关于写书的想法\2022-07-17-12-01-14.png" alt=""><img src="2022-07-17-12-01-14.png" alt="南京大学软件分析课程网站的文档"></p><p>我非常看好VuePress这个静态网页生成器，他也不仅仅可以用来写书，前景很好。</p></li><li><p>其他方式</p><p>这里要说的是我不太了解实现方式的几个在线电子书。</p><p>首先是<a href="https://github.com/phodal">Phodal Huang</a>大神写作的<a href="https://github.phodal.com/#/">《GitHub 漫游指南》</a>及其他书籍，我感觉比较像VuePress，但我实在不确定他是用什么生成的（原谅我太菜了没找出来ww），但是看他的项目文件确实是写了一个很大的Markdown文件。</p><p><img src="关于写书的想法\2022-07-17-12-12-49.png" alt=""><img src="2022-07-17-12-12-49.png" alt="《GitHub 漫游指南》"></p><p>然后是<a href="https://element-plus.gitee.io/zh-CN/">Element Plus</a>官方文档的实现，感觉效果还挺好的，但是我感觉似乎没有用什么静态网页生成器而是自己用Element Plus的各种组件搭建的？我不是很确定……</p><p><img src="关于写书的想法\2022-07-17-12-12-28.png" alt=""><img src="2022-07-17-12-12-28.png" alt="Element Plus官方文档"></p><p>以上几个所用的技术如有看官知道，真诚希望能在评论区不吝赐教，谢谢~</p><p>没想到写个书有这么多方法，而且肯定还有很多其他我不知道的方案，鉴于我第一次接触了解不多，在此谨记录我接触过的一些方法。</p></li></ol><h2 id="我的选择"><a href="#我的选择" class="headerlink" title="我的选择"></a>我的选择</h2><p>在此我暂时选择使用mdBook进行写作，感觉在以上众多方案中，mkBook是我相对来说最喜欢且非常看好的项目。</p><p>接下来就是漫长的写作了。受限于时间我大概要写很久，争取这个暑假空闲时间慢慢完成吧。我计划先记录一下过去三年中一些有意思的值得记录的事情，并记录一下自己的得失与反思；接下来我想记录一下以我现在的角度来看大学三年都应该做些什么，才能够达到我理想中“完美的自己”；然后我想根据前两部分的写作憧憬一下未来我应该做些什么，以及如何补偿三年来自己失败的部分，希望能给我的最后一年本科生涯提供一点指导；至于说大四的生活，我希望能够在博客中逐步记录，最后总结起来添加到这本书中。</p><p>想好了，那就做起来吧~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Book </category>
+          
+          <category> University </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog </tag>
+            
+            <tag> Book </tag>
+            
+            <tag> University </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客复活+浅谈博客相关的一些选择</title>
       <link href="/2022/07/15/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB-%E6%B5%85%E8%B0%88%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%89%E6%8B%A9/"/>
       <url>/2022/07/15/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB-%E6%B5%85%E8%B0%88%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%89%E6%8B%A9/</url>
@@ -11,6 +42,18 @@
         <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大概是一年前的这个时候，我头脑发热使用Hexo+github pages创建了自己的第一个Blog，并凭着一股热情在不懂大部分原理（甚至几乎不知道node.js是何物）的情况下跟着各路博客、视频、知乎文章美化博客。当时选用的主题是最最最常见的Next，我从各个地方学来野路子对他魔改一番，达到了还不错的显示效果。当时我感觉这一切很有成就感，现在回过头来感觉羞愧难耐——很多魔改都是主题自带的功能我却重写一遍，其他非自带功能我也魔改的不伦不类。</p><p>其实现在看来魔改Next并不是一个很好的选择，因为有很多已有的主题能够符合我的要求，而Next本身就是为喜欢简介风格的人士准备的，我去爆改他总有些不伦不类。但很多时候，一腔热情是很重要的，至少能够在当时的场景下支撑着我把事情做完，即使后来重新审视这件事情是多么的小儿科，但至少曾在认识尚浅的时候把事情做的还算不错。</p><p>唉，又说了一堆废话作为前言。</p><h2 id="为什么这么久不更新"><a href="#为什么这么久不更新" class="headerlink" title="为什么这么久不更新"></a>为什么这么久不更新</h2><p>从我开博客到现在不过一年时间，而距离我上次更新已经相隔10个月，为什么我竟然这么久都没有更新呢？</p><p>是因为我太忙了吗？我很想说是，但这明显只是个借口；想想，很多比我更忙的人其实一直在坚持更新博客，而我即使有时间也并没有用来写博客做记录。</p><p>是因为懒吗？我想是的，很多时候明明想了挺多，也挺想记录下来，可当我真正坐到博客编辑页之前，又好像懒于打字，思维骤停，就好像水龙头一下子被拧上了。于是干脆关掉编辑器做别的去了。</p><p>是因为写博客优先级太低吗？是的，我从来没把写博客当成一件要紧的事，一般只要有别的作业或是什么事情没做完，我绝不会想到先去记一下博客；即使所有事情都做完了，我第一个想到的还是娱乐；即使玩到不想再玩了，我又有什么时间和精力去写博客呢？</p><p>是因为害怕写错什么吗？这个有一点，主要是在记录技术时总担心自己有理解不到位的地方，怕误导别人。对我自己来说，通过博客记录自己的想法远比记录技术快乐得多，但是很多想法又不是能随意公开的，于是每每坐到编辑页面前，思来想去还是放弃了。</p><h2 id="为什么重新开博客"><a href="#为什么重新开博客" class="headerlink" title="为什么重新开博客"></a>为什么重新开博客</h2><p>既然有这么多的理由，那为什么我又重新开了博客呢？</p><p>其实本质上还是因为我有一些东西想要记录下来。</p><p>上面的问题都解决了吗？</p><p>有些解决了，有些转念一想也算是解决了。</p><p>对于时间和优先级问题，人这一生很少能有什么时候真正空闲下来，比如我说“等我有空了再去XXX把”，那这事很可能遥遥无期了；既然如此，就应该把博客的优先级提前一点，做事情累了，写写博客，不也是一种放松吗？</p><p>对于害怕误导别人的问题，其实很久之前我就意识到了，写博客最大的作用是给自己看，记录自己的学习生活的，既然如此，自私一点说，管别人干什么？别人偶然看到，若是能学到点东西，我自然无比荣幸；若是对其造成了误解，我大概也没有什么办法，也没有太多必要过于愧疚；若是别人能在评论中帮我指出问题，这自然是意外之喜，让我无比感激。总体来说，只要不是满篇胡说八道，本着较为严谨求实的态度，写博客于人于己还是利大于弊的。</p><p>至于说太懒，其实打打字也不会类到哪去，实在懒了上语音转文字好了。😁</p><h2 id="关于博客技术的选择"><a href="#关于博客技术的选择" class="headerlink" title="关于博客技术的选择"></a>关于博客技术的选择</h2><p>上次建博客的时候，我啥也不懂，不带脑子随大流上了Hexo+Next的车。现在看来，这样做还是有好处的，毕竟是采用了国内最多人采用的方案，遇到的问题总能通过搜索解决。</p><p>但是一方面Next的功能的外观其实有点不合我口味，另一方面我也羞于拿我不伦不类的魔改界面展示给别人，因此我还是决定认真调研一下常见的博客技术并做一点记录。</p><p>说是认真调研，其实也不过看了一点别人的说法，结合我去各自官网上查看了文档而已，真正上手测试的只有Typecho和Hexo……</p><h3 id="动态与静态博客的选择"><a href="#动态与静态博客的选择" class="headerlink" title="动态与静态博客的选择"></a>动态与静态博客的选择</h3><p>什么是动态与静态博客呢？一言以蔽之，前者带有后端、文章等信息存储在数据库里；后者不带后端，由静态页面生成器生成后作为静态页面发布。根据我的理解两者特点如下：</p><p>动态博客：</p><ul><li>需要后端和数据库，因此不能部署在各种码云带有的pages上，需要自己有服务器（很多时候是云服务器），并最好配备域名。顺便，服务器和域名一般都要钱的hhh…</li><li>由于要进行数据库查询，响应速度一般略慢于静态博客。</li><li>不需要使用静态页面生成器，可以在任何能够联网的场合使用浏览器访问页面写博客与进行管理。</li><li>轻松支持评论等功能，存到数据库里即可。</li><li>常用的动态博客框架有WordPress（功能多，不止可以做博客）、Typecho（轻量化）等，二者后端均为PHP</li></ul><p>静态博客：</p><ul><li>无后端和数据库，可以方便部署在各种码云的pages上，方便快捷，还免费。</li><li>直接请求页面，访问速度较快。</li><li>需要使用静态页面生成器，因此很可能需要有一个本地环境支持才能进行编辑与管理。（但这里我脑洞一下，是不是可以借助GitHub的CI/CD或是github.dev来简化编辑难度，达到一种只要能访问码云就可以编辑的效果呢？我没有尝试，我感觉有可行性，这样静态也就没有那么大的限制了。）</li><li>评论等功能需要额外支持。（但不得不说借助GitHub的issue来存储评论信息真是一大福音）</li><li>常用的静态博客生成器有Hexo（基于Node.js）、Hugo（基于Go）、Jekyll（基于Ruby）等。</li></ul><h3 id="常用博客框架的特点（我理解的）"><a href="#常用博客框架的特点（我理解的）" class="headerlink" title="常用博客框架的特点（我理解的）"></a>常用博客框架的特点（我理解的）</h3><ol><li><p><a href="https://cn.wordpress.org/">WordPress</a></p><p>动态框架，功能和插件非常全面，可以比较轻松的构建出不只包含博客的各种网站。在搜索资料时我没有尝试使用该框架，但是感觉WordPress的资料还是相当多的，插件也足够丰富，日后我会考虑在自己购买的云服务器上尝试一下。另外值得一提的是，之前在软工项目调查网站使用语言时，我发现即使在2022年PHP语言竟然在网站中博得头筹，这让我大为不解；现在看来，恐怕是有不少网站和个人博客直接采用了WordPress或Typecho导致了这种结果吧。</p></li><li><p><a href="http://typecho.org/">Typecho</a></p><p>前几天我突发奇想，既然树莓派都可以作为服务器使用，那么各方面功能无疑更加强大且完善的旧手机（除了不方便作为嵌入式开发板）为什么不能呢？经过调查我发现了基于<a href="https://kslabs.ru/">KSWEB</a>的方案。</p><p>KSWEB是一款Android服务器APP，使用lighttpd+nginx+apache+php+sql技术，各方面功能完善可用于搭建建议网站。</p><p>正好为了测试KSWEB和动态博客框架，我在我的平板上安装了KSWEB并使用Typecho搭建了简易的本地博客。我感觉Typecho对于搭建博客来说，各方面资料及插件应该是足够了，上手非常容易，按照网上的说法要求的配置也比WordPress低，可以一试。</p><p>后来我又尝试进行内网穿透，我使用的是免费的<a href="https://www.cpolar.com/">cpolar</a>。运行方法是使用<a href="https://termux.com/">Termux</a>安装与使用；Termux是一个是一款模拟Linu的APP，无需root，可以使用apt安装各种包。这套方案还算比较稳定，我自己在家里连接穿透后的网址还是相当不错的，但是不知道为啥发给别人测试却速度奇慢，或许在自家访问有什么特殊的优化？</p><p>后来我又了解到了<a href="https://www.aidlux.com/">AidLux</a>，可以让Android手机直接变成Linux电脑，装在平板上更是极为合适，爱奇艺变生产力了有木有。我暂时还没有折腾太多，但是感觉真的用它作为服务器也是完全可行的。</p><p>呃扯远了，总体来说Typecho轻量可用，但是外面想要访问还是存在一定的问题，使用各种小东西（手机、树莓派等）构建家庭网站甚为不错（但是这样真的有很大意义吗），真想分享给别人看可能还得是正经服务器（但就算是用云服务器，国内这些服务商较低的带宽能有多大的访问速度呢？这有待我进一步尝试）。</p><p>顺便吐槽一下官网😥</p><p><img src="博客复活-浅谈博客相关的一些选择/1657934787822.png" alt=""><img src="1657934787822.png" alt=""></p></li><li><p><a href="https://hexo.io/zh-cn/index.html">Hexo</a></p><p>基于Node.js的静态博客生成器，国内使用人数颇多以至于铺天盖地的Hexo+Next建站方案……</p><p>实现效果还是非常不错的，文档和各种资料非常全，基本不用担心遇到什么问题；主题和插件相当多，可以实现各种功能；而且静态博客基于Pages的方案是免费的。个人感觉对于小白来说Hexo应该是首选。</p><p>缺点是网传当文章数较多时，因为Node.js解释型语言的特点，速度还是有点慢的。具体我没有测试，网上给出的测试情况大概比Hugo慢5~10倍，但我想我大概一时半会体会不到这种慢……</p></li><li><p><a href="https://gohugo.io/">Hugo</a></p><p>基于Go语言的静态博客生成器，我暂时没找到很好的中文文档，但是英文文档还算是比较全。网上的讨论热度比起Hexo好像也没有低多少，遇到问题应该是都能解决的。</p><p>优点就是速度快，毕竟是编译型语言，速度还是比较有保障的。博文较多的小伙伴可以考虑迁移到Hugo。</p><p>由于我没有尝试，我对于他的认知仅限于网上其他博客的讨论。大概是主题偏少（实际上有那么一套稳定且符合需求的主题就足够了）、没有主题配置文件（这个我感觉有点奇怪，这个设计怎么看起来不太成熟的样子，这样能很好的维护吗？）。</p><p>我感觉Hugo还是不错的，未来博文多了或许会考虑迁移过来。</p></li><li><p><a href="https://jekyllrb.com/">Jekyll</a></p><p>基于Ruby，也是Github pages的默认渲染方式。我了解不多，感觉网上的讨论对比上两个确实偏少，于是不考虑使用了。</p></li><li><p><a href="https://vuepress.vuejs.org/zh/">VuePress</a></p><p>基于Vue，现在用的人还是偏少了，据说非常自由，但我不是很想折腾。其实我还是比较看好这个的。</p></li><li><p>Others</p><p>其实还是有不少其他方案的，这边说的都是相对来说比较常用的，对于我这样的新手，还是尽量套用前人的轮子吧。因此其他方案没有过多研究。</p></li></ol><h3 id="我的选择"><a href="#我的选择" class="headerlink" title="我的选择"></a>我的选择</h3><p>看了以上一堆胡言乱语的分析，你猜我选择了什么？</p><p>我暂时选择使用Hexo框架，因为资料最多最容易上手。日后如果博文变多了生成速度过慢，我会考虑迁移到Hugo中。</p><p>至于说动态博客，我觉得还是挺有意思的，或许会额外在云服务器上使用WordPress建一个玩玩，但是就不作为主力博客了。</p><h2 id="关于博客主题的选择"><a href="#关于博客主题的选择" class="headerlink" title="关于博客主题的选择"></a>关于博客主题的选择</h2><p>鉴于<a href="https://theme-next.js.org/">Next</a>主题实在是过于烂大街，且他的简洁风格不是我喜欢的样式，因此我需要寻找新的主题。</p><p>于是我来到<a href="https://hexo.io/themes/index.html">Hexo主题网站</a>寻找。其实好看的主题还是有不少的，但是经常点看一看star很少，怕是用户不多，这很可能意味着主体功能不够完善需要折腾。鉴于之前折腾的经历并不美好，我希望能直接找到符合我要求的主题。</p><p>我先是找到了<a href="https://github.com/auroral-ui/hexo-theme-aurora">Aurora</a>主题，感觉还是挺炫酷的，但是一看issues，好家伙现阶段怕是还有不少bug，还是暂时不折腾了。</p><p>没想到最后我还是投入了<a href="https://butterfly.js.org/">Butterfly</a>的怀抱。不得不说，Butterfly各方面还是非常完善且美观的，而且一直维护的很好（star 4.1k，远超Next 1.6k），适合作为Next的替代品新手上手。实际上日常查阅资料中Butterfly的烂大街程度并不比Next低多少（甚至可能比Next要更多见），但是其出色的自定义化程度让他很容易显示出个人的风格，让我们并不感觉他有多么常见。</p><p>接下来就是按照官方教程做优化了。讲真配置项还是挺多的，花了我半个上午+一整个下午的时间才算配置出了我比较喜欢的样子。官方教程讲的很详细，除了PWA的配置不知道是不是没有更新存在一些问题，其他的都很好。但是改配置怎么看都是体力活，花了这么多时间还是挺可惜的。</p><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>唔，不管怎么说，博客总算是复活啦！接下来就是用它记录下生活，充分发挥博客的价值吧~😄</p>]]></content>
       
       
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blog </tag>
+            
+        </tags>
       
     </entry>
     
@@ -24,6 +67,56 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>慎言之</title>
+      <link href="/2021/09/29/%E6%85%8E%E8%A8%80%E4%B9%8B/"/>
+      <url>/2021/09/29/%E6%85%8E%E8%A8%80%E4%B9%8B/</url>
+      
+        <content type="html"><![CDATA[<p>近日常为言语之事所困，今日洗澡之时颇做思索，吾文学功底了了，以慎言之概括之。<br><span id="more"></span><br>古语云，“言多必失”，亦有“沉默是金”之说。今我所谓“慎言之”者，有此思想，亦有他者。</p><p>不整文言文了，除了少说甚说，亦要做到在合适的场合，慎重发声。</p><p>从初中起，我就数次因为说错话受到教训。我印象中曾因嘲讽初中5班被体育老师拉走”教育“，亦有高中时没逼数把学校安排发空间导致酿成大祸，就在今天下午，我又因为考虑不周在”使命与担当“群里说错话导致一些莫名的结果。其实从我自己来说，我说这些不过是正常情感的表达，并未有任何不良的想法，但是正所谓“言者无意，听者有心”，听者很难从我说话的角度考虑，因此经常从话中理解出他意，这很正常，因为每个人情况都不一样，有些人说正常的话在别人看来都是一种炫耀或是卖惨；另一方面，也确实有有意利用言语的人，虽说不至于恶意利用，但也确有拿来开玩笑之事，如果完全不加注意，真说不定会被利用。这一段话说的很乱，其实我想说的是，说话前要三思，正式场合更需要站在听者的角度打磨所说之话，此所谓“慎言之”其一。</p><p>最近我水群颇多，本以为这是融入集体、积极交流的表现，但从结果来看，似乎并非如此。多言浪费时间，毫无疑问，如果太过积极，难免招来更多聊天，时间之浪费越来越多。多言似乎是提升了名气，但是有时莫名被膜，自从读了鲁迅先生的《捧与挖》，我对这种事反感的很，怕是只想快快摆脱。其实想想，真正的强者，很少有经常水群的，更多的是自主的思考。此段所论者，为多言之害，不必要的废话需要少说，没必要刷什么存在感，如有必要，则参见上段所论。此所谓“慎言之”其二。</p><p>前日wy与近日奖学金之事，着实让人烦恼，第一件事确实与我并无直接关系，而第二件则是切实与我利益相关，而在这两件事上，我虽然处于自所谓“正义感”深感愤懑，却并无真正有效发言，而各群之中，已有同学勇敢发声，甚至是利益无关的同学，相比之下，我实在惭愧。对于正义之事，即使大家都选择沉默，即使发声并不容易，但我想总要有人站出来的，这便是“慎言之”的另一重含义，即关键时刻，为正义勇敢发声。此所谓“慎言之”其三。</p><p>念此私自愧，以上三点我都没有做到，难怪我自己经常因为说话而酿下祸端，实在是因为没有做到“慎言之”的三重含义。在此记录，希望日后能有所改观。</p><p>另有一事，昨日jggg与我QQ交流也让我对于说话有不少考虑。其实虽然经常一起水群，但我与jggg其实还不算太熟的，准确来说他应该并不熟我，怕是都不知道我是哪一个。昨天本来是邓老师让他找我拉进操作系统课程群，这本来是件小事，可是jggg竟然先言其他再引出此事，这让我略有费解，可能是不够熟的缘故吧。后来交流时，我发现jggg竟然略带拘谨，甚至有点过敏，这让我确实有点奇怪了。毕竟面对我这样的晚辈，实在不应该，或许jggg也曾因为说话受到了一些教训，慢慢有了这些说话的风格吧。没有不好的意思，仅作记录，希望jggg不要怪罪（呜呜）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 闲聊 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 闲聊 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>论电影</title>
+      <link href="/2021/09/28/%E8%AE%BA%E7%94%B5%E5%BD%B1/"/>
+      <url>/2021/09/28/%E8%AE%BA%E7%94%B5%E5%BD%B1/</url>
+      
+        <content type="html"><![CDATA[<p>昨天半夜和舍友gzc偶然谈到电影的相关话题，解决了我一直以来的很多疑惑，在此稍做记录。以下看法全部仅代表个人观点。<br><span id="more"></span><br>很久以来，我一直感觉自己似乎无法融入电影这种艺术形式，不只是生理上（眼睛，久坐），还有心理上（各种迷惑），每次去电影院看完电影，总感觉非常疲惫；自己看电影的时候，也是时常不得不暂停休息，总之比起来看书，总有些不舒适。</p><p>于是，每当别人和我谈论起电影时，我或许总会非常无趣的说：我不喜欢看电影。真的是这样吗？其实我内心还是非常喜欢看一部分电影的。《肖申克的救赎》《阿甘正传》这种经典电影我刷了好几遍，《千与千寻》让我沉醉于画风的同时也引发了深入的思考，《罗生门》则是让我深深的认识到人性的自私性。这些经典电影我看的很舒服，就像仔细品味一本好书，看后久久难忘。</p><p>然而，近几年爆火的一些电影却引发了我的强烈不适感，让我一度怀疑自己对于电影的审美是否出现了一些问题。首先是《战狼2》，这部电影为我们展示了一个身处他乡的硬汉的爱国情怀，以及中国在国际事务中的强大力量，对于爱国情绪的渲染非常有力，可是当我全部看完，却没有太多震撼，或许出除了开场时打向我的一颗3D子弹，我便再也没有什么激动了。很多情节我不能详细记住，但是一些个人英雄主义的片段并没有打动我，而坦克对战、军火商干掉领导人的举动更是让我深深迷惑；这些可能对于推动情节、渲染气氛非常有效，但我却总是在考虑他的不合理。</p><p>然后是流浪地球，可以说特效不错，但也就这样了，问题一堆，可能由于是春节档可以加入了许多略显突兀的喜庆与搞笑元素，可以理解。但整体的故事在我看来，不如改为“中二少年历险记”。</p><p>最让我反感的就是《哪吒》了。动画电影终于不再拿西游记开刀了，不得不说是件好事，但其它部分我感觉槽点太多。首先是画风，不得不说，实在是很少中国传统画风的影子，反倒充满了迪士尼的画风；当然，这个见仁见智，我只能说我不喜欢。然后是一开场，一个疯癫、酗酒的胖子逢神的旨意来培育哪吒，虽然很有搞笑元素，但这是凭什么？尤其是看到后来申公豹的待遇，我们抛去神话元素，但从该电影出发，实在让人想不明白这个胖子有啥优点。电影的主旨是宣传“我命由我不由天”的思想，怎么一上来就有一个这样的明显漏洞呢？其后有诸多地方在我看来都不合逻辑，或许从“图一乐”的角度来看，这部电影有着许多惊喜，但我总是忍不住去分析，平添苦恼。</p><p>还有就是漫威系列电影。讲真高中同学都挺爱看的，而我看了一次之后就再也不想看了。这一系列无非在讲述一些有超能力的人，他们我行我素，并不团结，穿上皮套就有了超能力，宣传个人英雄主义。虽然这样做拉近了平常人和英雄的距离，但是看下来除了可能感觉到爽，并无收获，也找不到中心思想，相比之下，《蝙蝠侠》系列可能真就不知道高到哪里去了。</p><p>这些胡思乱想总让我感觉，我与大众的审美格格不入，直到昨晚，我们讨论了一番，我才意识到，这些都是商业片的通病，即更加重视画面与场景震撼力效果，而不是把重点放在逻辑上，因为大部分观影者只要看得爽就行了，同时评论电影也是掌握在多数人手上的，这对于电影产业来说，足够了。怪不得我越来越看不下去爆火的电影了，怪不得爆火的电影越来越不能经得起时间的沉淀了……而事实上我自己肯定也有问题的，那就是对于电影逻辑太过注重，而不是把看电影当成一种娱乐消遣，自增烦恼。</p><p>总之，我其实还是喜欢电影这种艺术的，但电影种类实在是繁多，相比之下我更爱的就是经过实践检验的经典篇目了。毕竟能在两个小时左右的时间里讲好一个故事，并且要声情并茂，并且要引人思考，做到这些，并不容易。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 闲聊 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 闲聊 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -51,6 +144,35 @@
             <tag> 学习 </tag>
             
             <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>配置wsl</title>
+      <link href="/2021/09/19/%E9%85%8D%E7%BD%AEwsl/"/>
+      <url>/2021/09/19/%E9%85%8D%E7%BD%AEwsl/</url>
+      
+        <content type="html"><![CDATA[<p>暑假快结束的时候为了玩安装了wsl，但是没有进行详细的配置，这次操作系统小实验需要用到linux系统，虽说已经有了centOS虚拟机，但是还是想借机玩一把wsl，在此做一点记录。</p><span id="more"></span><p>算了懒得搞了，以后补充…</p><p>补充(2021-9-28)：<br>似乎也没干什么特别的事情，一切都很顺利，使用的是WSL1+vscode remote WSL插件，效果非常nice<br>使用ssh连接的时候似乎需要找到WSL的地址，但是根据报错提示一步步来就行；然后ssh的安装也差不多，似乎有的地方有点问题网上查了一下解决了。<br>总之不算太复杂，有问题再记录吧…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+          <category> wsl </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> wsl </tag>
             
         </tags>
       
@@ -88,21 +210,50 @@
       <link href="/2021/09/14/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"/>
       <url>/2021/09/14/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/</url>
       
-        <content type="html"><![CDATA[<p>算是当时建站留下的一点坑，博客一直没有插入图片的功能，这对于显示当然及其不友好。这学期我转用markdown进行课堂笔记，最近突发奇想想将笔记转移到博客上，这样的话没有图片肯定是不行的，于是稍微折腾了一下。</p><span id="more"></span><p>其实网上比较推荐的做法是使用“七牛”等网络图床，网络存图有好处也有缺点，我想还是用本地方案得了，遂放弃（才不是懒得研究）<br>本地方案其实也不难，按照<a href="https://hexo.io/zh-cn/docs/">hexo的官方文档</a>来做十分容易，核心如下：<br><img src="博客插入图片/2021-09-14-19-29-24.png" alt=""><img src="2021-09-14-19-29-24.png" alt=""><br>其实就是全局配置打开资源文件夹，然后用一些特定格式加入图片就行，markdown自带的插入图片格式也是可以用的，虽然官方说有些缺点。</p><p>问题在于为了做课堂笔记，想要插入图片必须要快速高效，因此需要使粘贴插图的默认位置在资源文件夹中。使用markdown all in one的默认位置使./image/[post_name]/pic_name，这样显然不行，仔细寻找了markdown all in one的设置也没有设置图片位置的方法，于是只能用其他方法来做到。<br>网上找到了一些方法，最后发现<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a>插件比较符合我的需求，可以按相对位置插入图片，也可以改变图片存储位置，只是粘贴的快捷键需要使用CTRL+ALT+V，稍微麻烦，但无伤大雅。<br><img src="博客插入图片/2021-09-14-19-37-33.png" alt=""><img src="2021-09-14-19-37-33.png" alt=""></p><p>不算什么有用的文章，仅作记录。</p><hr><h2 id="更新-2022-7-16"><a href="#更新-2022-7-16" class="headerlink" title="更新 2022-7-16"></a>更新 2022-7-16</h2><p>时间来到了2022-7-16，没想到我重新建站又被插入图片ex了一下，因此有必要具体分析并做详细记录。</p><p>首先是解决方案。如果使用图床，免费的既有不小的空间基本够用，但是访问速度可能会有点不够；但即使氪金，个位数的价格即能在半年到一年的时间里获得不错的体验了。总体来说，价格完全完全可以接受。要说问题的话，如果使用Typora书写，自然可以很方便的上传图床，简直nice！但是Typora不再免费提供，有必要考虑其他方案。Vscode我没有仔细研究，猜测借助各种插件也是可以的，同时我也猜测没有Typora那么方便；不过这些纯属我个人根据经验意淫，因为我没有真正去尝试……</p><p>我个人还是倾向于本地方案（+Github）解决的，毕竟这种解决方案免费且比较稳定（真的稳定吗？）。好吧其实还是我懒了。</p><p>没想到时隔一年，<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a>插件依旧是首选方案。但是一年前我的具体解决方案并没有记录，这一年里也不知道怎么回事Paste Image好像配置都消失了，无奈我只得重新记录一下。</p><p>按照之前记录的方式（其实我也有重新查阅资料，但是方法并没有变化），我们可以使用hexo的标签插件（<code>&#123;% %&#125;</code>）的方式插入图片，也可以使用html的<code>img</code>标签灵活的插入图片，但是我最常用的自然还是markdown的<code>![](url)</code>的写法。</p><p>这里的原理就是使用Paste Image插件的自定义功能，在粘贴图片时一下插入两段插入图片的代码，一段带有资源文件夹（资源文件夹是什么上面有说过）路径而另一段不带有，这样在本地预览时看到的就是第一段代码插入的图片，而使用Hexo生成静态网页时，博文和博文资源文件夹中的图片被放到了同一目录下，这样第二段图片代码起作用展示图片。</p><p>这里需要注意的是，两段插入图片代码的方括号中在粘贴时都不要有内容，如果要给出提示加到第二段代码的方括号中。这样在网站上运行时，第一段代码请求图片一定是失败的，但是由于没有在方括号中给出提示性文字，相当于啥也不显示；而第二段代码如果由于网络问题也请求失败了，此时会显示第二段代码方括号里的内容作为提示。</p><p>这一解决思想其实也挺丑陋的，但是不失为一个可用的方案，如果想同时在本地预览并在Blog上看到、还不想使用图床，那么可以一试。我猜测未来大概会有更优雅的方法，到时候我再更换吧。</p><p>顺便提一下，问了有多年Blog经验的<a href="https://skyleaworlder.github.io/">skyleaworlder</a>，得知他写博客并不需要本地预览，直接写完提交就行了。看来我还是写少了……</p><p>又扯远了，回到具体解决方法上来。我重新阅读了<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Inage的说明文档</a>，发现其实只需要改一个地方就能满足需求，于是修改如下：</p><p><img src="博客插入图片\2022-07-16-17-03-11.png" alt=""><img src="2022-07-16-17-03-11.png" alt=""></p><p>其实就是改了一下插入的Pattern，改为以下代码：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$&#123;imageSyntaxPrefix&#125;$&#123;imageFilePath&#125;$&#123;imageSyntaxSuffix&#125;![]($&#123;imageFileName&#125;)</span><br></pre></td></tr></table></figure><p>该配置的默认项为前3个变量（<code>$&#123;&#125;</code>）内容，我在后面添加了<code>![]($&#123;imageFileName&#125;)</code>，相当于插入上文所说的第二段插入图片代码。此时使用<code>Ctrl+Alt+V</code>粘贴图片效果如下（一下展示的是上面的配置截图的图片代码）：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![](博客插入图片\2022-07-16-17-03-11.png)![](2022-07-16-17-03-11.png)</span><br></pre></td></tr></table></figure><p>好吧，虽然很啰嗦很丑陋，但是总算是完成了我预想的要求，先这样把博客写起来吧~</p>]]></content>
+        <content type="html"><![CDATA[<p>算是当时建站留下的一点坑，博客一直没有插入图片的功能，这对于显示当然及其不友好。这学期我转用markdown进行课堂笔记，最近突发奇想想将笔记转移到博客上，这样的话没有图片肯定是不行的，于是稍微折腾了一下。</p><span id="more"></span><p>其实网上比较推荐的做法是使用“七牛”等网络图床，网络存图有好处也有缺点，我想还是用本地方案得了，遂放弃（才不是懒得研究）<br>本地方案其实也不难，按照<a href="https://hexo.io/zh-cn/docs/">hexo的官方文档</a>来做十分容易，核心如下：<br><img src="博客插入图片/2021-09-14-19-29-24.png" alt=""><img src="2021-09-14-19-29-24.png" alt=""><br>其实就是全局配置打开资源文件夹，然后用一些特定格式加入图片就行，markdown自带的插入图片格式也是可以用的，虽然官方说有些缺点。</p><p>问题在于为了做课堂笔记，想要插入图片必须要快速高效，因此需要使粘贴插图的默认位置在资源文件夹中。使用markdown all in one的默认位置使./image/[post_name]/pic_name，这样显然不行，仔细寻找了markdown all in one的设置也没有设置图片位置的方法，于是只能用其他方法来做到。<br>网上找到了一些方法，最后发现<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a>插件比较符合我的需求，可以按相对位置插入图片，也可以改变图片存储位置，只是粘贴的快捷键需要使用CTRL+ALT+V，稍微麻烦，但无伤大雅。<br><img src="博客插入图片/2021-09-14-19-37-33.png" alt=""><img src="2021-09-14-19-37-33.png" alt=""></p><p>不算什么有用的文章，仅作记录。</p><hr><h2 id="更新-2022-7-16"><a href="#更新-2022-7-16" class="headerlink" title="更新 2022-7-16"></a>更新 2022-7-16</h2><hr><p>时间来到了2022-7-16，没想到我重新建站又被插入图片ex了一下，因此有必要具体分析并做详细记录。</p><p>首先是解决方案。如果使用图床，免费的既有不小的空间基本够用，但是访问速度可能会有点不够；但即使氪金，个位数的价格即能在半年到一年的时间里获得不错的体验了。总体来说，价格完全完全可以接受。要说问题的话，如果使用Typora书写，自然可以很方便的上传图床，简直nice！但是Typora不再免费提供，有必要考虑其他方案。Vscode我没有仔细研究，猜测借助各种插件也是可以的，同时我也猜测没有Typora那么方便；不过这些纯属我个人根据经验意淫，因为我没有真正去尝试……</p><p>我个人还是倾向于本地方案（+Github）解决的，毕竟这种解决方案免费且比较稳定（真的稳定吗？）。好吧其实还是我懒了。</p><p>没想到时隔一年，<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Image</a>插件依旧是首选方案。但是一年前我的具体解决方案并没有记录，这一年里也不知道怎么回事Paste Image好像配置都消失了，无奈我只得重新记录一下。</p><p>按照之前记录的方式（其实我也有重新查阅资料，但是方法并没有变化），我们可以使用hexo的标签插件（<code>&#123;% %&#125;</code>）的方式插入图片，也可以使用html的<code>img</code>标签灵活的插入图片，但是我最常用的自然还是markdown的<code>![](url)</code>的写法。</p><p>这里的原理就是使用Paste Image插件的自定义功能，在粘贴图片时一下插入两段插入图片的代码，一段带有资源文件夹（资源文件夹是什么上面有说过）路径而另一段不带有，这样在本地预览时看到的就是第一段代码插入的图片，而使用Hexo生成静态网页时，博文和博文资源文件夹中的图片被放到了同一目录下，这样第二段图片代码起作用展示图片。</p><p>这里需要注意的是，两段插入图片代码的方括号中在粘贴时都不要有内容，如果要给出提示加到第二段代码的方括号中。这样在网站上运行时，第一段代码请求图片一定是失败的，但是由于没有在方括号中给出提示性文字，相当于啥也不显示；而第二段代码如果由于网络问题也请求失败了，此时会显示第二段代码方括号里的内容作为提示。</p><p>这一解决思想其实也挺丑陋的，但是不失为一个可用的方案，如果想同时在本地预览并在Blog上看到、还不想使用图床，那么可以一试。我猜测未来大概会有更优雅的方法，到时候我再更换吧。</p><p>顺便提一下，问了有多年Blog经验的<a href="https://skyleaworlder.github.io/">skyleaworlder</a>，得知他写博客并不需要本地预览，直接写完提交就行了。看来我还是写少了……</p><p>又扯远了，回到具体解决方法上来。我重新阅读了<a href="https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image">Paste Inage的说明文档</a>，发现其实只需要改一个地方就能满足需求，于是修改如下：</p><p><img src="博客插入图片\2022-07-16-17-03-11.png" alt=""><img src="2022-07-16-17-03-11.png" alt=""></p><p>其实就是改了一下插入的Pattern，改为以下代码：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$&#123;imageSyntaxPrefix&#125;$&#123;imageFilePath&#125;$&#123;imageSyntaxSuffix&#125;![]($&#123;imageFileName&#125;)</span><br></pre></td></tr></table></figure><p>该配置的默认项为前3个变量（<code>$&#123;&#125;</code>）内容，我在后面添加了<code>![]($&#123;imageFileName&#125;)</code>，相当于插入上文所说的第二段插入图片代码。此时使用<code>Ctrl+Alt+V</code>粘贴图片效果如下（一下展示的是上面的配置截图的图片代码）：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">![](博客插入图片\2022-07-16-17-03-11.png)![](2022-07-16-17-03-11.png)</span><br></pre></td></tr></table></figure><p>好吧，虽然很啰嗦很丑陋，但是总算是完成了我预想的要求，先这样把博客写起来吧~</p>]]></content>
       
       
       <categories>
           
-          <category> blog </category>
+          <category> Blog </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> blog </tag>
+            <tag> Blog </tag>
             
-            <tag> image </tag>
+            <tag> Image </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git学习记录</title>
+      <link href="/2021/09/14/git%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+      <url>/2021/09/14/git%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<p>暑假前我曾经用了一天的时间学习git和github的使用，为了练习在暑假第一周我把大学作业中勉强称得上是项目的东西传到了github上并借助gitpages配置了本blog。本想着git算是学会了，可惜暑假并没有及时进行练习，当我想上传数据结构课设作业时发现该忘的都忘记了，记性不好吗，看来还是有必要记录一下。</p><span id="more"></span><h4 id="git-clone和download-zip区别"><a href="#git-clone和download-zip区别" class="headerlink" title="git clone和download zip区别"></a>git clone和download zip区别</h4><p>前者带一个.git，是一个仓库，也就是带有一些版本控制</p><h4 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h4><p>对于初始项目目录，使用git init初始化为git仓库</p><h4 id="git-add-A"><a href="#git-add-A" class="headerlink" title="git add -A"></a>git add -A</h4><p>将所有文件添加到暂存区<br>可用vscode左边点”+”实现</p><h4 id="vscode的U-A"><a href="#vscode的U-A" class="headerlink" title="vscode的U/A"></a>vscode的U/A</h4><p>U:表示是新增文件<br>A:到达暂存区</p><h4 id="git-commit-m-“提交信息”"><a href="#git-commit-m-“提交信息”" class="headerlink" title="git commit -m “提交信息”"></a>git commit -m “提交信息”</h4><p>提交暂存，每次提交有位移hash值，并用提交信息提醒这次提交了什么<br>可用vscode插件输入提交信息ctrl+enter实现</p><h4 id="git-log-—stat"><a href="#git-log-—stat" class="headerlink" title="git log —stat"></a>git log —stat</h4><p>查看提交记录<br>可直接在vscode插件COMMITS中查看</p><h4 id="git-checkout-filename"><a href="#git-checkout-filename" class="headerlink" title="git checkout [filename]"></a>git checkout [filename]</h4><p>未提交时撤销修改，变为仓库中的状态<br>可在vscode插件中点放弃修改实现</p><h4 id="git-reset-HEAD-m"><a href="#git-reset-HEAD-m" class="headerlink" title="git reset HEAD^[m]"></a>git reset HEAD^[m]</h4><p>退回到第前m个版本<br>可用COMMITS里undo commit做到</p><h4 id="git-checkout-b-branchname"><a href="#git-checkout-b-branchname" class="headerlink" title="git checkout -b [branchname]"></a>git checkout -b [branchname]</h4><p>以当前分支为基础创建分支并切换到该分支<br>主分支一般是代码的起点和终点</p><h4 id="git-checkout-branchname"><a href="#git-checkout-branchname" class="headerlink" title="git checkout [branchname]"></a>git checkout [branchname]</h4><p>切换分支</p><h4 id="git-merge-branchname"><a href="#git-merge-branchname" class="headerlink" title="git merge [branchname]"></a>git merge [branchname]</h4><p>把[branchname]分支合并到当前分支</p><h4 id="git-merge-—abort"><a href="#git-merge-—abort" class="headerlink" title="git merge —abort"></a>git merge —abort</h4><p>放弃本次合并</p><h4 id="git-branch"><a href="#git-branch" class="headerlink" title="git branch"></a>git branch</h4><p>查看本地所有分支<br>*是当前分支</p><h4 id="git-branch-r"><a href="#git-branch-r" class="headerlink" title="git branch -r"></a>git branch -r</h4><p>查看远程所有分支</p><h4 id="git-branch-a"><a href="#git-branch-a" class="headerlink" title="git branch -a"></a>git branch -a</h4><p>查看本地和远程所有分支</p><h4 id="git-branch-d-D-branchname"><a href="#git-branch-d-D-branchname" class="headerlink" title="git branch -d/D [branchname]"></a>git branch -d/D [branchname]</h4><p>删除分支，其中D是强制删除</p><h4 id="git-remote-add-origin-远端仓库地址"><a href="#git-remote-add-origin-远端仓库地址" class="headerlink" title="git remote add origin [远端仓库地址]"></a>git remote add origin [远端仓库地址]</h4><p>把远端仓库作为”origin”名添加到本地中</p><h4 id="git-branch-m-M-oldbranchname-newbranchname"><a href="#git-branch-m-M-oldbranchname-newbranchname" class="headerlink" title="git branch -m/M [oldbranchname] [newbranchname]"></a>git branch -m/M [oldbranchname] [newbranchname]</h4><p>修改分支名字，M是强制修改<br>可以只有[newbranchname]，修改当前分支<br>常用git branch -M main解决github上main和master的冲突</p><h4 id="git-push-u-remoteoriginname-localoriginname"><a href="#git-push-u-remoteoriginname-localoriginname" class="headerlink" title="git push (-u) [remoteoriginname] ([localoriginname])"></a>git push (-u) [remoteoriginname] ([localoriginname])</h4><p>推送到远程仓库<br>常用git push -u origin main<br>[localoriginname]省略则为当前分支<br>其中-u用来绑定远程主机，之后就可以简写为git push和git pull而不用指定origin<br><!-- ![](1631595461467.png) --><br><img src="/2021/09/14/git%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/1631595461467.png" class="" title="[知乎大佬的解释]"><br><!-- > `$ git push origin`上面命令表示，将当前分支推送到origin主机的对应分支。如果当前分支只有一个追踪分支，那么主机名都可以省略。`$ git push`如果当前分支与多个主机存在追踪关系，那么这个时候-u选项会指定一个默认主机，这样后面就可以不加任何参数使用git push。`$ git push -u origin master`上面命令将本地的master分支推送到origin主机，同时指定origin为默认主机，后面就可以不加任何参数使用git push了。 --></p><h4 id="git-pull-—rebase-remoteoriginname-localoriginname"><a href="#git-pull-—rebase-remoteoriginname-localoriginname" class="headerlink" title="git pull (—rebase) [remoteoriginname] ([localoriginname])"></a>git pull (—rebase) [remoteoriginname] ([localoriginname])</h4><p>拉取远程分支内容<br>—rebase作用参考<a href="https://blog.csdn.net/yao_hou/article/details/108178717">这篇文章</a><br>其实就是git pull不在当前合并出新节点，而是在分支出来的结点进行合并并修改之后的结点<br>用来解决github新仓库第一次提交失败的问题</p><hr><h2 id="更新-2022-07-17"><a href="#更新-2022-07-17" class="headerlink" title="更新 2022-07-17"></a>更新 2022-07-17</h2><p>现在来看，当时的认识有许多地方都与实际有所出入，希望别误导了别人。这里先记录一下，有空更正。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+          <category> git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> git </tag>
             
         </tags>
       
@@ -147,6 +298,22 @@
         <content type="html"><![CDATA[<p>昨天晚上的CF是昆明站以来第一次摸算法的东西(学校的算法课配叫算法？)，想法是借着这次CF回复一下竞赛状态，事实证明我的竞赛状态确实是一塌糊涂。打完后已经是凌晨一点多了，想想还是不总结记录了，于是把记录留到了今天。</p><span id="more"></span><p>首先出师不利，我竟然忘记了赛前register，只好等比赛开始10分钟后的extra register，直接丧失了赛处最珍贵的10分钟。比赛开始后，<a href="https://codeforces.com/problemset/problem/1553/A">A题</a>一如既往是大水题，秒过，但是由于不熟悉了在写代码时速度实在不算快。就在我以为自己竞赛状态竟然还有不少保留时，第二题直接打脸。<br>讲真我在写A题时，<a href="https://codeforces.com/problemset/problem/1553/B">B题</a>就已经有了一个说明通知，但由于我没看B题因此没有特别注意，结果第二题我没想到去看通知，一上来就理解错了，第一发写了一个奇葩的乱搞思路，白给。然后我就思考是怎么回事，这时才突然记起来那个通知，快速扫了一眼，知道自己提议理解错了，于是赶快重新构思并写代码。实际上B题就是一个朴素的三层循环(分别枚举起点、转折点、终点)，码完后过了样例，一交又不对，呜呜。调了一会，陆续找到了几个看起来有问题但是实际上应该不会有影响的小问题，改完后结果不变，心态崩了，弃疗。</p><p><a href="https://codeforces.com/problemset/problem/1553/C">C题</a>第一遍读题竟然没看懂，大慌，心想完了完了我不会只能签到吧……镇定下来重读一遍，总算是看懂了，快速码完并简单调试了一下，过了，心情大好。</p><p><a href="https://codeforces.com/problemset/problem/1553/D">D题</a>还是挺有意思的，乍一看似乎和B是同一个人出的。第一遍看下来感觉就是用s串去匹配t串的每一个，并考虑两个匹配字符之间相隔的字符数是否为偶数个，若是则匹配t的下一个字符。但是这个贪心思路明显是$O(n)$的，但是题目数据量看似在向$O(logn)$引导。算了，先写一发吧，写完后只剩3分钟了(前面浪费时间太多了，呜呜)，一试竟然过不了样例，大崩。这时候我突然想到我那个思路确实正着匹配是错的，但是按照题目中backspace的特性，似乎倒着匹配就是正确的？赶紧改，结果最后改完后时间还是到了，难受。</p><p>结束后一段时间不让提交，也没法验证D是否正确。对着电脑发了一会呆，感觉挺难受的，最后试了一遍还是不能交，想想还是先睡觉了。</p><p>没想到的是，今早晨起来，博宇哥说我B其实就是数组开小了，我一看，甚惊之，哭笑不得，一改遂过，难受了，舒服了……D题一交也是过了，这么说我昨天至少思路上四道题都是对的，可惜太久不做码力大降，加上时间分配不合理，最终抱憾两题，坐等掉大分。</p><p>不过想想好处也是有的，至少我感觉我的英语水平还是有所提升，读英文题目没有半年前那种浑身难受看不懂总想翻译的感觉了；顺便这么久没练做成这样倒也正常，叶神他们也不能一直保持状态，更别提一直划水的我了……</p><p>后面几题想想还是要补的，最后一年ACM了，虽说是一年但也就两三场比赛了，总要拼一下，大学生涯总不能一直炼铜(非恶意)啊……</p>]]></content>
       
       
+      <categories>
+          
+          <category> 学习 </category>
+          
+          <category> ACM </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> ACM </tag>
+            
+        </tags>
       
     </entry>
     
@@ -160,10 +327,16 @@
         <content type="html"><![CDATA[<p>今天在高铁上，我终于完成了基于github pages的blog搭建，说实话从有想搭博客的想法已经很久了，直到最近才越来越感觉真的需要记录点东西，正好趁着假期研究了下git的使用(之前一直没搞明白属实惭愧)，于是趁热打铁利用github pages搭建了一个博客。正好赶上回家，感觉有许多想法想要记录下来，趁着年轻，就应该多留下点想法。</p><span id="more"></span> <h3 id="为什么要写博客？"><a href="#为什么要写博客？" class="headerlink" title="为什么要写博客？"></a>为什么要写博客？</h3><p>虽说不是什么事都要刨根问底问个为什么，但是写博客倒是确实需要一个明确的理由，毕竟现在已经不是博客的时代了，博客不再拥有大量的读者，也不像微博等当代社交方式便捷。那么我为什么要写博客呢？<br>一个原因是想记录自己学习技术的过程。就像很多计算机技术大牛那样，我想用博客记录一下自己学习过程中的一点点收获与思想。我在大二下这学期也明显感受到了自己所学的许多东西如果不经记录很快就会被忘记，因此确实有必要记录下来，至少可以起到备查的作用，如果能帮到其他有同样学习经历的人我更是感到十分荣幸，同时记录的过程也是对所学的一种总结，有利于更好地归纳总结所学。<br>另一个非常重要的原因就是想要通过博客与自己的内心进行一种“对话”，这也是我为什么将博客名暂定为”Soul Talk”。其实一直以来我废话都挺多的，至少心里有什么想法大多数时候都希望找个人分享一下，一般我都是通过打电话和家里分享或是告诉身边的朋友，但是这学期真的许多事似乎只适合和自己说，或是找到某种“灵魂伴侣”；当然若是能有红颜知己再好不过，但我懂得还是要放弃幻想认清形势。写博客其实就是和自己对话的过程，在高中时尽管平时学习压力并不小，但我还是喜欢闲下来的时候，写一点日记记录一下，到大学后不知道为何反而丢弃了记日记的习惯；另一方面，上大学后真的很少写字了，现在我这赖字写日记真的是自己看了都嫌弃，那就干脆用博客代替吧……</p><h3 id="下一步做什么？"><a href="#下一步做什么？" class="headerlink" title="下一步做什么？"></a>下一步做什么？</h3><p>其实为啥写博客想清楚了，下一步干什么也就明白了。平时学习技术的时候开个md记录一下，有想说的就当日记记录一下，不求真的有读者，更重要的还是写给自己吧。<br>另外其实利用github pages搭建博客真的挺简单的，但我为了美化还是花了一些时间，不得不说这个next主题我个人感觉目前还是挺丑挺简陋的，未来肯定还要进一步美化，毕竟界面美了我才更有动力写下去嘛……</p><h3 id="第一篇博客还有啥想说的"><a href="#第一篇博客还有啥想说的" class="headerlink" title="第一篇博客还有啥想说的"></a>第一篇博客还有啥想说的</h3><p>还想bb点这学期的事……高铁上我用电脑做了些事导致没电了，后期除了一段水群的时间，大概是考虑了一下这学期的一些事。<br>首先最大的好消息是满绩了，虽然一个虚无的数字对我已经不再有那么大的意义了，毕竟保研无望，但是这至少还是证明了自己其实并没有差多少。这学期我真的是一步一赌，步步惊心，31.5的学分量不管怎么说都给我带来了巨大的课业压力。为什么要选那么多课呢？因为当时感觉反正保研不可能了，不如干脆提前学一下大三的内容，到时候好抽出时间准备考研或出国，能够满绩是我完全没想到的。这学期其实有好几个之前和我绩点相近的同学都在努力证明自己，大概是周一没有重视导致现在绩点不太好看吧，就想着这学期努力证明一次，看看自己是不是真的比不上那些专业前列的大佬，也都取得了不错的结果。讲真我是没有这种想法的，毕竟我的学分量摆在那里，我只是努力走好每一步，渴望“活下去”。<br>那我究竟为什么竟能顶着如此大的压力达到满绩呢？一方面，有我自己努力的结果。期末复习时，我和同学说我每一科只需要两小时的复习时间，这虽然有所夸张，但是这学期我所有的考试确实都只复习了半天时间，一方面是我确实被一堆作业压迫着不得不缩减复习时间，另一方面这学期许多课我都是每次上完课及时通过看ppt熟悉了课程内容，而不是把复习压力全部堆到期末，这样期末复习时我就是在回忆而不是许多人调侃的“预习”，速度自然快。另一方面，更重要的就是许多朋友对我的帮助。在计网作业我几乎崩溃的时候，是waq和ymy对我提供了许多及时而有效的帮助；在DSP搞得我自闭时，是bcc和ljj给我指明了方向；在自动机、计组和人工智能因为我被作业压迫没有听课自己课下补课看不懂时，是gzc与我进行了许多理论方面的交流并给了我许多理解上的帮助，尤其是最后计组CPU54的实验，多亏gzc的提醒我才能避开许多坑成功完成了本学期最后的任务。真的真的非常感谢各位朋友的帮助，多亏了你们，才能让我成功活过了这个任务繁重的学期！同时我也认识到，只有大家抱团取暖，才能一起共度难关！</p><p>另外这学期的一大坏消息就是感情上的大失败。说是失败其实也没啥，还是自己格局小了。想了想还是不bb这里了，把悲伤留给自己吧。</p><p>想来这学期总算是结束了，虽然小学期还有两个课设和一点日记需要完成，但是大风大浪算是过去了。这学期我收获还蛮多的，我发现，之前大概是受my和by等熟悉学长的影响，我把较多精力花在了“用”上，但是经过大二的学习与不断的思考，我认为我们计算机科班与技校生的区别并不在于谁会不会用，而在于谁基础扎实，能够更快的适应；也就是说，相比于使用语言等工具，我感觉到基础扎实、原理透彻是很重要也很容易被忽视的。就比如这学期的人工智能课程项目，被很多学长吐槽为“没用”，是的，从项目本身来说，我们做的八数码、五子棋啥的确实没用，甚至不屑于写到简历中，同时我们使用的都是比较传统的基于搜索的方法，那么这个就真的没用了吗？非也，通过人工智能课程的学习和大作业的完成，我对于人工智能的基本原理有了真正的认识，而这才是这门课的真正目的。懂得了搜索的原理之后，再去实现无疑简单得多，我只是用语言工具描述一下就可以了，甚至基于先前对C++语言较为系统的学习和较深入的理解，我再学习js等工具时只需要花费很少的力气就可以轻松学会了，并能够立刻使用其完成五子棋web开发，这无疑比技校生、培训班高明得多。值得一提的是，计组的CPU编写也是这个道理。</p><p>经过这学期的深思熟虑，我最终还是决定要出国读研，那么这个假期就要好好地准备起来，但是假期我又有ICPC竞赛训练、数模模拟赛、国创项目等一堆棘手的事情需要去做，同时还要准备语言考试，终归不是个轻松的假期，唉。</p><p>bb结束，明天就正式开启假期吧！</p>]]></content>
       
       
+      <categories>
+          
+          <category> Blog </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> test </tag>
+            <tag> Blog </tag>
             
         </tags>
       
