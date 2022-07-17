@@ -1,8 +1,23 @@
 ---
 title: 记暑期第一场CF
 date: 2021-07-23 10:49:58
-tags:
 mathjax: true
+comments: true
+noticeOutdate:
+  enable: true
+  style: flat
+  limit_day: 365
+  position: top
+  message_prev: It has been
+  message_next: days since the last update, the content of the article may be outdated.
+updated:
+tags: [ACM, 学习]
+categories:
+   - [学习, ACM]
+keywords:
+description:
+top_img:
+cover:
 ---
 
 昨天晚上的CF是昆明站以来第一次摸算法的东西(学校的算法课配叫算法？)，想法是借着这次CF回复一下竞赛状态，事实证明我的竞赛状态确实是一塌糊涂。打完后已经是凌晨一点多了，想想还是不总结记录了，于是把记录留到了今天。

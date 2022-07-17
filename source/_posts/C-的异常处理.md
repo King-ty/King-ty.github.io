@@ -1,10 +1,22 @@
 ---
 title: C++的异常处理
-mathjax: true
+mathjax: false
 date: 2021-09-28 13:35:56
 tags: [学习, C++]
 categories: [学习, C++]
-password:
+comments: true
+noticeOutdate:
+  enable: true
+  style: flat
+  limit_day: 365
+  position: top
+  message_prev: It has been
+  message_next: days since the last update, the content of the article may be outdated.
+updated:
+keywords:
+description:
+top_img:
+cover:
 ---
 
 C++的异常处理使用try throw catch进行，高程课并没有学习，我当时也就懒得自己研究，虽然老师建议要自学。近来随着接触一些东西意识到这玩意还是有必要学一下的，稍做记录。
