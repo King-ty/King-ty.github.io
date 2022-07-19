@@ -1,3 +1,4 @@
+https://www.king-ty.top/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/
 https://www.king-ty.top/2022/07/17/%E5%85%B3%E4%BA%8E%E5%86%99%E4%B9%A6%E7%9A%84%E6%83%B3%E6%B3%95/
 https://www.king-ty.top/about/
 https://www.king-ty.top/2021/09/14/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/
@@ -30,6 +31,7 @@ https://www.king-ty.top/tags/University/
 https://www.king-ty.top/tags/git/
 https://www.king-ty.top/tags/wsl/
 https://www.king-ty.top/tags/Image/
+https://www.king-ty.top/tags/%E8%87%AA%E5%AD%A6/
 https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/
 https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/C/
 https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/ACM/
@@ -39,3 +41,4 @@ https://www.king-ty.top/categories/University/
 https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/git/
 https://www.king-ty.top/categories/Blog/
 https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/wsl/
+https://www.king-ty.top/categories/%E5%AD%A6%E4%B9%A0/%E8%87%AA%E5%AD%A6/

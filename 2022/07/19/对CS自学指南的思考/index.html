@@ -1,0 +1,439 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>对CS自学指南的思考 | Renxin's Blog</title><meta name="keywords" content="学习,自学,CS,指南"><meta name="author" content="King-ty"><meta name="copyright" content="King-ty"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="近来我重新“找到”了CS自学指南这本书，翻看之下，思考颇多。  其实大概一年前我就在学长的推荐下得知这本书了，当时点进去看着众多不认识的名词，带着一种难言的恐慌，我把他关掉了。于是这本书在我的收藏夹中吃灰了一年。 在这一年的学习中，我接触了许多计算机的核心课程，我感觉自己总算是有点入门CS了。今天翻看Github，偶然再次看到了这本书，于是带着一种复杂的心情，我重新翻开了他。 这次阅读带给我的感受">
+<meta property="og:type" content="article">
+<meta property="og:title" content="对CS自学指南的思考">
+<meta property="og:url" content="https://www.king-ty.top/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/">
+<meta property="og:site_name" content="Renxin&#39;s Blog">
+<meta property="og:description" content="近来我重新“找到”了CS自学指南这本书，翻看之下，思考颇多。  其实大概一年前我就在学长的推荐下得知这本书了，当时点进去看着众多不认识的名词，带着一种难言的恐慌，我把他关掉了。于是这本书在我的收藏夹中吃灰了一年。 在这一年的学习中，我接触了许多计算机的核心课程，我感觉自己总算是有点入门CS了。今天翻看Github，偶然再次看到了这本书，于是带着一种复杂的心情，我重新翻开了他。 这次阅读带给我的感受">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.king-ty.top/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/2022-07-19-23-30-20.png">
+<meta property="article:published_time" content="2022-07-19T15:28:43.000Z">
+<meta property="article:modified_time" content="2022-07-19T15:30:46.603Z">
+<meta property="article:author" content="King-ty">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="自学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.king-ty.top/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/2022-07-19-23-30-20.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.king-ty.top/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/favicon-16x16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '对CS自学指南的思考',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-07-19 23:30:46'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/2022-07-19-23-30-20.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Renxin's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">对CS自学指南的思考<a class="post-edit-link" href="https://github.com/King-ty/King-ty.github.io/edit/main/source/_posts/对CS自学指南的思考.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-19T15:28:43.000Z" title="发表于 2022-07-19 23:28:43">2022-07-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-07-19T15:30:46.603Z" title="更新于 2022-07-19 23:30:46">2022-07-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/%E8%87%AA%E5%AD%A6/">自学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="对CS自学指南的思考"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/#post-comment"><span class="gitalk-comment-count"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>近来我重新“找到”了<a target="_blank" rel="noopener" href="https://csdiy.wiki/">CS自学指南</a>这本书，翻看之下，思考颇多。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="对CS自学指南的思考\2022-07-19-23-30-20.png" alt=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="2022-07-19-23-30-20.png" alt=""></p>
+<p>其实大概一年前我就在学长的推荐下得知这本书了，当时点进去看着众多不认识的名词，带着一种难言的恐慌，我把他关掉了。于是这本书在我的收藏夹中吃灰了一年。</p>
+<p>在这一年的学习中，我接触了许多计算机的核心课程，我感觉自己总算是有点入门CS了。今天翻看Github，偶然再次看到了这本书，于是带着一种复杂的心情，我重新翻开了他。</p>
+<p>这次阅读带给我的感受是完全不一样的。我感觉书里说的所有东西我就算不懂，也好歹是有所涉猎；但我还是有触目惊心之感，因为通过阅读指南中的描述，我深刻意识到：我大学学习的并不深入！但是和一年前那种迷茫的感觉终归是不同的，现在我也绝不会再次采用鸵鸟策略，我想我应该按照书里所讲做点什么，以弥补自己大学时的空缺。</p>
+<p>书里的内容真的太多了，可以说汇集了全世界的CS精品课程。而几乎每个课程链接点开，很可能都是一个月+的学习时间（非脱产），即使是从大一开始自学，在应对大学课程的同时，想要全部学完也是很困难的。而我现在可以说大学仅剩1年的时光，想要完成“自救”，必须做好取舍，从中选择真正对自己有益的内容进行学习。</p>
+<p>顺便说一下，即使是从大一开始跟着这份指南自学，与传统意义上的大学生评判标准可以说是相违背的。现在很多学生都把出国或者保研作为比较成功的大学出路，而二者基本都需要通过科研论文、竞赛获奖以及高绩点这些外在的标准来提高竞争力。根据我的大学经历，想要顾好绩点、竞赛和科研三者对于普通人几乎是不可能的，甚至好几届学生才能出这样一个神人；而额外进行如此大规模的自学，其需要的精力绝不比以上三者任何一项低。可能有人想说，我通过优质的自学资源大大提升了专业素养，想要取得好成绩、竞赛取得好名次、科研做出好成果，不是水到渠成的吗？按理说应该是这样，可是事实却是：好成绩往往来源于“好”报告，竞赛获奖或科研出成果更需要在某一领域刻苦钻研，而不是在全方面达到较好的水准。我想，这种高质量的自学更像是在苦练“内功”，他大大提升了你的学科综合素养，并帮助你寻找到自己感兴趣的方向，最终在研究生阶段提供极大的帮助。按照我现在的想法，本科阶段能够做到广泛涉猎并找到自己的方向，已经可以说是莫大的成功了。</p>
+<p>那么接下来的一年我应该如何合理的利用这份《指南》完成“自救”呢？虽然我可以不受考研困扰，但终究时间少任务重，需要认真辨别仔细取舍。我的想法是：夯实基础、巩固方向、扩展新路。</p>
+<p>虽然从高中开始我就通过信息竞赛对CS相关知识有所接触，大学三年中我也进行了比较合理的学科训练，我还是感觉我的基础并不够好，其中最主要的一点就是在大一时我没有学好数学类（微积分、线性代数等）课程，而这一点虽然后来通过我的自学有一定改观，但实际上在大一后的两年学习中一直让我有所困扰。为了不让基础问题成为限制我日后上限的瓶颈，《指南》中的基础部分我应该进行学习。我目前的想法是：认真学习《指南》中的微积分以及线性代数课程，快速过一下电子电路、离散数学和基础工具类课程。前者我确实学的不好，后者我则是在大学学习中有所瑕疵。哦对了，还要学一下《CSAPP》，这个算是CS体系的基础了，其实大多内容也都明白，但是还是需要串一下，因此想要较快的过一遍。</p>
+<p>如果不出意外的话，我日后的研究方向很可能是计算机系统的可行性以及安全性，当然我对于图形学以及静态分析也有一定的兴趣（这么看来我的兴趣点都好传统啊……），因此这三点我也要学习。我的想法是，最最重点的就是学习指南中的系统部分，尤其是使用Rust语言构建系统的课程，因为这很可能是我未来的方向。图形学至少真正把Games101看完吧，再顺便把看了一半的learn OpenGL补完，弥补当初课程的遗憾。静态分析则是打算跟着南大的程序设计网课走一遍，未来我还是很想试试能不能去跟着两位讲课老师做研究的。</p>
+<p>扩展新学部分，主要就是人工智能方向了。现在想来大学阶段人工智能类的课程我也算接触不少了，但我总感觉自己学的零零碎碎，没有把握到要点，完全没有真正入门。现在别人问我，我总是说我对AI方向兴趣不高，可是真的是这样吗？其实我内心一直都很清楚，真实情况是我自我感觉这方面没入门，很多东西不太敢大谈特谈；真要说有没有兴趣，还得是真正入门了才能知道。好在通过大学几门课的学习，相关的理论我总算是了解了一点，想要入门应该也会稍微轻松点吧。这里我的想法是，从深度学习理论学起，了解几个常用网络的特点及使用；然后学习一下计算机视觉以及nlp的内容，大学阶段没有接触这两部分真是我的一大遗憾。</p>
+<p>至于说其他课程，鉴于我自认为大学中不管怎么说还是学了一遍的，即使不够深入但是对于我日后的发展来说基本算是够用了，因此优先级往后放放，大概会在研究生阶段或是日后工作后当成课余兴趣看一看吧。</p>
+<p>总体来说，我接下来一年想要学习的课程的优先级如下：</p>
+<ol>
+<li>Rust与操作系统</li>
+<li>CSAPP</li>
+<li>基础类</li>
+<li>数学类</li>
+<li>程序分析</li>
+<li>人工智能类</li>
+<li>图形学</li>
+<li>其他</li>
+</ol>
+<p>俗话说“适合自己的才是最好的”，我能从这份《指南》中找到适合自己的“自救之路”，至少算是有些意义吧。真的很想把这份指南推荐给大一的新生或是其他想要接触CS的人，顺便反过来想想，如果是我大一的时候拿到这份《指南》，现在的我又会有什么不同呢？</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://www.king-ty.top">King-ty</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://www.king-ty.top/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/">https://www.king-ty.top/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.king-ty.top" target="_blank">Renxin's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a><a class="post-meta__tags" href="/tags/%E8%87%AA%E5%AD%A6/">自学</a></div><div class="post_share"><div class="social-share" data-image="/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/2022-07-19-23-30-20.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/07/17/%E5%85%B3%E4%BA%8E%E5%86%99%E4%B9%A6%E7%9A%84%E6%83%B3%E6%B3%95/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2022/07/17/%E5%85%B3%E4%BA%8E%E5%86%99%E4%B9%A6%E7%9A%84%E6%83%B3%E6%B3%95/2022-07-17-10-56-56.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">关于写书的想法</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/09/28/C-%E7%9A%84%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" title="C++的异常处理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Cover1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-28</div><div class="title">C++的异常处理</div></div></a></div><div><a href="/2021/08/12/%E5%8C%B9%E9%85%8D/" title="匹配"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Cover2.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-08-12</div><div class="title">匹配</div></div></a></div><div><a href="/2021/07/23/%E8%AE%B0%E6%9A%91%E6%9C%9F%E7%AC%AC%E4%B8%80%E5%9C%BACF/" title="记暑期第一场CF"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Cover1.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-07-23</div><div class="title">记暑期第一场CF</div></div></a></div><div><a href="/2021/09/14/git%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="git学习记录"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Background.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-14</div><div class="title">git学习记录</div></div></a></div><div><a href="/2021/09/19/%E9%85%8D%E7%BD%AEwsl/" title="配置wsl"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Background.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-19</div><div class="title">配置wsl</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">King-ty</div><div class="author-info__description">Do one's level best and leave the rest to God's will.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/King-ty"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/King-ty" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:king-ty@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎关注，一起玩耍~</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/" title="对CS自学指南的思考"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/2022-07-19-23-30-20.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="对CS自学指南的思考"/></a><div class="content"><a class="title" href="/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/" title="对CS自学指南的思考">对CS自学指南的思考</a><time datetime="2022-07-19T15:28:43.000Z" title="发表于 2022-07-19 23:28:43">2022-07-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/17/%E5%85%B3%E4%BA%8E%E5%86%99%E4%B9%A6%E7%9A%84%E6%83%B3%E6%B3%95/" title="关于写书的想法"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2022/07/17/%E5%85%B3%E4%BA%8E%E5%86%99%E4%B9%A6%E7%9A%84%E6%83%B3%E6%B3%95/2022-07-17-10-56-56.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于写书的想法"/></a><div class="content"><a class="title" href="/2022/07/17/%E5%85%B3%E4%BA%8E%E5%86%99%E4%B9%A6%E7%9A%84%E6%83%B3%E6%B3%95/" title="关于写书的想法">关于写书的想法</a><time datetime="2022-07-17T04:48:16.000Z" title="发表于 2022-07-17 12:48:16">2022-07-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/15/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB-%E6%B5%85%E8%B0%88%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%89%E6%8B%A9/" title="博客复活+浅谈博客相关的一些选择"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/2022/07/15/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB-%E6%B5%85%E8%B0%88%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%89%E6%8B%A9/cover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客复活+浅谈博客相关的一些选择"/></a><div class="content"><a class="title" href="/2022/07/15/%E5%8D%9A%E5%AE%A2%E5%A4%8D%E6%B4%BB-%E6%B5%85%E8%B0%88%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%89%E6%8B%A9/" title="博客复活+浅谈博客相关的一些选择">博客复活+浅谈博客相关的一些选择</a><time datetime="2022-07-15T15:00:34.000Z" title="发表于 2022-07-15 23:00:34">2022-07-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/14/hello-world/" title="Hello World"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Cover3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/07/14/hello-world/" title="Hello World">Hello World</a><time datetime="2022-07-14T10:54:32.756Z" title="发表于 2022-07-14 18:54:32">2022-07-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/29/%E6%85%8E%E8%A8%80%E4%B9%8B/" title="慎言之"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/Background.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="慎言之"/></a><div class="content"><a class="title" href="/2021/09/29/%E6%85%8E%E8%A8%80%E4%B9%8B/" title="慎言之">慎言之</a><time datetime="2021-09-29T15:15:56.000Z" title="发表于 2021-09-29 23:15:56">2021-09-29</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/2022/07/19/%E5%AF%B9CS%E8%87%AA%E5%AD%A6%E6%8C%87%E5%8D%97%E7%9A%84%E6%80%9D%E8%80%83/2022-07-19-23-30-20.png')"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2022 By King-ty</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a target="_blank" rel="noopener" href="https://king-ty.github.io/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8297cf38915d0b5bde8e',
+      clientSecret: '2c641e025b69dafb3aee5631230fa3d6a2b953ca',
+      repo: 'King-ty.github.io',
+      owner: 'King-ty',
+      admin: ['King-ty'],
+      id: '29961605fe0e7507b4b992d6717c0032',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const findTrueUrl = (array) => {
+    Promise.all(array.map(item =>
+      fetch(item.url).then(resp => resp.json()).then(data => {
+        const urlArray = data.body.match(/(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/ig)
+        if (data.user.login === 'utterances-bot') {
+          return urlArray.pop()
+        } else {
+          return urlArray.shift()
+        }
+      })
+    )).then(res => {
+        array = array.map((i,index)=> {
+          return {
+            ...i,
+            url: res[index]
+          }
+        })
+
+        saveToLocal.set('github-newest-comments', JSON.stringify(array), 10/(60*24))
+        generateHtml(array)
+    });
+  }
+
+  const getComment = () => {
+    fetch('https://api.github.com/repos/King-ty/King-ty.github.io/issues/comments?sort=updated&direction=desc&per_page=6&page=1',{
+      "headers": {
+        Accept: 'application/vnd.github.v3.html+json'
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        const githubArray = data.map(item => {
+          return {
+            'avatar': item.user.avatar_url,
+            'content': changeContent(item.body_html),
+            'nick': item.user.login,
+            'url': item.issue_url,
+            'date': item.updated_at,
+            'githubUrl': item.html_url
+          }
+        })
+        findTrueUrl(githubArray)
+      }).catch(e => {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
+      })
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
+        }
+
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('github-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script id="canvas_nest" defer="defer" color="255,255,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
