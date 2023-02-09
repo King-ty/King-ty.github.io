@@ -90,15 +90,15 @@ public:
 
 其实这题从难度上来说，完全不值得我来做一次详细的笔记。主要还是这个题解的写法中有不少C++11的特性涉及到了我的知识盲区，因此为了学习还是记录一下。
 
-### std::array
+### [std::array](https://zh.cppreference.com/w/cpp/container/array)
 
 首先是[std::array](https://zh.cppreference.com/w/cpp/container/array)的使用，我的第一版代码中使用的是`vector`，但这样一个动态可变的数组放在这里确实有一点“高射炮打蚊子”之感；但是如果使用C风格的数组`T[N]`，我感觉在这里又不够灵活。看了答案才知道C++11引入了`array`这一类型，非常适用于这里的场景。
 
-### decltype 说明符
+### [decltype 说明符](https://zh.cppreference.com/w/cpp/language/decltype)
 
 也是C++类型推导的一种形式，但是和`auto`不同，`auto`是推导右值的类型，而`decltype(expr)`则是推导括号内表达式`expr`的类型。也是十分灵活好用。
 
-### std::accumulate
+### [std::accumulate](https://zh.cppreference.com/w/cpp/algorithm/accumulate)
 
 在标头`<numeric>`定义，算法库中的区间求累加结果的函数，可以传入一个lambda表达式来改变操作的性质，可以用来简化循环写法，非常灵活好用。
 
@@ -110,13 +110,13 @@ public:
 
 可以参考[链接](https://zh.cppreference.com/w/cpp/language/operators)中的**函数调用运算符**部分
 
-### std::hash
+### [std::hash](https://zh.cppreference.com/w/cpp/utility/hash)
 
 在标头`<functional>`定义，是一种泛型函数对象，这里使用`fn = hash<int>{}`实例化后使用`fn(num)`产生num的hash值。
 
-### Lambda 表达式
+### [Lambda 表达式](https://zh.cppreference.com/w/cpp/language/lambda)
 
-我个人非常喜欢C++的lambda表达式的语法，因为他非常简洁的表达出了**捕获**及**函数签名**，清晰明了！这里简单记录下这次代码中用到的特性：
+我个人非常喜欢[C++的lambda表达式](https://zh.cppreference.com/w/cpp/language/lambda)的语法，因为他非常简洁的表达出了**捕获**及**函数签名**，清晰明了！这里简单记录下这次代码中用到的特性：
 
 1. 默认捕获：
    - &（以引用隐式捕获被使用的自动变量）和
@@ -144,7 +144,7 @@ public:
 
 ### 定制key类型的unordered_map
 
-可以使用函数对象、lambda表达式等构造hash和comp函数，以下是使用lambda表达式的示例：
+可以使用函数对象、lambda表达式等构造hash和comp函数，以下是使用lambda表达式的示例（参考[链接](https://zh.cppreference.com/w/cpp/container/unordered_map/unordered_map)中最下面的*示例*部分）：
 
 ```c++
 // 选项 3 ：用 lambdas
