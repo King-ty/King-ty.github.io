@@ -1,7 +1,7 @@
 ---
 title: 记leetcode剑指 Offer II 071. 按权重生成随机数
 comments: true
-mathjax: false
+mathjax: true
 noticeOutdate:
   enable: true
   style: flat
