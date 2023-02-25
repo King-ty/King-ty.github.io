@@ -11,9 +11,9 @@ noticeOutdate:
   message_next: days since the last update, the content of the article may be outdated.
 date: 2023-02-09 15:51:46
 updated:
-tags:
+tags: [学习, leetcode, modern C++]
 categories: [学习, leetcode]
-keywords: [学习, leetcode, C++11]
+keywords: [学习, leetcode, modern C++]
 description:
 top_img:
 cover: 2023-02-09-15-53-01.png
@@ -157,7 +157,7 @@ std::unordered_map<Goo, double, decltype(hash), decltype(comp)> m8(10,hash, comp
 
 # 感慨
 
-终于搞定了~没想到为了解决这道题用了这么多C++11的特性，看来我之前对于modern C++确实了解偏少了。
+终于搞定了~没想到为了解决这道题用了这么多Modern C++的特性，看来我之前对于modern C++确实了解偏少了。
 
 PS：
 最近有在尝试写一写leetcode上的剑指offer（[链接](https://github.com/King-ty/JianzhiOffer)），主要尝试练习Rust，也考虑借此熟悉Mondern C++、JAVA、Python、TypeScript、Go等语言，暂时来看，确实达到了我预想的目的。
