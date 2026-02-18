@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yu TIAN (Tyrace) - M.Phil. Student at HKU, specializing in AI Infrastructure, Machine Learning Systems, and Distributed Computing.">
+    <meta name="keywords" content="Yu TIAN, Tyrace, HKU, AI Infrastructure, ML Systems, Distributed Computing, LLM">
+    
+    <meta property="og:title" content="Yu TIAN (Tyrace) - AI Infra / ML Systems">
+    <meta property="og:description" content="M.Phil. @ HKU | Researching AI Infrastructure & Distributed Systems">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="https://king-ty.github.io/">
+    <meta property="og:type" content="profile">
+
+    <title>Yu TIAN - AI Infra / ML Systems</title>
+    <link rel="icon" href="images/site.jpg" type="image/jpeg">
+
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="lang-en"> 
+
+<div class="floating-controls">
+    <button class="icon-btn" id="menuToggle" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <button class="icon-btn" id="mobileLangToggle" aria-label="Switch Language">
+        中
+    </button>
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+    </button>
+</div>
+
+<div class="container">
+    <aside class="sidebar">
+        <div class="profile-section">
+            <div class="avatar">
+                <img src="images/profile.jpg" alt="Yu TIAN" width="180" height="180" loading="lazy">
+            </div>
+            <h1 class="name" data-i18n="name">Yu TIAN (Tyrace)</h1>
+            <p class="tagline" data-i18n="tagline">M.Phil. @ HKU</p>
+            <p class="sub-tagline" data-i18n="sub_tagline">AI Infra & ML Sys</p>
+            <div class="location-tag">
+                <i class="fas fa-map-marker-alt"></i> 
+                <span data-i18n="location">Shanghai</span>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:yutian23m@connect.hku.hk" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/King-ty" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yu-tian-tyrace" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+            <!-- <div class="sidebar-actions">
+                <button class="sidebar-btn" id="langToggle">中 / En</button>
+            </div> -->
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about" class="nav-link active"><i class="fas fa-home"></i> <span data-i18n="nav_home">Home</span></a></li>
+                <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> <span data-i18n="nav_exp">Experience</span></a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-code-branch"></i> <span data-i18n="nav_projects">Projects</span></a></li>
+                <li><a href="#publications" class="nav-link"><i class="fas fa-book"></i> <span data-i18n="nav_pubs">Publications</span></a></li>
+                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> <span data-i18n="nav_edu">Education</span></a></li>
+                <li><a href="#teaching" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> <span data-i18n="nav_teaching">Teaching</span></a></li>
+                <li><a href="#awards" class="nav-link"><i class="fas fa-trophy"></i> <span data-i18n="nav_awards">Awards</span></a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> <span data-i18n="nav_skills">Skills</span></a></li>
+            </ul>
+        </nav>
+        
+        <div class="footer-note">
+            &copy; 2026 Yu TIAN
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="page-welcome">
+            <h1 data-i18n="page_title">Welcome to Yu TIAN's Homepage</h1>
+        </div>
+        
+        <header class="mobile-header">
+            <div class="mobile-avatar">
+                <img src="images/profile.jpg" alt="Yu TIAN" width="45" height="45">
+            </div>
+            <div class="mobile-info">
+                <div class="mobile-title-row">
+                    <h1 class="name" data-i18n="name">Yu TIAN (Tyrace)</h1>
+                    <div class="location-tag">
+                        <i class="fas fa-map-marker-alt"></i> 
+                        <span data-i18n="location">Shanghai</span>
+                    </div>
+                </div>
+                <p class="tagline" data-i18n="tagline">M.Phil. @ HKU</p>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:yutian23m@connect.hku.hk"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/King-ty" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yu-tian-tyrace" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </header>
+        
+        <section id="about" class="info-card">
+            <h2><i class="fas fa-user-circle"></i> <span data-i18n="about_title">About Me</span></h2>
+            <p class="about-text" data-i18n="about_intro">
+                I am a final-year Master of Philosophy (M.Phil.) candidate in Computer Science at the University of Hong Kong (HKU), supervised by <a href="https://i.cs.hku.hk/~heming/">Prof. Heming Cui</a>.
+                Before that, I received my B.Eng. degree in Computer Science from Tongji University.
+                Currently, I am a Research Intern at ByteDance Seed-Infra-Training in Shanghai.
+            </p>
+            
+            <div class="status-alert">
+                <i class="fas fa-bullhorn"></i>
+                <span class="alert-content" data-i18n="about_status">
+                    <strong>Update:</strong> I am actively looking for <strong>job opportunities</strong> / <strong>PhD positions (Fall 2026)</strong> — feel free to reach out!
+                </span>
+            </div>
+
+            <p class="about-text" data-i18n="about_detail">
+                My research focuses on <strong>Machine Learning Systems</strong>, <strong>AI Infrastructure</strong>, and <strong>Distributed Computing</strong>.
+                Specifically, I specialize in building high-performance, scalable, and reliable systems for Large Language Models (LLMs).
+                My work tackles critical challenges in distributed training and inference, such as ensuring consistency in large-scale Reinforcement Learning (RL) scenarios and optimizing Pipeline Parallelism (PP) in inference frameworks.
+            </p>
+            
+            <p class="about-text fun-fact" data-i18n="about_fun">
+                <i class="fas fa-terminal"></i> <strong>Fun Fact:</strong> You can also call me the <strong>"Handle Runner"</strong> 
+                — inspired by one of my favorite movies, "Blade Runner". 
+                While we CS guys might not be good at physical running, we are always running <code class="inline-code">handles</code>!
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title" data-i18n="section_exp">Internship Experience</h2>
+            <div class="content-list">
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="images/bytedance.svg" alt="ByteDance" width="40" height="40">
+                    </div>
+                    <div class="list-content">
+                        <div class="item-header">
+                            <h3 data-i18n="exp_bytedance_role">ByteDance / Seed-Infra-Training</h3>
+                            <span class="date" data-i18n="exp_bytedance_time">Jan 2026 - Present</span>
+                        </div>
+                        <p data-i18n="exp_bytedance_desc">
+                            Participating in R&D for Agent RL post-training systems.
+                            Designing and implementing low-overhead calibration mechanisms for asynchronous streaming RL training to address data consistency challenges and ensure stability in large-scale RL training.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="images/huawei.svg" alt="Huawei" width="40" height="40">
+                    </div>
+                    <div class="list-content">
+                        <div class="item-header">
+                            <h3 data-i18n="exp_huawei_role">Huawei 2012 Labs (Hong Kong)</h3>
+                            <span class="date" data-i18n="exp_huawei_time">May 2025 - Nov 2025</span>
+                        </div>
+                        <p data-i18n="exp_huawei_desc">
+                            Developed Pipeline Parallelism (PP) modules for Ascend LLM inference systems.
+                            Researched optimization techniques including Parallelism Mechanisms, PD Disaggregation, Speculative Decoding, Sparse/Linear Attention, and Quantization.
+                            Addressed resource scheduling and memory bottlenecks in super-node environments.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="images/shlab.png" alt="Shanghai AI Lab" width="40" height="40">
+                    </div>
+                    <div class="list-content">
+                        <div class="item-header">
+                            <h3 data-i18n="exp_shlab_role">Shanghai AI Lab</h3>
+                            <span class="date" data-i18n="exp_shlab_time">Oct 2022 - Apr 2023</span>
+                        </div>
+                        <p data-i18n="exp_shlab_desc">
+                            Researched secure microservice architectures.
+                            Designed a secure and efficient microservice runtime based on Trusted Execution Environments (TEE) and Rust.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title" data-i18n="section_projects">Research Projects</h2>
+            <div class="content-list">
+                <div class="list-item">
+                    <div class="list-img" style="color: #1976d2; background-color: var(--icon-bg-blue);"><i class="fas fa-network-wired"></i></div>
+                    <div class="list-content">
+                        <h3 data-i18n="proj_huawei_title">Efficient PD Disaggregation Inference System Optimized by Pipeline Parallelism (PP)</h3>
+                        <p data-i18n="proj_huawei_desc">
+                            <strong>Huawei Research:</strong>
+                            Integrated Pipeline Parallelism (PP) & PD Disaggregation to optimize long-sequence and multi-node scenarios.
+                            First complete solution combining PP, PD disaggregation, and Multi-Token Prediction.
+                            Improved throughput by <strong>9.47%</strong> and kept pipeline bubbles &le;5%.
+                        </p>
+                        <div class="project-stats">
+                            <span data-i18n="proj_huawei_stat"><i class="fas fa-check-circle"></i> Landed in Huawei OmniInfer (Patent filed as First Inventor)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-img" style="color: #f57c00; background-color: var(--icon-bg-orange);"><i class="fas fa-lock"></i></div>
+                    <div class="list-content">
+                        <h3 data-i18n="proj_hedas_title">Secure and Efficient Distributed OLAP System via Fully Homomorphic Encryption (FHE)</h3>
+                        <p data-i18n="proj_hedas_desc">
+                            <strong>HKU Research:</strong>
+                            First FHE-based distributed OLAP system.
+                            Achieved secure and efficient data processing.
+                            Reduced end-to-end latency by <strong>44.1%</strong> compared to SOTA single-node systems in 4-node settings.
+                        </p>
+                        <div class="project-stats">
+                            <span data-i18n="proj_hedas_stat"><i class="fas fa-book"></i> Published in ESORICS DPM '24</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-img" style="color: #388e3c; background-color: var(--icon-bg-green);"><i class="fas fa-bolt"></i></div>
+                    <div class="list-content">
+                        <h3 data-i18n="proj_olap_title">High-Throughput OLAP System Accelerated by GPU/NPU</h3>
+                        <p data-i18n="proj_olap_desc">
+                            <strong>HKU-Huawei Joint Research:</strong>
+                            Designed high-performance OLAP system using GPU/NPU for offline scenarios.
+                            Achieved <strong>50%</strong> throughput improvement compared to NVIDIA RAPIDS for Spark.
+                        </p>
+                        <div class="project-stats">
+                            <span data-i18n="proj_olap_stat"><i class="fas fa-users"></i> Team Lead (Led 2 RAs)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2 class="section-title" data-i18n="section_pubs">Publications</h2>
+            <div class="content-list">
+                <div class="list-item clickable-block">
+                    <a href="https://doi.org/10.1007/978-3-031-82349-7_6" target="_blank" class="block-link" aria-label="View Publication"></a>
+                    <div class="list-img pdf-container">
+                        <a href="papers/hedas.pdf" target="_blank" title="Download PDF" class="pdf-link">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="list-content">
+                        <h3 class="pub-title">HEDAS: Secure and Efficient Distributed OLAP using Fully Homomorphic Encryption</h3>
+                        <div class="pub-authors" data-i18n="pub_hedas_authors">
+                            <strong>Yu Tian</strong>, Tianxiang Shen, Qi Hu, Wei Chen, Heming Cui, and Ji Qi<sup class="envelope-icon"><i class="fas fa-envelope"></i></sup>
+                        </div>
+                        <div class="pub-venue" data-i18n="pub_hedas_venue">
+                            ESORICS 2024 International Workshops: DPM, CBT, and CyberICPS, 77-93.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2 class="section-title" data-i18n="section_edu">Education</h2>
+            <div class="content-list">
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="images/hku.svg" alt="HKU" width="40" height="40">
+                    </div>
+                    <div class="list-content">
+                        <div class="item-header">
+                            <div class="info-left">
+                                <h3 data-i18n="edu_hku_school">The University of Hong Kong (HKU)</h3>
+                            </div>
+                            <span class="date" data-i18n="edu_hku_time">Sep 2023 - Present</span>
+                        </div>
+                        <p data-i18n="edu_hku_degree">M.Phil. in Computer Science</p>
+                    </div>
+                </div>
+
+                <div class="list-item">
+                    <div class="list-img">
+                        <img src="images/tongji.svg" alt="Tongji University" width="40" height="40">
+                    </div>
+                    <div class="list-content">
+                        <div class="item-header">
+                            <div class="info-left">
+                                <h3 data-i18n="edu_tongji_school">Tongji University</h3>
+                                <span class="gpa" data-i18n="edu_tongji_gpa">GPA: 91.63/100</span>
+                            </div>
+                            <span class="date" data-i18n="edu_tongji_time">Sep 2019 - Jun 2023</span>
+                        </div>
+                        <p data-i18n="edu_tongji_degree">B.Eng. in Computer Science and Technology</p>
+                        <div class="edu-activities" data-i18n="edu_tongji_activities">
+                            One of the Leaders of CPC Lab (Tongji University)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teaching">
+            <h2 class="section-title" data-i18n="section_teaching">Teaching Experience</h2>
+            <ul class="intro-list">
+                <li>
+                    <div class="ta-left">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span data-i18n="ta_hku_detail"><strong>Teaching Assistant</strong> @ HKU (COMP3230: Operating Systems)</span>
+                    </div>
+                    <span class="date" data-i18n="ta_hku_date">Fall 2023 & 2024</span>
+                </li>
+
+                <li>
+                    <div class="ta-left">
+                        <i class="fas fa-code"></i>
+                        <span data-i18n="ta_tongji_detail"><strong>Teaching Assistant</strong> @ Tongji (Advanced Programming Language)</span>
+                    </div>
+                    <span class="date" data-i18n="ta_tongji_date">Sep 2020 - Jun 2021</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="awards">
+            <h2 class="section-title" data-i18n="section_awards">Honors & Awards</h2>
+            <ul class="intro-list">
+                <li><i class="fas fa-award"></i> <span data-i18n="award_national">National Scholarship (Top 0.2%)</span> <span class="date">2022</span></li>
+                <li><i class="fas fa-medal"></i> <span data-i18n="award_icpc">ICPC Asia Regional Contest (Jinan) Silver Medal</span> <span class="date">2021</span></li>
+                <li><i class="fas fa-star"></i> <span data-i18n="award_qidi">Tongji University Qidi Scholarship (Top 1%)</span> <span class="date">2023</span></li>
+                <li><i class="fas fa-code"></i> <span data-i18n="award_csp">CCF CSP Certification 350 (Top 1.49%)</span> <span class="date">2021</span></li>
+                <li><i class="fas fa-graduation-cap"></i> <span data-i18n="award_grad">Outstanding Graduate of Tongji University</span> <span class="date">2023</span></li>
+            </ul>
+        </section>
+
+        <section id="skills" class="info-card">
+            <h2><i class="fas fa-terminal"></i> <span data-i18n="section_skills">Technical Skills</span></h2>
+            
+            <div class="skill-group">
+                <h4 data-i18n="skill_cat_lang">Languages</h4>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Rust</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">C</span>
+                    <span class="tag">CUDA</span>
+                    <span class="tag">Shell</span>
+                    <span class="tag">Go</span>
+                    <span class="tag" data-i18n="skill_lang">English</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h4 data-i18n="skill_cat_frameworks">Systems & Frameworks</h4>
+                <div class="tags">
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">vLLM</span>
+                    <span class="tag">SGLang</span>
+                    <span class="tag">verl</span>
+                    <span class="tag">Triton</span>
+                    <span class="tag">Transformers</span>
+                    <span class="tag">Megatron-LM</span>
+                </div>
+            </div>
+            </section>
+
+    </main>
+</div>
+
+<script src="translations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
