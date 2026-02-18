@@ -678,68 +678,39 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    /* 1. 字体微调 */
+    /* ==================== 1. 字体与基础设置 ==================== */
     body { font-size: 15px; }
-    .about-text, .list-content p, .intro-list li { font-size: 0.95rem; line-height: 1.5; }
-    /* .page-welcome h1 {
-        font-size: 1.6rem;
-    } */
+    .about-text, .list-content p, .intro-list li { font-size: 1rem; line-height: 1.5; }
     h2 { font-size: 1.35rem; margin-bottom: 12px; }
-    .status-alert { font-size: 0.9rem !important; padding: 12px 15px; }
+    .status-alert { font-size: 1rem !important; padding: 12px 15px; }
     .tags { gap: 8px; }
     .tag { font-size: 0.85rem; padding: 5px 12px; }
 
-    /* 2. 手机端显示悬浮按钮 */
+    /* ==================== 2. 侧边栏与菜单 ==================== */
     #menuToggle, #mobileLangToggle { display: flex; }
-    
-    /* 菜单按钮特殊样式 */
     #menuToggle {
         background-color: var(--accent-color);
         color: white;
         border: none;
     }
-    
-    /* 隐藏侧边栏内的重复按钮 */
     .sidebar-btn { display: none; }
-
-    /* 3. 侧边栏抽屉效果 */
     .sidebar {
-        position: fixed;
-        left: -100%;
-        top: 0;
-        bottom: 0;
-        width: 260px;
-        z-index: 1001;
-        transition: left 0.3s ease-in-out;
-        box-shadow: 5px 0 15px rgba(0,0,0,0.1);
-        border-right: none;
-        height: 100vh;
-        overflow-y: auto;
+        position: fixed; left: -100%; top: 0; bottom: 0; width: 260px;
+        z-index: 1001; transition: left 0.3s ease-in-out;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.1); border-right: none;
+        height: 100vh; overflow-y: auto;
     }
-
-    .sidebar.active {
-        left: 0;
-    }
-    
-    /* 侧边栏内不显示个人信息，只显示菜单 */
+    .sidebar.active { left: 0; }
     .sidebar .profile-section { display: none; }
-
     .container { flex-direction: column; }
     .main-content { padding: 15px; }
-
-    /* 遮罩层 */
     .overlay {
-        position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(0,0,0,0.5);
-        z-index: 999;
-        display: none;
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.5); z-index: 999; display: none;
     }
-    .overlay.active {
-        display: block;
-    }
+    .overlay.active { display: block; }
 
-    /* 手机顶部 Header */
+    /* ==================== 3. Header ==================== */
     .mobile-header {
         display: flex;
         align-items: center; 
@@ -749,8 +720,10 @@ h2 {
         margin-bottom: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        gap: 12px;
         min-height: 60px; 
+        /* 允许内容换行，并增加行间距 */
+        flex-wrap: wrap; 
+        gap: 10px 12px; /* row-gap 10px, column-gap 12px */
     }
 
     .mobile-avatar img {
@@ -765,19 +738,21 @@ h2 {
         display: flex;
         flex-direction: column;
         justify-content: center; 
+        min-width: 150px; /* 防止文字被挤得太扁 */
     }
 
     .mobile-title-row {
         display: flex;
         align-items: baseline;
         gap: 8px;
+        flex-wrap: wrap; /* 名字太长也允许换行 */
     }
     .mobile-title-row .name {
         font-size: 1.15rem;
         font-weight: 700;
         margin: 0;
         line-height: 1.2;
-        white-space: nowrap;
+        white-space: normal; 
     }
 
     .mobile-info .location-tag {
@@ -805,28 +780,74 @@ h2 {
 
     .mobile-header .social-icons {
         display: flex;
-        gap: 12px;
         margin: 0;
         flex-shrink: 0;
+        margin-left: auto; 
+        align-items: center;
     }
 
-    .item-header {
-        margin-bottom: 6px; /* 手机端稍微宽一点点以免太挤 */
-    }
-
-    /* 手机上助教经历日期换行显示，避免挤压 */
-    /* .intro-list li {
-        align-items: flex;
-    } */
-    /* .intro-list li .date {
-        margin-left: 0;
-        width: 100%; */
-        /* margin-top: 4px;
-        font-size: 0.85rem !important;
-    } */
-
+    /* ==================== 4. 经历/教育列表修复 (核心改动) ==================== */
     .list-item { padding: 18px; }
     .list-img { width: 45px; height: 45px; margin-right: 15px; }
+
+    .item-header {
+        margin-bottom: 6px;
+        display: flex;          /* 确保是 flex 布局 */
+        flex-wrap: wrap;        /* 允许换行！ */
+        justify-content: space-between;
+        align-items: baseline;  /* 文字底部对齐 */
+        gap: 4px 10px;          /* 稍微加点间距 */
+    }
+
+    /* 标题部分 */
+    .item-header h3 {
+        /* 如果空间不够，标题优先占满一行，把日期挤下去 */
+        flex: 1 1 auto;     
+        margin-right: 5px;
+    }
+
+    /* 日期部分 */
+    .item-header .date {
+        white-space: nowrap;    /* 禁止日期内部折行 (如 "Jan" 和 "2026" 分开) */
+        flex-shrink: 0;         /* 防止日期被挤压 */
+        font-size: 0.9rem;
+        margin-left: auto;      /* 确保靠右 */
+    }
+    
+    /* 教育背景的左侧信息 (校名+GPA) */
+    .item-header .info-left {
+        display: flex;
+        flex-wrap: wrap;        /* 允许 GPA 换行 */
+        align-items: center;
+        gap: 8px;
+        flex: 1;
+    }
+
+    /* ==================== 5. 奖项/助教列表修复 ==================== */
+    .intro-list li {
+        display: flex;
+        flex-wrap: wrap;        /* 允许换行 */
+        justify-content: space-between;
+        align-items: flex-start; /* 顶部对齐 */
+        gap: 5px;
+    }
+    
+    /* 文字部分 */
+    .intro-list li > div:first-child,
+    .intro-list li > span:first-child {
+        flex: 1;                /* 占据主导地位 */
+        padding-right: 5px;
+    }
+
+    /* 日期部分 */
+    .intro-list .date,
+    .intro-list li .date {
+        white-space: nowrap;    /* 禁止日期折行 */
+        flex-shrink: 0;         /* 保持完整 */
+        margin-left: auto;      /* 靠右对齐 */
+        margin-top: 2px;
+        font-size: 0.9rem !important; /* 强制覆盖 */
+    }
 }
 
 .inline-code {
