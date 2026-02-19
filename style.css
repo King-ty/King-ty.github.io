@@ -406,7 +406,21 @@ h2 {
     color: #ef5350;
 }
 
-.pdf-link {
+/* DOI / Official Link Icon */
+.doi-container {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    z-index: 2;
+    position: relative;
+}
+/* 暗色模式下 DOI 图标微调 */
+[data-theme="dark"] .doi-container {
+    background-color: #0b2e59;
+    color: #64b5f6;
+}
+
+/* 通用链接与悬浮动画 */
+.pdf-link, .doi-link {
     color: inherit;
     display: flex;
     align-items: center;
@@ -416,7 +430,7 @@ h2 {
     transition: transform 0.2s;
 }
 
-.pdf-link:hover {
+.pdf-link:hover, .doi-link:hover {
     transform: scale(1.2);
 }
 
