@@ -509,29 +509,6 @@ h2 {
     flex: 1; 
 }
 
-/* Awards List */
-.intro-list {
-    list-style: none;
-}
-.intro-list li {
-    margin-bottom: 12px;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.intro-list i {
-    color: var(--accent-color);
-    margin-right: 12px;
-    width: 20px;
-}
-.intro-list .date {
-    float: right;
-    /* font-size: 0.9rem; */
-    color: var(--text-date);
-}
-
 /* =========================================
    Floating Buttons
    适配 HTML 中的 floating-controls 结构
@@ -581,7 +558,7 @@ h2 {
 }
 
 /* =========================================
-   Mobile / Responsive
+   Mobile / Responsive Base Elements
    ========================================= */
 .mobile-header {
     display: none;
@@ -600,40 +577,43 @@ h2 {
     letter-spacing: -0.5px; 
 }
 
+/* =========================================
+   通用列表排版 (全局生效：经历/教育/奖项/助教)
+   ========================================= */
+
+/* 1. 经历与教育头部对齐 (换行靠左规则提取至全局) */
 .item-header {
+    margin-bottom: 6px;
     display: flex;
-    justify-content: space-between; /* 左右分布 */
-    align-items: flex-start;        /* 顶部对齐 (防止多行标题时日期位置尴尬) */
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    flex-wrap: wrap;                /* 移动端允许换行 */
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 4px 10px;
 }
 
-/* 强制去掉头部内部 H3 的下边距，消除额外空隙 */
 .item-header h3 {
-    margin-bottom: 0 !important; 
-    flex: 1;             /* 标题占据左侧主要空间 */
-    line-height: 1.2;    /* 优化行高 */
+    flex: 0 1 auto;
+    margin-right: 5px;
     padding: 0 !important;
-}
-
-/* 头部右侧的日期样式 */
-.item-header .date {
-    white-space: nowrap; /* 禁止日期换行 */
-    flex-shrink: 0;      /* 防止日期被挤压 */
-    color: var(--text-date);
-    font-weight: 500;
-    margin-left: auto;   /* 强制靠右 */
+    margin-bottom: 0 !important;
     line-height: 1.2;
 }
 
-/* 针对包含额外信息（如GPA）的左侧容器 */
 .item-header .info-left {
     display: flex;
-    align-items: center;
-    gap: 12px;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    flex: 1 1 auto;
+}
+
+.item-header .date {
+    white-space: nowrap;
+    flex-shrink: 0;
+    color: var(--text-date);
+    font-weight: 500;
+    margin-left: 0; /* 使得其可以自然换行靠左 */
+    line-height: 1.2;
 }
 
 .gpa {
@@ -647,20 +627,6 @@ h2 {
     display: inline-block;
 }
 
-/* 让列表项（图标+文字+日期）整体居中 */
-#awards .intro-list li {
-    /* justify-content: center; 把两端对齐(space-between)改为居中 */
-    gap: 8px;                /* 控制图标、文字、日期之间的间距 */
-    text-align: center;      /* 确保文字换行后也是居中的 */
-}
-
-/* 针对日期的小调整 */
-#awards .intro-list .date {
-    float: none;             /* 清除旧样式可能存在的浮动 */
-    margin-left: 0;          /* 清除之前可能设置的左侧自动边距 */
-}
-
-/* 在校经历 */
 .edu-activities {
     margin-top: 10px;
     font-size: 0.95rem;
@@ -670,15 +636,100 @@ h2 {
     line-height: 1.5;
 }
 
-/* 2. 助教经历 */
-/* 确保 .intro-list li 内的 span.date 能右浮动 */
-.intro-list li .date {
-    margin-left: auto; /* Flex布局下自动推到最右边 */
-    padding-left: 10px;
+/* 2. 奖项与助教列表排版 (兼容逻辑提取至全局) */
+.intro-list {
+    list-style: none;
 }
 
+.intro-list li {
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 5px;
+    text-align: left;
+}
+
+.intro-list i {
+    color: var(--accent-color);
+    width: 20px;
+    text-align: center;
+}
+
+.intro-list .date,
+.intro-list li .date {
+    white-space: nowrap;    
+    flex-shrink: 0;        
+    margin-left: auto;      
+    color: var(--text-date);
+}
+
+/* 荣誉 (Awards) 专用逻辑：保持同行对齐，自然右浮动 */
+#awards .intro-list li > i {
+    margin-top: 4px;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+#awards .intro-list li > span:not(.date) {
+    flex: 1 1 auto;
+    padding-right: 5px;
+}
+
+/* 助教 (Teaching) 专用逻辑：块级+内联排版，日期永远跟随末尾 */
+#teaching .intro-list li {
+    display: block; 
+    position: relative;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#teaching .intro-list li > div.ta-left {
+    display: inline;
+}
+
+#teaching .intro-list li i {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#teaching .intro-list li .date {
+    float: right; 
+    margin-left: 10px;
+    margin-top: 0; 
+}
+
+#teaching .intro-list li::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* =========================================
+   代码标签
+   ========================================= */
+.inline-code {
+    background: #f0f0f0; /* 默认浅色 */
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #d63384;
+    font-family: monospace;
+    font-style: normal;
+}
+
+/* 暗色模式适配 */
+[data-theme="dark"] .inline-code {
+    background: #333;
+    color: #ff80ab;
+}
+
+/* =========================================
+   移动端响应式 (清理了冗余结构，保留尺寸调整)
+   ========================================= */
 @media (max-width: 768px) {
-    /* ==================== 1. 字体与基础设置 ==================== */
+    /* 1. 字体与基础设置 */
     body { font-size: 15px; }
     .about-text, .list-content p, .intro-list li { font-size: 1rem; line-height: 1.5; }
     h2 { font-size: 1.35rem; margin-bottom: 12px; }
@@ -686,7 +737,7 @@ h2 {
     .tags { gap: 8px; }
     .tag { font-size: 0.85rem; padding: 5px 12px; }
 
-    /* ==================== 2. 侧边栏与菜单 ==================== */
+    /* 2. 侧边栏与菜单 */
     #menuToggle, #mobileLangToggle { display: flex; }
     #menuToggle {
         background-color: var(--accent-color);
@@ -710,20 +761,18 @@ h2 {
     }
     .overlay.active { display: block; }
 
-    /* ==================== 3. Header ==================== */
+    /* 3. Header */
     .mobile-header {
         display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
         align-items: center; 
-        justify-content: space-between;
         background: var(--card-bg);
         padding: 10px 15px; 
         margin-bottom: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        min-height: 60px; 
-        /* 允许内容换行，并增加行间距 */
-        flex-wrap: wrap; 
-        gap: 10px 12px; /* row-gap 10px, column-gap 12px */
+        gap: 10px; 
     }
 
     .mobile-avatar img {
@@ -734,25 +783,24 @@ h2 {
     }
 
     .mobile-info {
-        flex: 1;
+        flex: 1 1 auto; 
         display: flex;
         flex-direction: column;
         justify-content: center; 
-        min-width: 150px; /* 防止文字被挤得太扁 */
+        min-width: 150px; 
     }
 
     .mobile-title-row {
         display: flex;
         align-items: baseline;
         gap: 8px;
-        flex-wrap: wrap; /* 名字太长也允许换行 */
+        flex-wrap: wrap; 
     }
     .mobile-title-row .name {
         font-size: 1.15rem;
         font-weight: 700;
         margin: 0;
         line-height: 1.2;
-        white-space: normal; 
     }
 
     .mobile-info .location-tag {
@@ -763,104 +811,31 @@ h2 {
         white-space: nowrap;
         margin: 0;          
     }
-    .mobile-info .location-tag i {
-        font-size: 0.8rem;  
-        color: var(--accent-color);
-    }
-
     .mobile-info .tagline {
         font-size: 0.8rem;
         color: var(--text-secondary);
         margin: 2px 0 0 0; 
         line-height: 1.2;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 
     .mobile-header .social-icons {
         display: flex;
-        margin: 0;
-        flex-shrink: 0;
-        margin-left: auto; 
         align-items: center;
+        margin: 0; 
+        flex-shrink: 0;
     }
 
-    /* ==================== 4. 经历/教育列表修复 (核心改动) ==================== */
+    /* 4. 经历/教育列表 (已复用全局排版，仅保留尺寸修正) */
     .list-item { padding: 18px; }
     .list-img { width: 45px; height: 45px; margin-right: 15px; }
 
-    .item-header {
-        margin-bottom: 6px;
-        display: flex;          /* 确保是 flex 布局 */
-        flex-wrap: wrap;        /* 允许换行！ */
-        justify-content: space-between;
-        align-items: baseline;  /* 文字底部对齐 */
-        gap: 4px 10px;          /* 稍微加点间距 */
-    }
-
-    /* 标题部分 */
-    .item-header h3 {
-        /* 如果空间不够，标题优先占满一行，把日期挤下去 */
-        flex: 1 1 auto;     
-        margin-right: 5px;
-    }
-
-    /* 日期部分 */
     .item-header .date {
-        white-space: nowrap;    /* 禁止日期内部折行 (如 "Jan" 和 "2026" 分开) */
-        flex-shrink: 0;         /* 防止日期被挤压 */
         font-size: 0.9rem;
-        margin-left: auto;      /* 确保靠右 */
     }
     
-    /* 教育背景的左侧信息 (校名+GPA) */
-    .item-header .info-left {
-        display: flex;
-        flex-wrap: wrap;        /* 允许 GPA 换行 */
-        align-items: center;
-        gap: 8px;
-        flex: 1;
-    }
-
-    /* ==================== 5. 奖项/助教列表修复 ==================== */
-    .intro-list li {
-        display: flex;
-        flex-wrap: wrap;        /* 允许换行 */
-        justify-content: space-between;
-        align-items: flex-start; /* 顶部对齐 */
-        gap: 5px;
-    }
-    
-    /* 文字部分 */
-    .intro-list li > div:first-child,
-    .intro-list li > span:first-child {
-        flex: 1;                /* 占据主导地位 */
-        padding-right: 5px;
-    }
-
-    /* 日期部分 */
+    /* 5. 奖项/助教列表 (已复用全局排版，仅保留字体缩小) */
     .intro-list .date,
     .intro-list li .date {
-        white-space: nowrap;    /* 禁止日期折行 */
-        flex-shrink: 0;         /* 保持完整 */
-        margin-left: auto;      /* 靠右对齐 */
-        margin-top: 2px;
-        font-size: 0.9rem !important; /* 强制覆盖 */
+        font-size: 0.9rem !important;
     }
-}
-
-.inline-code {
-    background: #f0f0f0; /* 默认浅色 */
-    padding: 2px 5px;
-    border-radius: 4px;
-    color: #d63384;
-    font-family: monospace;
-    font-style: normal;
-}
-
-/* 暗色模式适配 */
-[data-theme="dark"] .inline-code {
-    background: #333;
-    color: #ff80ab;
 }
