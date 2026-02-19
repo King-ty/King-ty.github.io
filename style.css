@@ -1,6 +1,6 @@
 :root {
     /* =========================================
-       1. 变量定义 (合并自新版，支持暗色模式)
+       1. 变量定义
        ========================================= */
     /* Light Mode (默认) */
     --bg-color: #f4f6f8;
@@ -100,7 +100,7 @@ a {
 }
 
 /* =========================================
-   Sidebar (逻辑完全沿用旧版，仅替换颜色变量)
+   Sidebar
    ========================================= */
 .sidebar {
     width: 280px;
@@ -667,6 +667,10 @@ h2 {
 }
 
 /* 荣誉 (Awards) 专用逻辑：保持同行对齐，自然右浮动 */
+#awards .intro-list li {
+    flex-wrap: nowrap; /* 禁止图标和文字被拆分到两行 */
+}
+
 #awards .intro-list li > i {
     margin-top: 4px;
     margin-right: 8px;
@@ -676,6 +680,7 @@ h2 {
 #awards .intro-list li > span:not(.date) {
     flex: 1 1 auto;
     padding-right: 5px;
+    display: block; /* 允许超长的文字在自身容器内部自然换行 */
 }
 
 /* 助教 (Teaching) 专用逻辑：块级+内联排版，日期永远跟随末尾 */
@@ -726,7 +731,7 @@ h2 {
 }
 
 /* =========================================
-   移动端响应式 (清理了冗余结构，保留尺寸调整)
+   移动端响应式
    ========================================= */
 @media (max-width: 768px) {
     /* 1. 字体与基础设置 */
@@ -825,7 +830,7 @@ h2 {
         flex-shrink: 0;
     }
 
-    /* 4. 经历/教育列表 (已复用全局排版，仅保留尺寸修正) */
+    /* 4. 经历/教育列表 */
     .list-item { padding: 18px; }
     .list-img { width: 45px; height: 45px; margin-right: 15px; }
 
@@ -833,7 +838,7 @@ h2 {
         font-size: 0.9rem;
     }
     
-    /* 5. 奖项/助教列表 (已复用全局排版，仅保留字体缩小) */
+    /* 5. 奖项/助教列表 */
     .intro-list .date,
     .intro-list li .date {
         font-size: 0.9rem !important;
